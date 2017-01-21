@@ -1,12 +1,65 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GllacyShop</title>
+  <link rel="stylesheet" href="/167251-gllacy/css/style.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="main-header-logo">
+      <img src="/167251-gllacy/img/logo.png" alt="GllacyShop логотип" width="ё54" height="64">
+    </div>
+    <nav class="main-header-nav">
+      <ul>
+        <li>
+          <a href="#" class="main-header-nav-catalog">Каталог</a>
+        </li>
+        <li>
+          <a href="#">Доставка и оплата</a>
+        </li>
+        <li>
+          <a href="#">О Компании</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="main-header-userform"> <!-- какими тегами верстать, должен быть переход на формы? одинаковый класс для стилизации? Иконки через img? -->
+      <button type="button" class="userform-search">Поиск</button>
+      <button type="button" class="userform-enter">Вход</button>
+      <button type="button" class="userform-basket">Пусто</button>
+    </div>
+    <div class="main-header-schedule">
+      <p class="schedule-time">С 10 до 20, ежедневно</p>
+      <p class="schedule-tel">8 812 450-25-25</p>
+    </div>
+    <!-- должны ли выпадающие элементы относиться к хедеру? -->
+    <select name="nav-catalog" id="nav-catalog" class="nav-catalog">
+      <option value="catalog-new" class="catalog-new">Новинки</option> <!-- как добавить нижнее подчеркивание? специально заложил отдельный класс-->
+      <option value="catalog-creamy">Сливочное</option>
+      <option value="catalog-sherbet">Щербеты</option>
+      <option value="catalog-icefruit">Фруктовый лед</option>
+      <option value="catalog-melorin">Мелорин</option>
+    </select>
+    <!-- где должна располагаться эта форма обратной связи?
+    <form action="#" method="post" name="ask-info">
+      <input type="text" id="ask-name" placeholder="Как вас зовут?">
+      <input type="text" id="ask-email" placeholder="Ваша почта для ответа?">
+      стилизуется ли размер textarea через пиксели
+      <textarea name="ask-info-write" id="ask-info-write" cols="50" rows="10"></textarea>
+      <button type="submit" class="orange-btn">Отправить</button>
+    </form> -->
+    <form action="#" method="post" name="form-search">
+      <input type="text" class="form-search-text" name="form-search-text" placeholder="Что ищем">
+    </form>
+    <form action="#" method="post" name="form-login">
+      <input type="text" class="form-login-email" name="form-login-email" placeholder="Электронная почта">
+      <input type="text" class="form-login-password" name="form-login-password" placeholder="Пароль">
+      <button type="button" class="login-btn orange-btn">Войти</button>
+      <a href="#">Забыли пароль?</a>
+      <a href="#">Новая регистрация</a>
+    </form>
+    
+    
+  </header> 
+</body>
 </html>
