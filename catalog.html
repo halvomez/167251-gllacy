@@ -27,16 +27,17 @@
       </ul>
     </nav>
     <div class="main-header-userform">
-      <!-- какими тегами верстать, должен быть переход на формы? одинаковый класс для стилизации? Иконки через img? -->
-      <button type="button" class="userform-search">Поиск</button>
-      <button type="button" class="userform-enter">Вход</button>
-      <button type="button" class="userform-basket">Пусто</button>
+      <!-- Верстать ссылками, переход на формы через ховер. Иконки через псевдоэлемент -->
+      <a href="#" class="userform-search">Поиск</a>
+      <a href="#" class="userform-enter">Вход</a>
+      <a href="#" class="userform-basket">Пусто</a>
     </div>
     <div class="main-header-schedule">
       <p class="schedule-time">С 10 до 20, ежедневно</p>
       <p class="schedule-tel">8 812 450-25-25</p>
     </div>
-    <!-- должны ли выпадающие элементы относиться к хедеру? -->
+    <!-- должны ли выпадающие элементы относиться к хедеру? 
+    Будут находиться в блоке main-header-userform, где и кнопки. Располагаются абсолютным позиционированием -->
     <select name="nav-catalog" id="nav-catalog" class="nav-catalog">
       <option value="catalog-new" class="catalog-new">Новинки</option>
       <!-- как добавить нижнее подчеркивание? специально заложил отдельный класс-->
@@ -45,11 +46,10 @@
       <option value="catalog-icefruit">Фруктовый лед</option>
       <option value="catalog-melorin">Мелорин</option>
     </select>
-    <!-- где должна располагаться эта форма обратной связи?
     <form action="#" method="post" name="ask-info">
       <input type="text" id="ask-name" placeholder="Как вас зовут?">
       <input type="text" id="ask-email" placeholder="Ваша почта для ответа?">
-      ??????стилизуется ли размер textarea через пиксели???????
+      <!-- textarea задается ширина и высота без cols rows -->
       <textarea name="ask-info-write" id="ask-info-write" cols="50" rows="10"></textarea>
       <button type="submit" class="orange-btn">Отправить</button>
     </form> -->
@@ -77,25 +77,28 @@
       </li>
     </ul>
     <h2>Сливочное мороженное</h2>
-    <!-- или h1? -->
+    <!-- или h1? Здесь h2. h1 если полное объяснение, что на странице находится. -->
     <div class="main-catalog-sort">
       <form action="#" name="catalog-sort">
-        <!-- одна форма и в ней все элементы?  -->
+        <!-- одна форма и в ней все элементы? Да  -->
         <div class="sort-block">
           <p>Сортировка</p>
           <div class="sort-block-style">
             <!--  sort-block-style для общей стилизации элементов в форме -->
             <select>
-            <option value="sort-popular">По популярности</option>
-            <option value="sort-price">По цене</option> <!-- какие должны быть остальные значения в списке? -->
-          </select>
+              <option value="sort-popular">По популярности</option>
+              <option value="sort-price">По цене</option>
+              <!-- какие должны быть остальные значения в списке? -->
+            </select>
           </div>
         </div>
         <div class="sort-block">
-          Цена <input type="text" value="100 руб.">-<input type="text" value="500 руб.">
+          Цена
+          <input type="text" value="100 руб.">-
+          <input type="text" value="500 руб.">
           <div class="sort-block-style">
           </div>
-          <!-- как верстать ползунок? -->
+          <!-- как верстать ползунок? Стандартом сделать нельзя, оживлять только через JS, здесь просто визуально, размечается через div -->
         </div>
         <div class="sort-block">
           <p>Жирность:</p>
@@ -217,7 +220,6 @@
       </ul>
     </section>
     <section class="main-footer-documents">
-      <!-- можно ли разместить список таким образом как на макете? 2 на одной строчке - 2 на другой?-->
       <!-- вместо маркера первого элемента иконка сердца -->
       <ul>
         <li>

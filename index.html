@@ -26,16 +26,17 @@
       </ul>
     </nav>
     <div class="main-header-userform">
-      <!-- какими тегами верстать, должен быть переход на формы? одинаковый класс для стилизации? Иконки через img? -->
-      <button type="button" class="userform-search">Поиск</button>
-      <button type="button" class="userform-enter">Вход</button>
-      <button type="button" class="userform-basket">Пусто</button>
+      <!-- Верстать ссылками, переход на формы через ховер. Иконки через псевдоэлемент -->
+      <a href="#" class="userform-search">Поиск</a>
+      <a href="#" class="userform-enter">Вход</a>
+      <a href="#" class="userform-basket">Пусто</a>
     </div>
     <div class="main-header-schedule">
       <p class="schedule-time">С 10 до 20, ежедневно</p>
       <p class="schedule-tel">8 812 450-25-25</p>
     </div>
-    <!-- должны ли выпадающие элементы относиться к хедеру? -->
+    <!-- должны ли выпадающие элементы относиться к хедеру? 
+    Будут находиться в блоке main-header-userform, где и кнопки. Располагаются абсолютным позиционированием -->
     <select name="nav-catalog" id="nav-catalog" class="nav-catalog">
       <option value="catalog-new" class="catalog-new">Новинки</option>
       <!-- как добавить нижнее подчеркивание? специально заложил отдельный класс-->
@@ -44,11 +45,10 @@
       <option value="catalog-icefruit">Фруктовый лед</option>
       <option value="catalog-melorin">Мелорин</option>
     </select>
-    <!-- где должна располагаться эта форма обратной связи?
     <form action="#" method="post" name="ask-info">
       <input type="text" id="ask-name" placeholder="Как вас зовут?">
       <input type="text" id="ask-email" placeholder="Ваша почта для ответа?">
-      ??????стилизуется ли размер textarea через пиксели???????
+      <!-- textarea задается ширина и высота без cols rows -->
       <textarea name="ask-info-write" id="ask-info-write" cols="50" rows="10"></textarea>
       <button type="submit" class="orange-btn">Отправить</button>
     </form> -->
@@ -85,11 +85,12 @@
       <img src="/img/strawberry.png" alt="клубничный щербет" width="326" height="523">
       <img src="/img/fudge.png" alt="пломбир с помадкой" width="367" height="582">
       <p class="main-index-background-offertext">Пломбир с помадкой и клубничный щербет </p>
+      <!-- оптимизировать названия классов, слишком большие -->
       <a href="#" class="main-index-background-getbnt orange-btn">Давайте оба!</a>
     </section>
     <!-- слайдер -->
-    <!-- как размечать, через кнопку или ссылку, если меняется фон? или вообще все оживляется через js -->
-    <!-- как стилизовать эти кнопки в дальнейшем, какие классы? как идет сопоставление кнопки и фоновых секций с разными вариантами выбора? -->
+    <!-- оживляется через радио. Если через js, то можно через button -->
+    <!-- Как идет сопоставление радио и переключения слайдов? -->
     <div class="main-index-slider">
       <button type="button" class="slider-btn"></button>
       <button type="button" class="slider-btn"></button>
@@ -135,14 +136,14 @@
     </section>
     <article class="main-index-gllacyinfo">
       <h1 class="gllacyinfo">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
-      <!-- объединить 2 иконки в одну для одновременной вставки -->
+      <!-- объединить 2 иконки в одну для одновременной вставки
+      Иконки разметить псевдоэлементом -->
       <div class="gllacyinfo-aboutus-left">
         <img src="/img/aboutus-icons-left.png" alt="натуральное мороженное" width="49" height="137">
         <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
         <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
       </div>
       <div class="gllacyinfo-aboutus-right">
-       <!-- объединить 2 иконки в одну для одновременной вставки -->
         <img src="/img/aboutus-icons-right.png" alt="условия сотрудничества и доставка" width="49" height="137">
         <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
         <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
@@ -166,7 +167,7 @@
         <img src="where-mark.png" alt="маркер" width="80" height="140">
       </div>
       <div class="where-address">
-       <!-- использовать br? -->
+        <!-- использовать br? Допускается в адресе -->
         <p>Адрес главного офиса
           <br> и офлайн магазина:
           <br>
@@ -196,7 +197,6 @@
       </ul>
     </section>
     <section class="main-footer-documents">
-      <!-- можно ли разместить список таким образом как на макете? 2 на одной строчке - 2 на другой?-->
       <!-- вместо маркера первого элемента иконка сердца -->
       <ul>
         <li>
@@ -219,4 +219,5 @@
     </section>
   </footer>
 </body>
+
 </html>
