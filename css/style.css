@@ -1,0 +1,98 @@
+
+
+body {
+  background-color:#849d8f;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-catalog li:first-child {
+  border-bottom: 1px solid #d1d1ce;
+}
+
+.ask-info-textarea {
+  width: 428px;
+  height: 155px;
+}
+
+.banner {
+  width: 560px;
+  height: 229px;
+  
+}
+
+.radius {
+  border-radius: 15px;  
+}
+
+.banner-raspberry {
+  /*  почему не подхватывает через /img/raspberries-back.jpg*/
+  background-image: url(/167251-gllacy/img/raspberries-back.jpg);
+}
+
+.banner-choco {
+  background-image: url(/167251-gllacy/img/choco-back.jpg);
+}
+
+.main-index-gllacyinfo {
+  width: 1146px;
+  height: auto;
+/*  кусок текстуры через repeat или вырезать целиком?*/
+  background-image: url(/167251-gllacy/img/aboutus-wafer.jpg);
+}
+
+
+
+.main-index-news {
+  background-image: url(/167251-gllacy/img/news-back.jpg);
+  width: 560px;
+/*  высоту блока в дальнейшем будет определяться элементами внутри*/
+  height: 220px;
+}
+
+.main-index-subscribe {
+  background-image: url(/167251-gllacy/img/subscribe-back.jpg);
+  width: 560px;
+/*  высоту блока в дальнейшем будет определяться элементами внутри*/
+  height: 220px;
+}
+
+.for-shippers::before {
+/*  этот класс для li или для ссылки лучше?*/
+  content: url(/167251-gllacy/img/shippers-heart.png);
+  position: absolute;
+  margin-left: -22px;
+}
+
+.banner-promo {
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
+}
+
+.main-index-slider1 p {
+  font-size: 60px;
+  line-height: 60.35px;
+  color:#ffffff;
+  text-align: center;
+  display: inline-block;
+  width: 629px;
+}
+
+.icephoto-radius {
+  margin:0;
+  padding: 0;
+  border-radius: 140px;
+}
+
+.for-hit-icon::before {
+  content: url(/167251-gllacy/img/hit-icon.png);
+  position: absolute;
+}
