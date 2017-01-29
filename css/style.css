@@ -1,16 +1,10 @@
-
-
 body {
-  background-color:#849d8f;
+  background-color: #849d8f;
   font-family: Roboto;
   font-size: 16px;
   line-height: 22px;
   color: #323232;
   font-weight: bold;
-}
-
-li {
-  list-style: none;
 }
 
 .nav-catalog li:first-child {
@@ -25,47 +19,44 @@ li {
 .banner {
   width: 560px;
   height: 229px;
-  
 }
 
 .radius {
-  border-radius: 15px;  
+  border-radius: 15px;
 }
 
 .banner-raspberry {
   /*  почему не подхватывает через /img/raspberries-back.jpg*/
-  background-image: url(/167251-gllacy/img/raspberries-background.jpg);
+  background-image: url(/img/raspberries-background.jpg);
 }
 
 .banner-choco {
-  background-image: url(/167251-gllacy/img/chocolate-background.jpg);
+  background-image: url(/img/chocolate-background.jpg);
 }
 
 .main-index-gllacyinfo {
   width: 1146px;
   height: auto;
-/*  кусок текстуры через repeat или вырезать целиком?*/
-  background-image: url(/167251-gllacy/img/aboutus-wafer.jpg);
+  /*  кусок текстуры через repeat или вырезать целиком?*/
+  background-image: url(/img/aboutus-wafer.jpg);
 }
-
-
 
 .main-index-news {
   background-image: url(/167251-gllacy/img/news-background.jpg);
   width: 560px;
-/*  высоту блока в дальнейшем будет определяться элементами внутри*/
+  /*  высоту блока в дальнейшем будет определяться элементами внутри*/
   height: 220px;
 }
 
 .main-index-subscribe {
   background-image: url(/167251-gllacy/img/subscribe-background.jpg);
   width: 560px;
-/*  высоту блока в дальнейшем будет определяться элементами внутри*/
+  /*  высоту блока в дальнейшем будет определяться элементами внутри*/
   height: 220px;
 }
 
 .for-shippers::before {
-/*  этот класс для li или для ссылки лучше?*/
+  /*  этот класс для li или для ссылки лучше?*/
   content: url(/167251-gllacy/img/shippers-heart.png);
   position: absolute;
   margin-left: -22px;
@@ -80,19 +71,99 @@ li {
 .main-index-slider1 p {
   font-size: 60px;
   line-height: 60.35px;
-  color:#ffffff;
+  color: #ffffff;
   text-align: center;
   display: inline-block;
   width: 629px;
 }
 
 .icephoto-radius {
-  margin:0;
+  margin: 0;
   padding: 0;
   border-radius: 140px;
 }
 
 .for-hit-icon::before {
-  content: url(/167251-gllacy/img/hit-icon.png);
+  content: url(/img/hit-icon.png);
   position: absolute;
+}
+
+.container {
+  width: 1146px;
+  margin: 0 auto;
+}
+
+.main-header-nav {
+  float: left;
+  margin-top: 20px;
+  margin-left: 25px;
+  width: 400px;
+}
+
+.main-header-logo {
+  float: left;
+  width: 154px;
+}
+
+.main-header-userform {
+  float: right;
+  margin-top: 20px;
+  width: 265px;
+}
+
+.main-header-nav li {
+  display: inline-block;
+  padding-right: 29px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main-index-schedule {
+  clear: both;
+  width: 175px;
+  margin-left: 975px;
+  line-height: 10px;
+  color: #ffffff;
+}
+
+.nav-catalog {
+  display: none;
+  position: absolute;
+  width: 143px;
+  height: 171px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.nav-catalog li {
+  display: block;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.hover-catalog:hover .nav-catalog {
+  display: block;
+}
+
+.ask-info {
+  display: none;
+}
+
+.form-search {
+  display: none;
+}
+
+.form-login {
+  display: none;
+}
+
+.main-index-slider2 {
+  display: none;
+}
+
+.main-index-slider3 {
+  display: none;
 }
