@@ -34,11 +34,11 @@ li {
 
 .banner-raspberry {
   /*  почему не подхватывает через /img/raspberries-back.jpg*/
-  background-image: url(/167251-gllacy/img/raspberries-back.jpg);
+  background-image: url(/167251-gllacy/img/raspberries-background.jpg);
 }
 
 .banner-choco {
-  background-image: url(/167251-gllacy/img/choco-back.jpg);
+  background-image: url(/167251-gllacy/img/chocolate-background.jpg);
 }
 
 .main-index-gllacyinfo {
@@ -51,14 +51,14 @@ li {
 
 
 .main-index-news {
-  background-image: url(/167251-gllacy/img/news-back.jpg);
+  background-image: url(/167251-gllacy/img/news-background.jpg);
   width: 560px;
 /*  высоту блока в дальнейшем будет определяться элементами внутри*/
   height: 220px;
 }
 
 .main-index-subscribe {
-  background-image: url(/167251-gllacy/img/subscribe-back.jpg);
+  background-image: url(/167251-gllacy/img/subscribe-background.jpg);
   width: 560px;
 /*  высоту блока в дальнейшем будет определяться элементами внутри*/
   height: 220px;
