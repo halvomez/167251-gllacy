@@ -5,6 +5,8 @@ body {
   line-height: 22px;
   color: #323232;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-catalog li:first-child {
@@ -19,6 +21,8 @@ body {
 .banner {
   width: 560px;
   height: 229px;
+  margin-top: 41px;
+  margin-bottom: 40px;
 }
 
 .radius {
@@ -28,15 +32,15 @@ body {
 .banner-raspberry {
   /*  почему не подхватывает через /img/raspberries-back.jpg*/
   background-image: url(/img/raspberries-background.jpg);
+  float: left
 }
 
 .banner-choco {
   background-image: url(/img/chocolate-background.jpg);
+  float: right;
 }
 
 .main-index-gllacyinfo {
-  width: 1146px;
-  height: auto;
   /*  кусок текстуры через repeat или вырезать целиком?*/
   background-image: url(/img/aboutus-wafer.jpg);
 }
@@ -66,15 +70,6 @@ body {
   font-size: 35px;
   line-height: 41px;
   color: #ffffff;
-}
-
-.main-index-slider1 p {
-  font-size: 60px;
-  line-height: 60.35px;
-  color: #ffffff;
-  text-align: center;
-  display: inline-block;
-  width: 629px;
 }
 
 .icephoto-radius {
@@ -166,4 +161,52 @@ ul {
 
 .main-index-slider3 {
   display: none;
+}
+
+.main-index-slider1 img {
+  margin-left: 51px;
+}
+
+.slider-description {
+  width: 670px;
+  height: 116px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 60px;
+  text-align: center;
+  margin-left: 241px;
+  margin-top: -494px;
+  margin-bottom: 30px;
+}
+
+.main-index-slider1 a {
+  /* почему просвечивает цвет кнопки */
+  box-sizing: border-box;
+  display: inline-block;
+  width: 278px;
+  height: 63px;
+  margin-left: 370px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #e84d37;
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 30px;
+}
+
+.main-index-sliderbtn {
+  display: inline-block;
+  margin-left: 0;
+}
+
+.icephoto-hit {
+  clear: both;
+  display: inline-block;
+  width: 267px;
+  padding-right: 16px;;
 }
