@@ -31,32 +31,30 @@ body {
 
 .banner-raspberry {
   /*  почему не подхватывает через /img/raspberries-back.jpg*/
-  background-image: url(/img/raspberries-background.jpg);
+  background-image: url(../img/raspberries-background.jpg);
   float: left
 }
 
 .banner-choco {
-  background-image: url(/img/chocolate-background.jpg);
+  background-image: url(../img/chocolate-background.jpg);
   float: right;
 }
 
-.main-index-gllacyinfo {
-  /*  кусок текстуры через repeat или вырезать целиком?*/
-  background-image: url(/img/aboutus-wafer.jpg);
-}
-
 .main-index-news {
-  background-image: url(/167251-gllacy/img/news-background.jpg);
+  background-image: url(../img/news-background.jpg);
   width: 560px;
   /*  высоту блока в дальнейшем будет определяться элементами внутри*/
-  height: 220px;
+  min-height: 220px;
+  float: left;
 }
 
 .main-index-subscribe {
-  background-image: url(/167251-gllacy/img/subscribe-background.jpg);
+  background-image: url(../img/subscribe-background.jpg);
   width: 560px;
   /*  высоту блока в дальнейшем будет определяться элементами внутри*/
-  height: 220px;
+  min-height: 220px;
+  float: right;
+  margin-bottom: 40px;
 }
 
 .for-shippers::before {
@@ -86,6 +84,8 @@ body {
 .container {
   width: 1146px;
   margin: 0 auto;
+  padding: 0 10px;
+  н/* ужно ли задавать это центровщику?*/
 }
 
 .main-header-nav {
@@ -163,6 +163,10 @@ ul {
   display: none;
 }
 
+.main-index-slider1 {
+  clear: both;
+}
+
 .main-index-slider1 img {
   margin-left: 51px;
 }
@@ -205,8 +209,78 @@ ul {
 }
 
 .icephoto-hit {
-  clear: both;
-  display: inline-block;
+  float: left;
   width: 267px;
-  padding-right: 16px;;
+  padding-right: 26px;
+}
+
+.icephoto-hit-last {
+  padding-right: 0px;
+}
+
+.icephoto-hit p {
+  font-size: 45px;
+  color: #ffffff;
+}
+
+.icephoto-hit a {
+  display: inline-block;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 41px;
+}
+
+.main-index-gllacyinfo {
+  /*  кусок текстуры через repeat или вырезать целиком?*/
+  /* Откуда отступы между элементами p? */
+  clear: both;
+  background-image: url(../img/aboutus-wafer.jpg);
+  border-radius: 24px;
+  padding-left: 21px;
+}
+
+.main-index-gllacyinfo h1 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.where-map {
+  clear: both;
+  width: 1200px;
+  margin-left: -27px;
+  min-height: 430px;
+}
+
+.where-address {
+  box-sizing: border-box;
+  margin-left: 890px;
+  width: 302px;
+  height: 305px;
+  margin-top: -400px;
+  background-color: #fffffe;
+  padding-left: 25px;
+  padding-top: 32px;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 15px;
+}
+
+.where-address span {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+
+.main-footer-copyright {
+  float: right;
+}
+
+.main-footer-documents {
+  float: left;
+}
+
+.main-footer-social {
+  float: left;
+  padding-right: 500px;
 }
