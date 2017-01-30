@@ -12,10 +12,12 @@ body {
   color: #323232;
   font-weight: bold;
 }
+
 .container {
-  width:1200px;
+  box-sizing: border-box;
+  width: 1200px;
   padding: 0 27px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .ask-info {
@@ -56,4 +58,8 @@ body {
 .banner-choco {
   background-image: url(../img/chocolate-background.jpg);
   background-repeat: no-repeat;
+}
+
+.where-map img {
+  margin-left: -27px;
 }

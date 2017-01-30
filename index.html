@@ -73,126 +73,124 @@
       <a href="#">Новая регистрация</a>
     </form>
   </header>
-  <main class="main-index">
-    <div class="container">
-      <!-- первый вариант фона -->
-      <section class="main-index-slider1">
-        <img src="img/img-slider1.png" alt="пломбир с малиновым джемом" width="1045" height="881">
-        <p class="slider-description">Крем-брюле и пломбир с малиновым джемом</p>
-        <!-- давайте оба ссылка со стилем под кнопку? -->
-        <div class="main-index-sliderbtn">
-          <input type="radio">
-          <input type="radio">
-          <input type="radio">
-        </div>
-        <a href="#" class="orange-btn">Давайте оба!</a>
-      </section>
-      <!--второй вариант фона -->
-      <section class="main-index-slider2">
-        <img src="img/img-slider2.png" alt="шоколадный пломбир" width="1065" height="859">
-        <p>Шоколадный пломбир и лимонный сорбет </p>
-        <div class="main-index-sliderbtn">
-          <input type="radio">
-          <input type="radio">
-          <input type="radio">
-        </div>
-        <a href="#" class="orange-btn">Давайте оба!</a>
-      </section>
-      <section class="main-index-slider3">
-        <img src="img/img-slider3.png" alt="клубничный щербет" width="1079" height="854">
-        <p>Пломбир с помадкой и клубничный щербет </p>
-        <div class="main-index-sliderbtn">
-          <input type="radio">
-          <input type="radio">
-          <input type="radio">
-        </div>
-        <a href="#" class="orange-btn">Давайте оба!</a>
-      </section>
-      <!-- слайдер -->
-      <!-- оживляется через радио. Если через js, то можно через button -->
-      <!-- Как идет сопоставление радио и переключения слайдов? -->
-      <section class="banner banner-raspberry">
-        <p class="banner-promo">Малинка даром!</p>
-        <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
-        </p>
-        <a href="#" class="banner-getjam orange-btn">Хочу варенье!</a>
-      </section>
-      <section class="banner banner-choco">
-        <p class="banner-promo">Шоколадки даром!</p>
-        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
-        </p>
-        <a href="#" class="banner-getchocolate orange-btn">Хочу шоколадки!</a>
-      </section>
-      <section class="icephoto-hit">
-        <div class="for-hit-icon">
-          <img src="img/icecream-orange.png" class="icephoto-radius" alt="Сливочное с апельсиновым джемом" width="267" height="267">
-        </div>
-        <p>310&#8381;/кг</p>
-        <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-      </section>
-      <section class="icephoto-hit">
-        <div class="for-hit-icon">
-          <img src="img/icecream-coffee.png" class="icephoto-radius" alt="Сливочное кофейное" width="267" height="267">
-        </div>
-        <p>380&#8381;/кг</p>
-        <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-      </section>
-      <section class="icephoto-hit">
-        <div class="for-hit-icon">
-          <img src="img/icecream-strawberry.png" class="icephoto-radius" alt="Сливочное клубничное" width="267" height="267">
-        </div>
-        <p>355&#8381;/кг</p>
-        <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-      </section>
-      <section class="icephoto-hit icephoto-hit-last">
-        <div class="for-hit-icon">
-          <img src="img/icecream-caramel.png" class="icephoto-radius" alt="Сливочное крем-брюле" width="267" height="267">
-        </div>
-        <p>415&#8381;/кг</p>
-        <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-      </section>
-      <article class="main-index-gllacyinfo ">
-        <h1>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
-        <!-- Иконки разметить псевдоэлементом -->
-        <div class="gllacyinfo-aboutus">
-          <!-- <img src="img/aboutus-ice.png" alt="натуральное мороженное" width="49" height="49"> -->
-          <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-          <!-- <img src="img/aboutus-leaf.png" alt="сливки и молоко высокого качества" width="49" height="49"> -->
-          <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-        </div>
-        <div class="gllacyinfo-aboutus">
-          <!-- <img src="img/aboutus-cow.png" alt="ингридиенты от проверенных поставщиков" width="49" height="49"> -->
-          <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-          <!-- <img src="img/aboutus-temp.png" alt="доставка в термопакете" width="48" height="49"> -->
-          <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-        </div>
-      </article>
-      <section class="main-index-news radius">
-        <!--почему, если добавлять текст, вторая строчка выходит за родитель, а первая переносится-->
-        <p>Новое в нашем блоге</p>
-        <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
-      </section>
-      <section class="main-index-subscribe radius">
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-        <form action="#" method="post" name="subscribe">
-          <input type="text" name="subscribe-email" placeholder="Электронная почта">
-          <button type="submit" class="subscribe-btn orange-btn">Отправить</button>
-        </form>
-      </section>
-      <section class="where-map">
-        <img src="img/map.jpg" alt="наш адрес" width="1200" height="429">
-        <div class="where-address">
-          <p>Адрес главного офиса
-            <br> и офлайн магазина:
-            <br>
-            <span>ул. Большая Конюшенная<br> 19/8, Санкт-Петербург</span></p>
-          <p>Для заказов по телефону:
-            <br>
-            <span>8 812 450-25-25</span>
-            <br>(с 10 до 20 ежедневно)</p>
-        </div>
-      </section>
-    </div>
+  <main class="container">
+    <!-- первый вариант фона -->
+    <section class="main-index-slider1">
+      <img src="img/img-slider1.png" alt="пломбир с малиновым джемом" width="1045" height="881">
+      <p class="slider-description">Крем-брюле и пломбир с малиновым джемом</p>
+      <!-- давайте оба ссылка со стилем под кнопку? -->
+      <div class="main-index-sliderbtn">
+        <input type="radio">
+        <input type="radio">
+        <input type="radio">
+      </div>
+      <a href="#" class="orange-btn">Давайте оба!</a>
+    </section>
+    <!--второй вариант фона -->
+    <section class="main-index-slider2">
+      <img src="img/img-slider2.png" alt="шоколадный пломбир" width="1065" height="859">
+      <p>Шоколадный пломбир и лимонный сорбет </p>
+      <div class="main-index-sliderbtn">
+        <input type="radio">
+        <input type="radio">
+        <input type="radio">
+      </div>
+      <a href="#" class="orange-btn">Давайте оба!</a>
+    </section>
+    <section class="main-index-slider3">
+      <img src="img/img-slider3.png" alt="клубничный щербет" width="1079" height="854">
+      <p>Пломбир с помадкой и клубничный щербет </p>
+      <div class="main-index-sliderbtn">
+        <input type="radio">
+        <input type="radio">
+        <input type="radio">
+      </div>
+      <a href="#" class="orange-btn">Давайте оба!</a>
+    </section>
+    <!-- слайдер -->
+    <!-- оживляется через радио. Если через js, то можно через button -->
+    <!-- Как идет сопоставление радио и переключения слайдов? -->
+    <section class="banner banner-raspberry">
+      <p class="banner-promo">Малинка даром!</p>
+      <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+      </p>
+      <a href="#" class="banner-getjam orange-btn">Хочу варенье!</a>
+    </section>
+    <section class="banner banner-choco">
+      <p class="banner-promo">Шоколадки даром!</p>
+      <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+      </p>
+      <a href="#" class="banner-getchocolate orange-btn">Хочу шоколадки!</a>
+    </section>
+    <section class="icephoto-hit">
+      <div class="for-hit-icon">
+        <img src="img/icecream-orange.png" class="icephoto-radius" alt="Сливочное с апельсиновым джемом" width="267" height="267">
+      </div>
+      <p>310&#8381;/кг</p>
+      <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+    </section>
+    <section class="icephoto-hit">
+      <div class="for-hit-icon">
+        <img src="img/icecream-coffee.png" class="icephoto-radius" alt="Сливочное кофейное" width="267" height="267">
+      </div>
+      <p>380&#8381;/кг</p>
+      <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+    </section>
+    <section class="icephoto-hit">
+      <div class="for-hit-icon">
+        <img src="img/icecream-strawberry.png" class="icephoto-radius" alt="Сливочное клубничное" width="267" height="267">
+      </div>
+      <p>355&#8381;/кг</p>
+      <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+    </section>
+    <section class="icephoto-hit icephoto-hit-last">
+      <div class="for-hit-icon">
+        <img src="img/icecream-caramel.png" class="icephoto-radius" alt="Сливочное крем-брюле" width="267" height="267">
+      </div>
+      <p>415&#8381;/кг</p>
+      <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+    </section>
+    <article class="main-index-gllacyinfo ">
+      <h1>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
+      <!-- Иконки разметить псевдоэлементом -->
+      <div class="gllacyinfo-aboutus">
+        <!-- <img src="img/aboutus-ice.png" alt="натуральное мороженное" width="49" height="49"> -->
+        <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+        <!-- <img src="img/aboutus-leaf.png" alt="сливки и молоко высокого качества" width="49" height="49"> -->
+        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+      </div>
+      <div class="gllacyinfo-aboutus">
+        <!-- <img src="img/aboutus-cow.png" alt="ингридиенты от проверенных поставщиков" width="49" height="49"> -->
+        <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+        <!-- <img src="img/aboutus-temp.png" alt="доставка в термопакете" width="48" height="49"> -->
+        <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+      </div>
+    </article>
+    <section class="main-index-news radius">
+      <!--почему, если добавлять текст, вторая строчка выходит за родитель, а первая переносится-->
+      <p>Новое в нашем блоге</p>
+      <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
+    </section>
+    <section class="main-index-subscribe radius">
+      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+      <form action="#" method="post" name="subscribe">
+        <input type="text" name="subscribe-email" placeholder="Электронная почта">
+        <button type="submit" class="subscribe-btn orange-btn">Отправить</button>
+      </form>
+    </section>
+    <section class="where-map">
+      <img src="img/map.jpg" alt="наш адрес" width="1200" height="429">
+      <div class="where-address">
+        <p>Адрес главного офиса
+          <br> и офлайн магазина:
+          <br>
+          <span>ул. Большая Конюшенная<br> 19/8, Санкт-Петербург</span></p>
+        <p>Для заказов по телефону:
+          <br>
+          <span>8 812 450-25-25</span>
+          <br>(с 10 до 20 ежедневно)</p>
+      </div>
+    </section>
   </main>
   <footer class="main-footer">
     <div class="container">
