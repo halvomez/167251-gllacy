@@ -63,3 +63,34 @@ body {
 .where-map img {
   margin-left: -27px;
 }
+.main-header-logo {
+  width: 154px;
+  float: left;
+  margin-right: 26px;
+}
+
+.main-header-nav {
+  width: 348px;
+  float: left;
+}
+
+.main-header-userform {
+  width: 261px;
+  float: right
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-index-schedule {
+  width: 165px;
+  margin-left: 1009px;
+  text-align: right
+}
+
+main-header-nav>ul {
+  display: inline;
+}
