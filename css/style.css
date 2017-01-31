@@ -1,3 +1,9 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #849d8f;
   font-family: Roboto;
@@ -5,282 +11,84 @@ body {
   line-height: 22px;
   color: #323232;
   font-weight: bold;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-catalog li:first-child {
-  border-bottom: 1px solid #d1d1ce;
-}
-
-.ask-info-textarea {
-  width: 428px;
-  height: 155px;
-}
-
-.banner {
-  width: 560px;
-  height: 229px;
-  margin-top: 41px;
-  margin-bottom: 40px;
-}
-
-.radius {
-  border-radius: 15px;
-}
-
-.banner-raspberry {
-  /*  почему не подхватывает через /img/raspberries-back.jpg*/
-  background-image: url(../img/raspberries-background.jpg);
-  float: left
-}
-
-.banner-choco {
-  background-image: url(../img/chocolate-background.jpg);
-  float: right;
-}
-
-.main-index-news {
-  background-image: url(../img/news-background.jpg);
-  width: 560px;
-  /*  высоту блока в дальнейшем будет определяться элементами внутри*/
-  min-height: 220px;
-  float: left;
-}
-
-.main-index-subscribe {
-  background-image: url(../img/subscribe-background.jpg);
-  width: 560px;
-  /*  высоту блока в дальнейшем будет определяться элементами внутри*/
-  min-height: 220px;
-  float: right;
-  margin-bottom: 40px;
-}
-
-.for-shippers::before {
-  /*  этот класс для li или для ссылки лучше?*/
-  content: url(/167251-gllacy/img/shippers-heart.png);
-  position: absolute;
-  margin-left: -22px;
-}
-
-.banner-promo {
-  font-size: 35px;
-  line-height: 41px;
-  color: #ffffff;
-}
-
-.icephoto-radius {
-  margin: 0;
-  padding: 0;
-  border-radius: 140px;
-}
-
-.for-hit-icon::before {
-  content: url(/img/hit-icon.png);
-  position: absolute;
 }
 
 .container {
-  width: 1146px;
+  box-sizing: border-box;
+  width: 1200px;
+  padding: 0 27px;
   margin: 0 auto;
-  padding: 0 10px;
-  н/* ужно ли задавать это центровщику?*/
-}
-
-.main-header-nav {
-  float: left;
-  margin-top: 20px;
-  margin-left: 25px;
-  width: 400px;
-}
-
-.main-header-logo {
-  float: left;
-  width: 154px;
-}
-
-.main-header-userform {
-  float: right;
-  margin-top: 20px;
-  width: 265px;
-}
-
-.main-header-nav li {
-  display: inline-block;
-  padding-right: 29px;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-.main-index-schedule {
-  clear: both;
-  width: 175px;
-  margin-left: 975px;
-  line-height: 10px;
-  color: #ffffff;
-}
-
-.nav-catalog {
-  display: none;
-  position: absolute;
-  width: 143px;
-  height: 171px;
-  background-color: #ffffff;
-  border-radius: 10px;
-}
-
-.nav-catalog li {
-  display: block;
-  padding-left: 20px;
-  padding-bottom: 10px;
-}
-
-.hover-catalog:hover .nav-catalog {
-  display: block;
 }
 
 .ask-info {
+  /* временно скрываем */
   display: none;
 }
 
 .form-search {
+  /* временно скрываем */
   display: none;
 }
 
 .form-login {
+  /* временно скрываем */
+  display: none;
+}
+
+.nav-catalog {
+  /* временно скрываем */
   display: none;
 }
 
 .main-index-slider2 {
+  /* временно скрываем */
   display: none;
 }
 
 .main-index-slider3 {
+  /* временно скрываем */
   display: none;
 }
 
-.main-index-slider1 {
-  clear: both;
+.banner-raspberry {
+  background-image: url(../img/raspberries-background.jpg);
+  background-repeat: no-repeat;
 }
 
-.main-index-slider1 img {
-  margin-left: 51px;
+.banner-choco {
+  background-image: url(../img/chocolate-background.jpg);
+  background-repeat: no-repeat;
 }
 
-.slider-description {
-  width: 670px;
-  height: 116px;
-  color: #ffffff;
-  font-family: Roboto;
-  font-size: 60px;
-  font-weight: bold;
-  line-height: 60px;
-  text-align: center;
-  margin-left: 241px;
-  margin-top: -494px;
-  margin-bottom: 30px;
-}
-
-.main-index-slider1 a {
-  /* почему просвечивает цвет кнопки */
-  box-sizing: border-box;
-  display: inline-block;
-  width: 278px;
-  height: 63px;
-  margin-left: 370px;
-  text-decoration: none;
-  color: #ffffff;
-  font-family: Roboto;
-  font-size: 30px;
-  font-weight: bold;
-  background-color: #e84d37;
-  text-align: center;
-  padding-top: 20px;
-  border-radius: 30px;
-}
-
-.main-index-sliderbtn {
-  display: inline-block;
-  margin-left: 0;
-}
-
-.icephoto-hit {
-  float: left;
-  width: 267px;
-  padding-right: 26px;
-}
-
-.icephoto-hit-last {
-  padding-right: 0px;
-}
-
-.icephoto-hit p {
-  font-size: 45px;
-  color: #ffffff;
-}
-
-.icephoto-hit a {
-  display: inline-block;
-  text-align: center;
-  color: #ffffff;
-  margin-bottom: 41px;
-}
-
-.main-index-gllacyinfo {
-  /*  кусок текстуры через repeat или вырезать целиком?*/
-  /* Откуда отступы между элементами p? */
-  clear: both;
-  background-image: url(../img/aboutus-wafer.jpg);
-  border-radius: 24px;
-  padding-left: 21px;
-}
-
-.main-index-gllacyinfo h1 {
-  font-size: 24px;
-  line-height: 30px;
-}
-
-.where-map {
-  clear: both;
-  width: 1200px;
+.where-map img {
   margin-left: -27px;
-  min-height: 430px;
+}
+.main-header-logo {
+  width: 154px;
+  float: left;
+  margin-right: 26px;
 }
 
-.where-address {
-  box-sizing: border-box;
-  margin-left: 890px;
-  width: 302px;
-  height: 305px;
-  margin-top: -400px;
-  background-color: #fffffe;
-  padding-left: 25px;
-  padding-top: 32px;
-  font-size: 14px;
-  line-height: 22px;
-  border-radius: 15px;
-}
-
-.where-address span {
-  font-size: 18px;
-  line-height: 24px;
-}
-
-
-
-.main-footer-copyright {
-  float: right;
-}
-
-.main-footer-documents {
+.main-header-nav {
+  width: 348px;
   float: left;
 }
 
-.main-footer-social {
-  float: left;
-  padding-right: 500px;
+.main-header-userform {
+  width: 261px;
+  float: right
 }
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-index-schedule {
+  width: 165px;
+  margin-left: 1009px;
+  text-align: right
+}
+
+
