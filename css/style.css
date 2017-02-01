@@ -24,6 +24,10 @@ ul {
   margin: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 .ask-info {
   /* временно скрываем */
   display: none;
@@ -81,10 +85,6 @@ ul {
 .main-header-nav {
   width: 450px;
   float: left;
-}
-
-.main-header-nav ul {
-  list-style: none;
 }
 
 .main-header-userform {
@@ -157,16 +157,29 @@ ul {
   margin-bottom: 39px;
 }
 
-.icephoto {
+.icecream-info {
   width: 268px;
   float: left;
   margin-right: 24px;
   margin-bottom: 40px;
+  text-align: center;
 }
 
-.icephoto-last {
+.icecream-info:nth-of-type(4n) {
   float: right;
   margin-right: 0;
+}
+
+.icecream-info p {
+  margin-top: -50px;
+  margin-bottom: 25px;
+  font-size: 45px;
+  text-align: left;
+}
+
+.icecream-info a {
+  color:#ffffff;
+  font-weight: normal;
 }
 
 .for-hit-icon::before {
@@ -190,7 +203,7 @@ ul {
   float: left;
   padding: 20px;
   min-height: 220px;
-  background-image: url(/img/news-background.jpg);
+  background-image: url(../img/news-background.jpg);
   border-radius: 20px;
   margin-bottom: 40px;
 }
@@ -202,7 +215,7 @@ ul {
   padding: 20px;
   min-height: 220px;
   border-radius: 20px;
-  background-image: url(/img/subscribe-background.jpg);
+  background-image: url(../img/subscribe-background.jpg);
   color: #5a5a5a;
 }
 
@@ -230,10 +243,6 @@ ul {
   padding: 35px;
 }
 
-.main-footer ul {
-  list-style: none;
-}
-
 .main-footer-social {
   width: 200px;
   float: left;
@@ -253,5 +262,34 @@ ul {
 }
 
 .main-footer-copyright {
+  float: right;
+}
+
+/* Стили для каталога*/
+
+.header-catalog {
+  margin-bottom: 25px;
+} 
+
+.main-catalog-breadcrumbs {
+margin-bottom: -10px;  
+}
+
+.main-catalog-breadcrumbs li{
+  display: inline;
+  margin-right: 25px; 
+}
+
+.main-catalog-sort {
+  min-height: 150px;
+  width: 930px;
+}
+
+.sort-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.catalog-page {
   float: right;
 }
