@@ -9,15 +9,23 @@ body {
   font-family: Roboto;
   font-size: 16px;
   line-height: 22px;
-  color: #323232;
+  color: #ffffff;
   font-weight: bold;
+  min-width: 1200px;
+  padding: 10px 20px 0;
 }
 
-.container {
-  box-sizing: border-box;
-  width: 1200px;
-  padding: 0 27px;
-  margin: 0 auto;
+
+/* обнуляем отступы в абзацах и списках*/
+
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
 }
 
 .ask-info {
@@ -53,42 +61,235 @@ body {
 .banner-raspberry {
   background-image: url(../img/raspberries-background.jpg);
   background-repeat: no-repeat;
+  float: left;
 }
 
 .banner-choco {
   background-image: url(../img/chocolate-background.jpg);
   background-repeat: no-repeat;
+  float: right;
 }
 
-.where-map img {
-  margin-left: -27px;
+.container {
+  width: 1146px;
+  margin: 0 auto;
 }
+
 .main-header-logo {
   width: 154px;
+  height: 64px;
   float: left;
-  margin-right: 26px;
+  margin-right: 27px;
 }
 
 .main-header-nav {
-  width: 348px;
+  width: 450px;
   float: left;
 }
 
 .main-header-userform {
-  width: 261px;
-  float: right
+  width: 300px;
+  float: right;
 }
 
-.clearfix {
+.main-index-schedule {
+  width: 175px;
+  float: right;
+  margin-left: 100px;
+  /* можнои ли таким способом прижать второй флоат, чтобы один был над другим? */
+}
+
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
 
-.main-index-schedule {
-  width: 165px;
-  margin-left: 1009px;
-  text-align: right
+.main-header {
+  margin-bottom: 30px;
 }
 
+.main-index-slider1 img {
+  margin-left: 51px;
+  margin-top: -130px;
+}
 
+.slider-description {
+  margin-left: 235px;
+  width: 670px;
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
+  margin-top: -490px;
+  margin-bottom: 25px;
+}
+
+.main-index-sliderbtn {
+  display: inline-block;
+}
+
+.get-btn {
+  display: inline-block;
+  min-height: 65px;
+  min-width: 280px;
+  margin-left: 350px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 32px;
+  line-height: 65px;
+  margin-bottom: 40px;
+}
+
+.orange-btn {
+  background-color: #e84c36;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.banner {
+  width: 560px;
+  height: 230px;
+  border-radius: 20px;
+}
+
+.main-index-banners {
+  margin-bottom: 39px;
+}
+
+.icecream-info {
+  width: 268px;
+  float: left;
+  margin-right: 24px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.icecream-info:nth-of-type(4n) {
+  float: right;
+  margin-right: 0;
+}
+
+.icecream-info p {
+  margin-top: -50px;
+  margin-bottom: 25px;
+  font-size: 45px;
+  text-align: left;
+}
+
+.icecream-info a {
+  color:#ffffff;
+  font-weight: normal;
+}
+
+.for-hit-icon::before {
+  content: url(../img/hit-icon.png);
+  position: absolute;
+  /* почему так срабатывает? */
+}
+
+.main-index-gllacyinfo {
+  clear: both;
+  min-height: 308px;
+  background-image: url(../img/aboutus-wafer.jpg);
+  color: #323232;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.main-index-news {
+  box-sizing: border-box;
+  width: 560px;
+  float: left;
+  padding: 20px;
+  min-height: 220px;
+  background-image: url(../img/news-background.jpg);
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.main-index-subscribe {
+  box-sizing: border-box;
+  width: 560px;
+  float: right;
+  padding: 20px;
+  min-height: 220px;
+  border-radius: 20px;
+  background-image: url(../img/subscribe-background.jpg);
+  color: #5a5a5a;
+}
+
+.where-map {
+  clear: both;
+  position: relative;
+  margin-left: -27px;
+}
+
+.where-address {
+  box-sizing: border-box;
+  display: inline-block;
+  min-height: 310px;
+  min-width: 305px;
+  position: absolute;
+  right:0;
+  top:50px;
+  background-color: #fefefe;
+  color: #323232;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.main-footer {
+  padding: 35px;
+}
+
+.main-footer-social {
+  width: 200px;
+  float: left;
+  margin-right: 210px;
+}
+
+.main-footer-social li {
+  display: inline;
+  margin-right: 12px;
+}
+
+.main-footer-social a {
+  text-decoration: none;
+}
+.main-footer-documents {
+  float: left;
+}
+
+.main-footer-copyright {
+  float: right;
+}
+
+/* Стили для каталога*/
+
+.header-catalog {
+  margin-bottom: 25px;
+} 
+
+.main-catalog-breadcrumbs {
+margin-bottom: -10px;  
+}
+
+.main-catalog-breadcrumbs li{
+  display: inline;
+  margin-right: 25px; 
+}
+
+.main-catalog-sort {
+  min-height: 150px;
+  width: 930px;
+}
+
+.sort-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.catalog-page {
+  float: right;
+}
