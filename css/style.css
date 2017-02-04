@@ -24,13 +24,12 @@ body {
   width: 154px;
   height: 64px;
   float: left;
-  margin-right: 27px;
+  margin-right: 10px;
 }
 
 .main-header-nav {
   min-width: 450px;
   float: left;
-  margin-top: 20px;
 }
 
 .main-header-nav ul {
@@ -38,37 +37,119 @@ body {
   padding: 0;
   list-style: none;
   font-size: 0;
+  margin-top: 10px;
 }
 
 .main-header-nav li {
   display: inline-block;
-  margin-right: 28px;
   font-size: 16px;
   line-height: 18px;
   vertical-align: top;
 }
 
 .main-header-nav a {
+  display: block;
   color: #ffffff;
+  padding: 7px 14px;
+  border-radius: 15px;
+}
+
+.main-header-nav a:hover {
+  color: #333333;
+  background-color: #ffffff;
 }
 
 .main-header-userform {
   min-width: 300px;
   float: right;
+  text-align: right;
   font-size: 0;
-  /*обнуляем пробелы для inline-block ссылок внутри*/
-  margin-top: 22px;
+  margin-top: 10px;
 }
 
 .main-header-userform a {
+  box-sizing: border-box;
   display: inline-block;
-  color: #ffffff;
+  vertical-align: top;
+  min-height: 32px;
+  min-width: 32px;
+  margin-left: 10px;
+  padding-top: 8px;
+  text-decoration: none;
+  border-radius: 16px;
+  color:#ffffff;
+  background-color: #a1b4a9;
+}
+
+.userform-search {
+  position: relative;
+  min-width: 30px;
+}
+
+.userform-search::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 20px;
+  height: 20px;
+  background: url(../img/spritesheet-gllacy.png) no-repeat;
+  background-position: -561px -10px;
+}
+
+.userform-search:hover {
+  background-color:#f8f7f4;
+  /* заменить цвет иконки? спрайт или как-то еще можно? */
+}
+
+.userform-enter {
+  position: relative;
+  padding-left: 44px;
+  padding-right: 15px;
   font-size: 14px;
   line-height: 16px;
 }
 
-.main-header-userform a:first-child {
-  /* убираем текст у ссылки*/
+.userform-enter::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 19px;
+  background: url(../img/spritesheet-gllacy.png) no-repeat;
+  background-position: -520px -10px;
+  top:6px;
+  left:16px;
+}
+
+.userform-enter:hover {
+  background-color:#f8f7f4;
+  /* заменить цвет иконки? спрайт или как-то еще можно? */
+  color:#323232;
+}
+
+.userform-basket {
+  position: relative;
+  padding-left: 45px;
+  padding-right: 34px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.userform-basket::before {
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 20px;
+  background: url(../img/spritesheet-gllacy.png) no-repeat;
+  background-position: -284px -10px;
+  top:6px;
+  left: 16px;
+}
+
+.userform-basket:hover {
+  background-color:#f8f7f4;
+  /* заменить цвет иконки? спрайт или как-то еще можно? */
+  color:#323232;
 }
 
 .main-index-schedule {
@@ -78,19 +159,15 @@ body {
   /* можнои ли таким способом прижать второй флоат, чтобы один был над другим? */
 }
 
+.userform-basket {
+  font-size: 14px;
+  line-height: 16px;
+}
+
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
-}
-
-.main-header {
-  margin-bottom: 30px;
-}
-
-.main-index-slider1 img {
-  margin-left: 51px;
-  margin-top: -130px;
 }
 
 .slider-description {
