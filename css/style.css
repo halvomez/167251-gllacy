@@ -12,62 +12,7 @@ body {
   color: #ffffff;
   font-weight: bold;
   min-width: 1200px;
-  padding: 10px 20px 0;
-}
-
-
-/* обнуляем отступы в абзацах и списках*/
-
-p,
-ul {
-  padding: 0;
-  margin: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-.ask-info {
-  /* временно скрываем */
-  display: none;
-}
-
-.form-search {
-  /* временно скрываем */
-  display: none;
-}
-
-.form-login {
-  /* временно скрываем */
-  display: none;
-}
-
-.nav-catalog {
-  /* временно скрываем */
-  display: none;
-}
-
-.main-index-slider2 {
-  /* временно скрываем */
-  display: none;
-}
-
-.main-index-slider3 {
-  /* временно скрываем */
-  display: none;
-}
-
-.banner-raspberry {
-  background-image: url(../img/raspberries-background.jpg);
-  background-repeat: no-repeat;
-  float: left;
-}
-
-.banner-choco {
-  background-image: url(../img/chocolate-background.jpg);
-  background-repeat: no-repeat;
-  float: right;
+  padding: 5px 20px 0;
 }
 
 .container {
@@ -83,13 +28,47 @@ ul {
 }
 
 .main-header-nav {
-  width: 450px;
+  min-width: 450px;
   float: left;
+  margin-top: 20px;
+}
+
+.main-header-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.main-header-nav li {
+  display: inline-block;
+  margin-right: 28px;
+  font-size: 16px;
+  line-height: 18px;
+  vertical-align: top;
+}
+
+.main-header-nav a {
+  color: #ffffff;
 }
 
 .main-header-userform {
-  width: 300px;
+  min-width: 300px;
   float: right;
+  font-size: 0;
+  /*обнуляем пробелы для inline-block ссылок внутри*/
+  margin-top: 22px;
+}
+
+.main-header-userform a {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.main-header-userform a:first-child {
+  /* убираем текст у ссылки*/
 }
 
 .main-index-schedule {
@@ -147,6 +126,18 @@ ul {
   color: #ffffff;
 }
 
+.banner-raspberry {
+  background-image: url(../img/raspberries-background.jpg);
+  background-repeat: no-repeat;
+  float: left;
+}
+
+.banner-choco {
+  background-image: url(../img/chocolate-background.jpg);
+  background-repeat: no-repeat;
+  float: right;
+}
+
 .banner {
   width: 560px;
   height: 230px;
@@ -178,7 +169,7 @@ ul {
 }
 
 .icecream-info a {
-  color:#ffffff;
+  color: #ffffff;
   font-weight: normal;
 }
 
@@ -231,8 +222,8 @@ ul {
   min-height: 310px;
   min-width: 305px;
   position: absolute;
-  right:0;
-  top:50px;
+  right: 0;
+  top: 50px;
   background-color: #fefefe;
   color: #323232;
   border-radius: 20px;
@@ -257,6 +248,7 @@ ul {
 .main-footer-social a {
   text-decoration: none;
 }
+
 .main-footer-documents {
   float: left;
 }
@@ -265,19 +257,20 @@ ul {
   float: right;
 }
 
+
 /* Стили для каталога*/
 
 .header-catalog {
   margin-bottom: 25px;
-} 
-
-.main-catalog-breadcrumbs {
-margin-bottom: -10px;  
 }
 
-.main-catalog-breadcrumbs li{
+.main-catalog-breadcrumbs {
+  margin-bottom: -10px;
+}
+
+.main-catalog-breadcrumbs li {
   display: inline;
-  margin-right: 25px; 
+  margin-right: 25px;
 }
 
 .main-catalog-sort {
@@ -292,4 +285,34 @@ margin-bottom: -10px;
 
 .catalog-page {
   float: right;
+}
+
+.ask-info {
+  /* временно скрываем */
+  display: none;
+}
+
+.form-search {
+  /* временно скрываем */
+  display: none;
+}
+
+.form-login {
+  /* временно скрываем */
+  display: none;
+}
+
+.nav-catalog {
+  /* временно скрываем */
+  display: none;
+}
+
+.main-index-slider2 {
+  /* временно скрываем */
+  display: none;
+}
+
+.main-index-slider3 {
+  /* временно скрываем */
+  display: none;
 }
