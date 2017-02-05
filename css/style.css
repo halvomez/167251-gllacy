@@ -12,7 +12,7 @@ body {
   color: #ffffff;
   font-weight: bold;
   min-width: 1200px;
-  padding: 5px 20px 0;
+  padding: 5px 20px;
 }
 
 .container {
@@ -39,7 +39,8 @@ body {
   list-style: none;
   font-size: 0;
   margin-top: 10px;
-  position: relative; /* для всплывающего подменю */
+  position: relative;
+  /* для всплывающего подменю */
 }
 
 .nav-menu > li {
@@ -79,7 +80,7 @@ body {
   padding-top: 8px;
   text-decoration: none;
   border-radius: 16px;
-  color:#ffffff;
+  color: #ffffff;
   background-color: #a1b4a9;
 }
 
@@ -96,15 +97,15 @@ body {
   width: 20px;
   height: 20px;
   background: url(../img/spritesheet-gllacy.png) no-repeat;
-  background-position: -561px -10px;
+  background-position: -778px -10px;
 }
 
 .userform-search:hover {
-  background-color:#f8f7f4;
+  background-color: #f8f7f4;
   /* заменить цвет иконки? спрайт или как-то еще можно? */
 }
 
-.userform-enter {
+.userform-login {
   position: relative;
   padding-left: 44px;
   padding-right: 15px;
@@ -112,21 +113,21 @@ body {
   line-height: 16px;
 }
 
-.userform-enter::before {
+.userform-login::before {
   content: "";
   position: absolute;
   width: 21px;
   height: 19px;
   background: url(../img/spritesheet-gllacy.png) no-repeat;
-  background-position: -520px -10px;
-  top:6px;
-  left:16px;
+  background-position: -737px -10px;
+  top: 6px;
+  left: 16px;
 }
 
-.userform-enter:hover {
-  background-color:#f8f7f4;
+.userform-login:hover {
+  background-color: #f8f7f4;
   /* заменить цвет иконки? спрайт или как-то еще можно? */
-  color:#323232;
+  color: #323232;
 }
 
 .userform-basket {
@@ -144,14 +145,14 @@ body {
   height: 20px;
   background: url(../img/spritesheet-gllacy.png) no-repeat;
   background-position: -284px -10px;
-  top:6px;
+  top: 6px;
   left: 16px;
 }
 
 .userform-basket:hover {
-  background-color:#f8f7f4;
+  background-color: #f8f7f4;
   /* заменить цвет иконки? спрайт или как-то еще можно? */
-  color:#323232;
+  color: #323232;
 }
 
 .main-index-schedule {
@@ -162,7 +163,8 @@ body {
   /* можнои ли таким способом прижать второй флоат, чтобы один был над другим? */
 }
 
-.main-index-schedule p { /* обнуляем для абзацев */
+.main-index-schedule p {
+  /* обнуляем для абзацев */
   margin: 0;
 }
 
@@ -177,24 +179,25 @@ body {
   line-height: 24px;
 }
 
-.sub-menu { /* внутреннее подменю каталога. Как сделать, чтобы не пропадало? */
+.sub-menu {
+  /* внутреннее подменю каталога. Как сделать, чтобы не пропадало? */
   position: absolute;
-  top:40px;
-  left:-7px;
+  top: 40px;
+  left: -7px;
   margin: 0;
   padding: 0;
   /* временно скрываем */
   display: none;
-  width:145px;
+  width: 145px;
   list-style: none;
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
-.hover-catalog:hover .sub-menu { 
+.hover-catalog:hover .sub-menu {
   /* показываем подменю при наведении */
-   display: block; 
+  display: block;
 }
 
 .sub-menu a {
@@ -217,7 +220,6 @@ body {
 .sub-menu a:active {
   background-color: #f6b5a5;
 }
-
 
 .clearfix::after {
   content: "";
@@ -344,6 +346,8 @@ body {
 
 .where-map {
   clear: both;
+  width: 1200px;
+  height: 429px;
   position: relative;
   margin-left: -27px;
 }
@@ -363,30 +367,152 @@ body {
 }
 
 .main-footer {
-  padding: 35px;
+  min-height: 100px;
 }
 
 .main-footer-social {
-  width: 200px;
+  width: 425px;
   float: left;
-  margin-right: 210px;
+  margin-top: 36px;
+}
+
+.main-footer-social ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
 }
 
 .main-footer-social li {
-  display: inline;
-  margin-right: 12px;
+  display: inline-block;
 }
 
 .main-footer-social a {
-  text-decoration: none;
+  position: relative;
+  display: block;
+  min-height: 32px;
+  min-width: 32px;
+  margin-right: 11px;
+  border: 2px solid #c2cec7;
+  border-radius: 32px;
+  background-color: #ffffff;
+  opacity: 0.8;
 }
+
+.main-footer-social a:before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+}
+
+
+/* .social-twitter::before {
+  background-image: url(../img/spritesheet-gllacy.png);
+  background-position: -850px -10px;
+}
+
+.social-instagram::before {
+  background-image: url(../img/spritesheet-gllacy.png);
+  background-position: -685px -10px;
+}
+
+.social-fb::before {
+  background-image: url(../img/spritesheet-gllacy.png);
+  background-position: -366px -10px;
+}
+
+.social-vk::before {
+  background-image: url(../img/spritesheet-gllacy.png);
+  background-position: -902px -10px;
+} */
 
 .main-footer-documents {
   float: left;
+  width: 350px;
+}
+
+.main-footer-documents ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  margin-top: 30px;
+  margin-right: 29px;
+}
+
+.main-footer-documents a {
+  position: relative;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  /* REGULAR? */
+  text-decoration: none;
+  border-bottom: 1px solid #9db1a5;
+}
+
+.for-shippers {
+  /* ссылка 'для поставщиков' */
+  font-weight: bold;
+  /* почему не срабатывает переопределение? */
+}
+
+.for-shippers::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 13px;
+  top: 2px;
+  left: -22px;
+  background-image: url(../img/spritesheet-gllacy.png);
+  background-position: -815px -10px;
 }
 
 .main-footer-copyright {
   float: right;
+  margin-top: 18px;
+}
+
+.htmlacademy-logo {
+  width: 108px;
+  height: 38px;
+  background-image: url(../img/htmlacademy-logo.png);
+  /* или через спрайт? */
+  margin-bottom: 5px;
+}
+
+.main-footer-copyright p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
+.main-footer-copyright a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #9db1a5;
+}
+
+
+/* стилизация состояния ссылок футера при наведении */
+
+.main-footer a:hover,
+.main-footer a:active {
+  color: #ffbc9e;
+}
+
+
+/* стилизация состояния кнопок футера при наведении */
+
+.social-btn:hover {
+  opacity: 1;
+}
+
+.social-btn:active {
+  opacity: 1;
+  box-shadow: inset 0 1px 1px 0 #888888;
 }
 
 
@@ -434,8 +560,6 @@ body {
   display: none;
 }
 
-
-
 .main-index-slider2 {
   /* временно скрываем */
   display: none;
@@ -445,17 +569,3 @@ body {
   /* временно скрываем */
   display: none;
 }
-
-.Подложка {
-  border-radius: 5px;
-  background-color: rgb(248, 247, 244);
-  
-  position: absolute;
-  left: 359px;
-  top: 282px;
-  width: 143px;
-  height: 171px;
-  z-index: 381;
-}
-
-
