@@ -5,7 +5,7 @@ body {
 }
 
 body {
-  background-color: #849d8f;
+  position: relative;
   font-family: Roboto;
   font-size: 16px;
   line-height: 22px;
@@ -13,6 +13,12 @@ body {
   font-weight: bold;
   min-width: 1200px;
   padding: 5px 20px;
+  background: #849d8f url(../img/slider1.jpg) no-repeat 50% 0;
+  /* как переключать? */
+  /* второй вариант фона */
+  /* background: #8996a6 url(../img/slider2.jpg) no-repeat 50% 0; */
+  /* третий вариант фона */
+  /* background: #9d8b84 url(../img/slider3.jpg) no-repeat 50% 0; */
 }
 
 .container {
@@ -43,21 +49,21 @@ body {
   /* для всплывающего подменю */
 }
 
-.nav-menu > li {
+.nav-menu>li {
   display: inline-block;
   font-size: 16px;
   line-height: 18px;
   vertical-align: top;
 }
 
-.nav-menu > li > a {
+.nav-menu>li>a {
   display: block;
   color: #ffffff;
   padding: 7px 14px;
   border-radius: 15px;
 }
 
-.nav-menu > li > a:hover {
+.nav-menu>li>a:hover {
   color: #333333;
   background-color: #f8f7f4;
 }
@@ -227,43 +233,66 @@ body {
   clear: both;
 }
 
+.main-header {
+  margin-bottom: 285px;
+}
+
 .slider-description {
+  margin: 0;
   margin-left: 235px;
   width: 670px;
   font-size: 60px;
   line-height: 60px;
   text-align: center;
-  margin-top: -490px;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .main-index-sliderbtn {
   display: inline-block;
 }
 
-.get-btn {
-  display: inline-block;
-  min-height: 65px;
-  min-width: 280px;
-  margin-left: 350px;
-  vertical-align: middle;
-  text-align: center;
-  font-size: 32px;
-  line-height: 65px;
-  margin-bottom: 40px;
-}
-
 .orange-btn {
+  padding: 11px 20px;
+  display: inline-block;
   background-color: #e84c36;
-  border-radius: 50px;
+  border-radius: 30px;
   text-decoration: none;
   color: #ffffff;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+}
+
+.get-btn {
+  padding: 11px 40px;
+  margin-left: 350px;
+  vertical-align: baseline;
+  text-align: center;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 40px;
 }
 
 .banner-raspberry {
   background-image: url(../img/raspberries-background.jpg);
   background-repeat: no-repeat;
   float: left;
+}
+
+.banner-promo {
+  margin: 0;
+  font-size: 35px;
+  line-height: 41px;
+  padding-top: 18px;
+  padding-left: 20px;
+  margin-bottom: 17px;
+}
+
+.banner-promo-info {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 45px;
 }
 
 .banner-choco {
@@ -275,12 +304,20 @@ body {
 .banner {
   width: 560px;
   height: 230px;
-  border-radius: 20px;
+  border-radius: 18px;
+}
+
+.banner-getjam,
+.banner-getchocolate {
+  float: right;
+  margin-right:20px;
 }
 
 .main-index-banners {
-  margin-bottom: 39px;
+  margin-bottom: 40px;
 }
+
+
 
 .icecream-info {
   width: 268px;
@@ -428,6 +465,7 @@ body {
 } */
 
 .main-footer-documents {
+  /* при малом масштабе окна разъезжаются */
   float: left;
   width: 350px;
 }
