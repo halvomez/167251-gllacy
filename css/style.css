@@ -304,20 +304,18 @@ body {
 .banner {
   width: 560px;
   height: 230px;
-  border-radius: 18px;
+  border-radius: 20px;
 }
 
 .banner-getjam,
 .banner-getchocolate {
   float: right;
-  margin-right:20px;
+  margin-right: 20px;
 }
 
 .main-index-banners {
   margin-bottom: 40px;
 }
-
-
 
 .icecream-info {
   width: 268px;
@@ -352,22 +350,96 @@ body {
 
 .main-index-gllacyinfo {
   clear: both;
-  min-height: 308px;
-  background-image: url(../img/aboutus-wafer.jpg);
   color: #323232;
   border-radius: 20px;
   margin-bottom: 40px;
+  background-image: url(../img/aboutus-wafer.jpg);
+  font-size: 0;
+}
+
+.main-index-gllacyinfo h1 {
+  padding-top: 28px;
+  padding-left: 20px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  /* MEDIUM? */
+}
+
+.gllacyinfo-aboutus {
+  display: inline-block;
+  width: 540px;
+  vertical-align: top;
+  margin-left: 20px;
+  padding-bottom: 26px;
+}
+
+.gllacyinfo-aboutus p {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding-left: 58px;
+  padding-top: 15px; 
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400px; /* REGULAR? */
+}
+
+.gllacyinfo-aboutus p::before {
+  content: "";
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  left: 0;
+  top:-5px;
+}
+
+.aboutus-ice::before {
+  background-image: url(../img/spritesheet-gllacy.png);
+  background-position: -78px -10px;
+}
+
+.aboutus-eco::before {
+  background-image: url(../img/spritesheet-gllacy.png);
+  background-position: -147px -10px;
+}
+
+.aboutus-cow::before {
+   background-image: url(../img/spritesheet-gllacy.png);
+  background-position: -10px -10px; 
+}
+
+.aboutus-temp::before {
+   background-image: url(../img/spritesheet-gllacy.png);
+  background-position: -216px -10px; 
 }
 
 .main-index-news {
-  box-sizing: border-box;
   width: 560px;
   float: left;
-  padding: 20px;
   min-height: 220px;
   background-image: url(../img/news-background.jpg);
   border-radius: 20px;
   margin-bottom: 40px;
+}
+
+.main-index-news p {
+  margin: 0;
+  color:#323232;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 20px;
+  padding-top: 25px;
+  padding-bottom: 8px;
+}
+
+.main-index-news a {
+  display: inline-block;
+  color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+  padding-left: 20px;
+  width: 290px;
 }
 
 .main-index-subscribe {
