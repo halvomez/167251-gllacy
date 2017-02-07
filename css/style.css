@@ -12,7 +12,7 @@ body {
   color: #ffffff;
   font-weight: bold;
   min-width: 1200px;
-  /* нужно ли задавать? */
+  /* нужно ли задавать ширину? */
   padding: 5px 20px;
   background: #849d8f url(../img/slider1.jpg) no-repeat 50% 0;
   /* как переключать? */
@@ -167,7 +167,7 @@ body {
   text-align: right;
   margin-left: 100px;
   margin-top: 18px;
-  /* можнои ли таким способом прижать второй флоат, чтобы один был над другим? */
+  /* можно ли таким способом прижать второй флоат, чтобы один был над другим? */
 }
 
 .main-index-schedule p {
@@ -320,7 +320,7 @@ body {
   display: none;
   position: absolute;
   top: 55px;
-  right: 260px;
+  right: 490px;
   box-sizing: border-box;
   width: 277px;
   height: 214px;
@@ -903,6 +903,16 @@ body {
 }
 
 
+.main-index-slider2 {
+  /* временно скрываем */
+  display: none;
+}
+
+.main-index-slider3 {
+  /* временно скрываем */
+  display: none;
+}
+
 /* Стили для каталога*/
 
 .header-catalog {
@@ -932,12 +942,3 @@ body {
   float: right;
 }
 
-.main-index-slider2 {
-  /* временно скрываем */
-  display: none;
-}
-
-.main-index-slider3 {
-  /* временно скрываем */
-  display: none;
-}
