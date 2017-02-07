@@ -12,6 +12,7 @@ body {
   color: #ffffff;
   font-weight: bold;
   min-width: 1200px;
+  /* нужно ли задавать? */
   padding: 5px 20px;
   background: #849d8f url(../img/slider1.jpg) no-repeat 50% 0;
   /* как переключать? */
@@ -236,7 +237,13 @@ body {
 
 /* Всплывающие формы*/
 
-.ask-info {
+.feedback {
+  position: fixed;
+  display: none;
+  /* как правильно спозиционировать? */
+  z-index: 10;
+  top: 150px;
+  left: 25%;
   box-sizing: border-box;
   padding-left: 24px;
   padding-top: 18px;
@@ -245,9 +252,22 @@ body {
   background-color: #f8f7f4;
   border: 1px solid #d3d3d2;
   border-radius: 10px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
-.ask-info p {
+.feedback::before {
+  /* навесить на кнопку закрывание формы */
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 15px;
+  right: 15px;
+  background: url(../img/x.png) no-repeat;
+  cursor: pointer;
+}
+
+.feedback p {
   margin: 0;
   color: #323232;
   font-size: 24px;
@@ -256,7 +276,7 @@ body {
   margin-bottom: 18px;
 }
 
-.ask-info input {
+.feedback input {
   box-sizing: border-box;
   display: block;
   width: 268px;
@@ -266,26 +286,132 @@ body {
   margin-bottom: 20px;
 }
 
-.ask-info input[type="text"] {
+.feedback input[type="text"] {
   padding-left: 15px;
   padding-right: 15px;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 24px;
   color: #999999;
 }
 
-.ask-info textarea { /* как убрать возможность растягивания? */
+.feedback textarea {
+  /* как убрать возможность растягивания? */
   box-sizing: border-box;
   width: 428px;
   height: 155px;
+  font-family: inherit;
+  color: #999999;
+  padding-left: 15px;
+  padding-top: 12px;
   border: 1px solid #d3d3d2;
   border-radius: 4px;
+  border: 1px solid #d3d3d2;
   margin-bottom: 25px;
 }
 
-.ask-info-btn {
-  margin-left: 305px;  /* как убрать свои стили у кнопки? */
+.feedback-send-btn {
+  font-family: inherit;
+  margin-left: 305px;
+  /* как убрать свои стили у кнопки? */
 }
+
+.form-login {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 260px;
+  box-sizing: border-box;
+  width: 277px;
+  height: 214px;
+  background-color: #f8f7f4;
+  border-radius: 6px;
+  padding-left: 20px;
+  padding-top: 20px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.form-login input {
+  box-sizing: border-box;
+  width: 240px;
+  height: 44px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  border-color: #d3d3d2;
+  border: 1px solid #d3d3d2;
+}
+
+.form-login input[type="text"] {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.login-btn {
+  float: left;
+  font-family: inherit;
+  margin-right: 19px;
+}
+
+.form-login a {
+  float: left;
+  width: 120px;
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+  text-decoration: none;
+  /* как сделать нижнее подчеркивание как на макете? */
+  border-bottom: 1px solid #adacaa;
+}
+
+.form-search {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 360px;
+  box-sizing: border-box;
+  width: 340px;
+  height: 85px;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-top: 20px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.form-search input {
+  box-sizing: border-box;
+  width: 310px;
+  height: 45px;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+.form-search input[type="text"] {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+}
+
+
+/* почему не срабатывает hover? */
+
+.userform-search:hover .form-search {
+  display: block;
+}
+
+.userform-login:hover .form-login {
+  display: block;
+}
+
+
+/* Основное содержание */
 
 .main-header {
   margin-bottom: 285px;
@@ -335,8 +461,9 @@ body {
 }
 
 .get-btn {
+  display: inline-block;
+  margin-left: 380px;
   padding: 12px 40px;
-  margin-left: 350px;
   vertical-align: baseline;
   text-align: center;
   font-size: 32px;
@@ -803,16 +930,6 @@ body {
 
 .catalog-page {
   float: right;
-}
-
-.form-search {
-  /* временно скрываем */
-  display: none;
-}
-
-.form-login {
-  /* временно скрываем */
-  display: none;
 }
 
 .main-index-slider2 {

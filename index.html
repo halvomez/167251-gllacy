@@ -56,20 +56,19 @@
         <p class="schedule-tel">8 812 450-25-25</p>
       </div>
     </div>
-    <!--Будут находиться в блоке main-header-userform, где и кнопки. Располагаются абсолютным позиционированием-->
-    <section class="ask-info">
-      <p>Мы обязательно ответим</p>
-      <form action="#" method="post" name="ask-info">
+    <section class="feedback">
+      <p>Мы обязательно ответим!</p>
+      <form action="#" method="post" name="feedback">
         <input type="text" id="ask-name" placeholder="Как вас зовут?">
         <input type="text" id="ask-email" placeholder="Ваша почта для ответа?">
         <!-- textarea задается ширина и высота без cols rows. Нужно ли в html прописывать cols rows -->
-        <textarea name="ask-info-write" id="ask-info-write" cols="20" rows="20"></textarea>
-        <button type="submit" class="ask-info-btn orange-btn">Отправить</button>
+        <textarea name="ask-info-write" id="ask-info-write" cols="20" rows="20" placeholder="Напишите что-нибудь..."></textarea>
+        <button type="submit" class="feedback-send-btn orange-btn">Отправить</button>
       </form>
     </section>
     <section class="form-search">
       <form action="#" method="post" name="form-search">
-        <input type="text" class="form-search-text" name="form-search-text" placeholder="Что ищем">
+        <input type="text" class="form-search-text" name="form-search-text" placeholder="Что ищем?">
       </form>
     </section>
     <section class="form-login">
@@ -77,9 +76,9 @@
         <input type="text" class="form-login-email" name="form-login-email" placeholder="Электронная почта">
         <input type="text" class="form-login-password" name="form-login-password" placeholder="Пароль">
         <button type="submit" class="login-btn orange-btn">Войти</button>
-        <a href="#">Забыли пароль?</a>
-        <a href="#">Новая регистрация</a>
       </form>
+      <a href="#">Забыли пароль?</a>
+      <a href="#">Новая регистрация</a>
     </section>
   </header>
   <main class="main-index">
