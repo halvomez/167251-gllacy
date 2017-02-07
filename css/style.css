@@ -233,6 +233,60 @@ body {
   clear: both;
 }
 
+
+/* Всплывающие формы*/
+
+.ask-info {
+  box-sizing: border-box;
+  padding-left: 24px;
+  padding-top: 18px;
+  width: 480px;
+  min-height: 445px;
+  background-color: #f8f7f4;
+  border: 1px solid #d3d3d2;
+  border-radius: 10px;
+}
+
+.ask-info p {
+  margin: 0;
+  color: #323232;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.ask-info input {
+  box-sizing: border-box;
+  display: block;
+  width: 268px;
+  height: 44px;
+  border: 1px solid #d3d3d2;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.ask-info input[type="text"] {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 16px;
+  font-weight: 24px;
+  color: #999999;
+}
+
+.ask-info textarea { /* как убрать возможность растягивания? */
+  box-sizing: border-box;
+  width: 428px;
+  height: 155px;
+  border: 1px solid #d3d3d2;
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+
+.ask-info-btn {
+  margin-left: 305px;  /* как убрать свои стили у кнопки? */
+}
+
 .main-header {
   margin-bottom: 285px;
 }
@@ -507,7 +561,7 @@ body {
   width: 1200px;
   height: 429px;
   position: relative;
-  margin-left: -27px; 
+  margin-left: -27px;
   /* можно ли так? */
 }
 
@@ -749,11 +803,6 @@ body {
 
 .catalog-page {
   float: right;
-}
-
-.ask-info {
-  /* временно скрываем */
-  display: none;
 }
 
 .form-search {
