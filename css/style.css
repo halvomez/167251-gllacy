@@ -55,130 +55,29 @@ body {
   font-size: 16px;
   line-height: 18px;
   vertical-align: top;
+  border-radius: 15px;
 }
 
 .nav-menu>li>a {
   display: block;
   color: #ffffff;
   padding: 7px 14px;
-  border-radius: 15px;
+  border-radius: inherit;
 }
 
-.nav-menu>li>a:hover {
+.nav-menu li:hover {
   color: #333333;
   background-color: #f8f7f4;
 }
 
-.main-header-userform {
-  float: right;
-  min-width: 260px;
-  text-align: right;
-  font-size: 0;
-}
-
-.userform-search,
-.userform-login,
-.userform-basket {
-  position: relative;
-  display: inline-block;
-  font-size: 16px;
-  margin-right: 10px;
-}
-
-.userform-basket {
-  margin-right: 0px;
-}
-
-.main-header-userform a {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: top;
-  text-decoration: none;
-  border-radius: 15px;
-  color: #ffffff;
-  background-color: #a1b4a9;
-  min-height: 32px;
-  padding-top: 8px;
-}
-
-.userform-search a {
-  font-size: 0px;
-  width: 32px;
-}
-
-.userform-search a::before {
+.hover-catalog::before {
   content: "";
   position: absolute;
-  width: 17px;
-  height: 17px;
-  top: 25%;
-  left: 8px;
-  background: url(../img/spritesheet-gllacy.png) no-repeat;
-  background-position: -778px -10px;
-}
-
-.userform-search a::after {
-  /* хак, чтобы не пропадал ховер при наведении вниз с ссылки поиска */
-  content: "";
-  position: absolute;
-  width: 32px;
-  height: 50px;
-  top: 0;
-  left: 0;
-}
-
-.userform-search a:hover .form-search,
-.userform-search a::after:hover .form-search {
-  /* почему перестал срабатывать ховер */
-  display: block;
-}
-
-.userform-login a {
-  padding-right: 10px;
-  padding-left: 45px;
-}
-
-.userform-login a::before {
-  content: "";
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  top: 6px;
-  left: 16px;
-  background: url(../img/spritesheet-gllacy.png) no-repeat;
-  background-position: -737px -10px;
-}
-
-.userform-login a:hover .form-login {
-  /* почему не срабатывает */
-  display: block;
-}
-
-.main-index-schedule {
-  float: right;
-  text-align: right;
-  margin-left: 100px;
-  margin-top: 18px;
-  /* можно ли таким способом прижать второй флоат, чтобы один был над другим? */
-}
-
-.main-index-schedule p {
-  /* обнуляем для абзацев */
-  margin: 0;
-}
-
-.main-index-schedule p:first-child {
-  font-size: 14px;
-  line-height: 16px;
-  margin-bottom: 3px;
-}
-
-.main-index-schedule p:last-child {
-  font-size: 22px;
-  line-height: 24px;
+  top: 20px;
+  left: 10px;
+  width: 70px;
+  height: 20px;
+  background-color: red;
 }
 
 .sub-menu {
@@ -198,7 +97,6 @@ body {
 }
 
 .hover-catalog:hover .sub-menu {
-  /* показываем подменю при наведении */
   display: block;
 }
 
@@ -223,6 +121,277 @@ body {
   background-color: #f6b5a5;
 }
 
+.main-header-userform {
+  margin-top: 10px;
+  float: right;
+  min-width: 260px;
+  text-align: right;
+  font-size: 0;
+}
+
+.userform-search,
+.userform-login,
+.userform-basket {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 10px;
+  border-radius: 15px;
+  background-color: #a1b4a9;
+}
+
+.userform-basket {
+  margin-right: 0px;
+}
+
+.userform-search > a,
+.userform-login > a,
+.userform-basket > a {
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  border-radius: inherit;
+  color: #ffffff;
+  min-height: 32px;
+  padding-top: 8px;
+}
+
+.userform-search > a {
+  font-size: 0px;
+  width: 32px;
+}
+
+.userform-search > a::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 25%;
+  left: 8px;
+  background: url(../img/spritesheet-gllacy.png) no-repeat;
+  background-position: -778px -10px;
+}
+
+.userform-search > a::after {
+  /* хак, чтобы не пропадал ховер при наведении вниз с ссылки поиска */
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 50px;
+  top: 0;
+  left: 0;
+}
+
+.form-search {
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  top: 37px;
+  right: 0;
+  width: 340px;
+  height: 85px;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  padding-top: 20px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.userform-search:hover {
+  background-color: #f8f7f4;
+}
+
+.userform-search:hover .form-search {
+  display: block;
+}
+
+.form-search input {
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 15px;
+  height: 45px;
+  width: 310px;
+  margin: 0 auto;
+}
+
+.form-search input[type="text"] {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.userform-login > a {
+  padding-right: 10px;
+  padding-left: 45px;
+}
+
+.userform-login > a::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top: 6px;
+  left: 16px;
+  background: url(../img/spritesheet-gllacy.png) no-repeat;
+  background-position: -737px -10px;
+}
+
+.userform-login > a::after {
+  /* хак, чтобы не пропадал ховер при наведении вниз с ссылки поиска */
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 10px;
+  top: 30px;
+  left: 5px;
+}
+
+.userform-login:hover {
+  background-color: #f8f7f4;
+}
+
+.userform-login:hover > a {
+  color: #323232;
+}
+
+.userform-login:hover .form-login {
+  display: block;
+}
+
+.form-login input {
+  display: block;
+  box-sizing: border-box;
+  width: 240px;
+  height: 44px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  border-color: #d3d3d2;
+  border: 1px solid #d3d3d2;
+}
+
+.form-login input[type="text"] {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.login-btn {
+  float: left;
+  font-family: inherit;
+  margin-right: 19px;
+  border: none;
+}
+
+.form-login a {
+  float: left;
+  width: 120px;
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+  text-decoration: none;
+  /* как сделать нижнее подчеркивание как на макете? */
+  border-bottom: 1px solid #adacaa;
+}
+
+.userform-basket {
+  padding-right: 34px;
+  padding-left: 45px;
+}
+
+.form-basket {
+  position: absolute;
+  top:37px;;
+  right: 0;
+  box-sizing: border-box;
+  width: 540px;
+  min-height: 242px;
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  background-color: #f8f7f4;
+  color: #323232;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.basket-line,
+.basket-submit {
+  font-size: 0;
+}
+
+.basket-line:first-child {
+  margin-bottom: 38px;
+}
+
+.basket-line:nth-child(2){ /* почему не работает last-child */
+  padding-bottom: 32px;
+  border-bottom: 1px solid #cacac7;
+  margin-bottom: 16px;
+  
+}
+
+.form-basket p {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.basket-line p {
+  max-width: 220px;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 13px;
+  line-height: 16px;
+  margin-left: 30px;
+}
+
+.basket-submit {
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 14px;
+}
+
+.form-basket .order-btn {
+  float: right;
+}
+
+.main-index-schedule {
+  float: right;
+  min-width: 175px;
+  text-align: right;
+  margin-left: 600px;
+  margin-top: 18px;
+  /* можно ли таким способом прижать второй флоат, чтобы один был над другим? */
+}
+
+.main-index-schedule p {
+  /* обнуляем для абзацев */
+  margin: 0;
+}
+
+.main-index-schedule p:first-child {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 3px;
+}
+
+.main-index-schedule p:last-child {
+  font-size: 22px;
+  line-height: 24px;
+}
+
 .clearfix::after {
   content: "";
   display: table;
@@ -233,10 +402,11 @@ body {
 /* Всплывающие формы*/
 
 .feedback {
+  display: none;
   position: fixed;
   /* как правильно спозиционировать? */
   top: 345px;
-  left:50%;
+  left: 50%;
   margin-left: -240px;
   z-index: 10;
   box-sizing: border-box;
@@ -312,6 +482,7 @@ body {
 }
 
 .form-login {
+  display: none;
   position: absolute;
   top: 37px;
   right: 0;
@@ -325,81 +496,11 @@ body {
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
-.form-login input {
-  display: block;
-  box-sizing: border-box;
-  width: 240px;
-  height: 44px;
-  margin-bottom: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 5px;
-  border-color: #d3d3d2;
-  border: 1px solid #d3d3d2;
-}
-
-.form-login input[type="text"] {
-  font-family: inherit;
-  font-size: 14px;
-  line-height: 24px;
-  color: #999999;
-}
-
-.login-btn {
-  float: left;
-  font-family: inherit;
-  margin-right: 19px;
-  border: none;
-}
-
-.form-login a {
-  /* почему тащит стили кнопок? */
-  float: left;
-  width: 120px;
-  font-size: 13px;
-  line-height: 24px;
-  color: #323232;
-  text-decoration: none;
-  /* как сделать нижнее подчеркивание как на макете? */
-  border-bottom: 1px solid #adacaa;
-}
-
-.form-search {
-  position: absolute;
-  box-sizing: border-box;
-  top: 37px;
-  right: 0;
-  width: 340px;
-  height: 85px;
-  background-color: #f8f7f4;
-  border-radius: 5px;
-  padding-top: 20px;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-}
-
-.form-search input {
-  display: block;
-  box-sizing: border-box;
-  border: 1px solid #d3d3d2;
-  border-radius: 5px;
-  padding-left: 10px;
-  padding-right: 15px;
-  height: 45px;
-  width: 310px;
-  margin: 0 auto;
-}
-
-.form-search input[type="text"] {
-  font-family: inherit;
-  font-size: 14px;
-  line-height: 24px;
-  color: #999999;
-}
-
 
 /* Основное содержание */
 
 .main-header {
+  min-height: 120px;
   margin-bottom: 285px;
 }
 
