@@ -11,10 +11,10 @@ body {
   line-height: 22px;
   color: #ffffff;
   font-weight: bold;
-  min-width: 1200px;
-  /* нужно ли задавать ширину? */
+  /* нужно ли задавать ширину? нет*/
   padding: 5px 20px;
-  background: #849d8f url(../img/slider1.jpg) no-repeat 50% 0;
+  background: #849d8f/* url(../img/slider1.jpg) */
+  no-repeat 50% 0
   /* как переключать? */
   /* второй вариант фона */
   /* background: #8996a6 url(../img/slider2.jpg) no-repeat 50% 0; */
@@ -70,96 +70,91 @@ body {
 }
 
 .main-header-userform {
-  min-width: 300px;
   float: right;
+  min-width: 260px;
   text-align: right;
   font-size: 0;
-  margin-top: 10px;
+}
+
+.userform-search,
+.userform-login,
+.userform-basket {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.userform-basket {
+  margin-right: 0px;
 }
 
 .main-header-userform a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
-  min-height: 32px;
-  min-width: 32px;
-  margin-left: 10px;
-  padding-top: 8px;
   text-decoration: none;
-  border-radius: 16px;
+  border-radius: 15px;
   color: #ffffff;
   background-color: #a1b4a9;
+  min-height: 32px;
+  padding-top: 8px;
 }
 
-.userform-search {
-  position: relative;
-  min-width: 30px;
+.userform-search a {
+  font-size: 0px;
+  width: 32px;
 }
 
-.userform-search::before {
+.userform-search a::before {
   content: "";
   position: absolute;
+  width: 17px;
+  height: 17px;
   top: 25%;
-  left: 25%;
-  width: 20px;
-  height: 20px;
+  left: 8px;
   background: url(../img/spritesheet-gllacy.png) no-repeat;
   background-position: -778px -10px;
 }
 
-.userform-search:hover {
-  background-color: #f8f7f4;
-  /* заменить цвет иконки? спрайт или как-то еще можно? */
+.userform-search a::after {
+  /* хак, чтобы не пропадал ховер при наведении вниз с ссылки поиска */
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 50px;
+  top: 0;
+  left: 0;
 }
 
-.userform-login {
-  position: relative;
-  padding-left: 44px;
-  padding-right: 15px;
-  font-size: 14px;
-  line-height: 16px;
+.userform-search a:hover .form-search,
+.userform-search a::after:hover .form-search {
+  /* почему перестал срабатывать ховер */
+  display: block;
 }
 
-.userform-login::before {
+.userform-login a {
+  padding-right: 10px;
+  padding-left: 45px;
+}
+
+.userform-login a::before {
   content: "";
   position: absolute;
   width: 21px;
-  height: 19px;
+  height: 21px;
+  top: 6px;
+  left: 16px;
   background: url(../img/spritesheet-gllacy.png) no-repeat;
   background-position: -737px -10px;
-  top: 6px;
-  left: 16px;
 }
 
-.userform-login:hover {
-  background-color: #f8f7f4;
-  /* заменить цвет иконки? спрайт или как-то еще можно? */
-  color: #323232;
-}
-
-.userform-basket {
-  position: relative;
-  padding-left: 45px;
-  padding-right: 34px;
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.userform-basket::before {
-  position: absolute;
-  content: "";
-  width: 21px;
-  height: 20px;
-  background: url(../img/spritesheet-gllacy.png) no-repeat;
-  background-position: -284px -10px;
-  top: 6px;
-  left: 16px;
-}
-
-.userform-basket:hover {
-  background-color: #f8f7f4;
-  /* заменить цвет иконки? спрайт или как-то еще можно? */
-  color: #323232;
+.userform-login a:hover .form-login {
+  /* почему не срабатывает */
+  display: block;
 }
 
 .main-index-schedule {
@@ -239,11 +234,11 @@ body {
 
 .feedback {
   position: fixed;
-  display: none;
   /* как правильно спозиционировать? */
+  top: 345px;
+  left:50%;
+  margin-left: -240px;
   z-index: 10;
-  top: 150px;
-  left: 25%;
   box-sizing: border-box;
   padding-left: 24px;
   padding-top: 18px;
@@ -317,10 +312,9 @@ body {
 }
 
 .form-login {
-  display: none;
   position: absolute;
-  top: 55px;
-  right: 490px;
+  top: 37px;
+  right: 0;
   box-sizing: border-box;
   width: 277px;
   height: 214px;
@@ -332,6 +326,7 @@ body {
 }
 
 .form-login input {
+  display: block;
   box-sizing: border-box;
   width: 240px;
   height: 44px;
@@ -354,9 +349,11 @@ body {
   float: left;
   font-family: inherit;
   margin-right: 19px;
+  border: none;
 }
 
 .form-login a {
+  /* почему тащит стили кнопок? */
   float: left;
   width: 120px;
   font-size: 13px;
@@ -368,28 +365,28 @@ body {
 }
 
 .form-search {
-  display: none;
   position: absolute;
-  top: 55px;
-  right: 360px;
   box-sizing: border-box;
+  top: 37px;
+  right: 0;
   width: 340px;
   height: 85px;
   background-color: #f8f7f4;
   border-radius: 5px;
-  padding-left: 15px;
   padding-top: 20px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .form-search input {
+  display: block;
   box-sizing: border-box;
-  width: 310px;
-  height: 45px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   padding-left: 10px;
   padding-right: 15px;
+  height: 45px;
+  width: 310px;
+  margin: 0 auto;
 }
 
 .form-search input[type="text"] {
@@ -397,17 +394,6 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #999999;
-}
-
-
-/* почему не срабатывает hover? */
-
-.userform-search:hover .form-search {
-  display: block;
-}
-
-.userform-login:hover .form-login {
-  display: block;
 }
 
 
@@ -902,7 +888,6 @@ body {
   box-shadow: inset 0 1px 1px 0 #888888;
 }
 
-
 .main-index-slider2 {
   /* временно скрываем */
   display: none;
@@ -912,6 +897,7 @@ body {
   /* временно скрываем */
   display: none;
 }
+
 
 /* Стили для каталога*/
 
@@ -941,4 +927,3 @@ body {
 .catalog-page {
   float: right;
 }
-

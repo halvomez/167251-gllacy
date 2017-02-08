@@ -45,12 +45,36 @@
           </li>
         </ul>
       </nav>
+      <!-- Верстать ссылками, переход на формы через ховер. Иконки через псевдоэлемент -->
       <div class="main-header-userform">
-        <!-- Верстать ссылками, переход на формы через ховер. Иконки через псевдоэлемент -->
-        <a href="#" class="userform-search">Поиск</a>
-        <a href="#" class="userform-login">Вход</a>
-        <a href="#" class="userform-basket">Пусто</a>
+        <div class="userform-search">
+          <a href="#">Поиск</a>
+          <section class="form-search">
+            <form action="#" method="post" name="form-search">
+              <input type="text" name="form-search-text" placeholder="Что ищем?">
+            </form>
+          </section>
+        </div>
+        <div class="userform-login">
+          <a href="#">Вход</a>
+          <section class="form-login">
+            <form action="#" method="post" name="form-login">
+              <input type="text" class="form-login-email" name="form-login-email" placeholder="Электронная почта">
+              <input type="text" class="form-login-password" name="form-login-password" placeholder="Пароль">
+              <button type="submit" class="login-btn orange-btn">Войти</button>
+            </form>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </section>
+        </div>
+        <div class="userform-basket">
+          <a href="#">Пусто</a>
+          <section class="form-basket">
+            <!-- форма для корзины -->
+          </section>
+        </div>
       </div>
+
       <div class="main-index-schedule">
         <p class="schedule-time">С 10 до 20, ежедневно</p>
         <p class="schedule-tel">8 812 450-25-25</p>
@@ -65,20 +89,6 @@
         <textarea name="ask-info-write" id="ask-info-write" cols="20" rows="20" placeholder="Напишите что-нибудь..."></textarea>
         <button type="submit" class="feedback-send-btn orange-btn">Отправить</button>
       </form>
-    </section>
-    <section class="form-search">
-      <form action="#" method="post" name="form-search">
-        <input type="text" class="form-search-text" name="form-search-text" placeholder="Что ищем?">
-      </form>
-    </section>
-    <section class="form-login">
-      <form action="#" method="post" name="form-login">
-        <input type="text" class="form-login-email" name="form-login-email" placeholder="Электронная почта">
-        <input type="text" class="form-login-password" name="form-login-password" placeholder="Пароль">
-        <button type="submit" class="login-btn orange-btn">Войти</button>
-      </form>
-      <a href="#">Забыли пароль?</a>
-      <a href="#">Новая регистрация</a>
     </section>
   </header>
   <main class="main-index">
