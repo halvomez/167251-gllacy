@@ -770,12 +770,24 @@ body > input[type="radio"] {
 }
 
 .icecream-info {
+  position: relative;
   width: 268px;
   float: left;
   margin-right: 24px;
   margin-bottom: 40px;
   text-align: center;
 }
+
+.icecream-info::before { /* обводка */
+  content: "";
+  position: absolute;
+  top:-5px;
+  left: -13px;
+  width:293px;
+  height: 405px;
+  background-color: rgba(248,247,244,0.3);
+  border-radius: 5px;
+} 
 
 .icecream-info:nth-of-type(4n) {
   float: right;
@@ -789,11 +801,20 @@ body > input[type="radio"] {
   text-align: left;
 }
 
-.icecream-info a {
+.icecream-info a:first-of-type {
+  display: inline;
   color: #ffffff;
   font-weight: normal;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(225,225,225,0.2);
 }
 
+.quick-view {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 11px 15px;
+}
 .for-hit-icon::before {
   content: url(../img/hit-icon.png);
   position: absolute;
