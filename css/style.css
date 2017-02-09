@@ -11,20 +11,90 @@ body {
   line-height: 22px;
   color: #ffffff;
   font-weight: bold;
+  background-color: #849d8f;
   /* нужно ли задавать ширину? нет*/
-  padding: 5px 20px;
-  background: #849d8f/* url(../img/slider1.jpg) */
-  no-repeat 50% 0
-  /* как переключать? */
-  /* второй вариант фона */
-  /* background: #8996a6 url(../img/slider2.jpg) no-repeat 50% 0; */
-  /* третий вариант фона */
-  /* background: #9d8b84 url(../img/slider3.jpg) no-repeat 50% 0; */
+}
+
+.site-wrapper {
+  min-width: 940px;
+  background-color: #849d8f;
+  background-image: url("../img/slider1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.site-wrapper::before,
+.site-wrapper::after {
+  content: "";
+
+  visibility: hidden;
+}
+
+.site-wrapper::before {
+  background-image: url("../img/slider2.png");
+}
+
+.site-wrapper::after {
+  background-image: url("../img/slider3.png");
+}
+
+.content-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .container {
   width: 1146px;
   margin: 0 auto;
+}
+
+.main-index-sliderbtn label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+  vertical-align: top;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+body > input[type="radio"] {
+  display: none;
+}
+
+.slide {
+  display: none;
+}
+
+#btn-1:checked ~ .site-wrapper #slide1,
+#btn-2:checked ~ .site-wrapper #slide2,
+#btn-3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+
+#btn-1:checked ~ .site-wrapper label[for="btn-1"],
+#btn-2:checked ~ .site-wrapper label[for="btn-2"],
+#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+  background-color: #ffffff;
+}
+
+#btn-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/slider1.png");
+}
+
+#btn-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/slider2.png");
+}
+
+#btn-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/slider3.png");
 }
 
 .main-header-logo {
@@ -174,7 +244,7 @@ body {
   font-size: 16px;
   margin-right: 10px;
   border-radius: 15px;
-  background-color: #a1b4a9;
+  background-color: rgba(225,225,225,0.2);
 }
 
 .userform-basket {
@@ -611,6 +681,7 @@ body {
 
 .main-index-sliderbtn {
   display: inline-block;
+  margin-right: 335px;
 }
 
 .orange-btn {
@@ -644,7 +715,6 @@ body {
 
 .get-btn {
   display: inline-block;
-  margin-left: 380px;
   padding: 12px 40px;
   vertical-align: baseline;
   text-align: center;
@@ -1018,7 +1088,7 @@ body {
   font-weight: 400;
   /* REGULAR? */
   text-decoration: none;
-  border-bottom: 1px solid #9db1a5;
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2);
 }
 
 a.for-shippers {
@@ -1082,16 +1152,6 @@ a.for-shippers {
 .social-btn:active {
   opacity: 1;
   box-shadow: inset 0 1px 1px 0 #888888;
-}
-
-.main-index-slider2 {
-  /* временно скрываем */
-  display: none;
-}
-
-.main-index-slider3 {
-  /* временно скрываем */
-  display: none;
 }
 
 
