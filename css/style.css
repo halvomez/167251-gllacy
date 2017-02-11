@@ -27,7 +27,6 @@ body {
 .site-wrapper::before,
 .site-wrapper::after {
   content: "";
-
   visibility: hidden;
 }
 
@@ -181,7 +180,6 @@ body > input[type="radio"] {
   padding-left: 14px;
   padding-right: 14px;
   height: 28px;
-  
 }
 
 .sub-menu a {
@@ -206,6 +204,7 @@ body > input[type="radio"] {
 .sub-menu li:last-child {
   margin-bottom: 5px;
 }
+
 .sub-menu li:first-child::before {
   position: absolute;
   content: "";
@@ -216,7 +215,8 @@ body > input[type="radio"] {
   left: 6px;
 }
 
-.sub-menu li:first-child a { /* можно такой селектор? */
+.sub-menu li:first-child a {
+  /* можно такой селектор? */
   font-weight: 700;
 }
 
@@ -244,7 +244,7 @@ body > input[type="radio"] {
   font-size: 16px;
   margin-right: 10px;
   border-radius: 15px;
-  background-color: rgba(225,225,225,0.2);
+  background-color: rgba(225, 225, 225, 0.2);
 }
 
 .userform-basket {
@@ -778,16 +778,17 @@ body > input[type="radio"] {
   text-align: center;
 }
 
-.icecream-info::before { /* обводка */
+.icecream-info::before {
+  /* обводка */
   content: "";
   position: absolute;
-  top:-5px;
+  top: -5px;
   left: -13px;
-  width:293px;
+  width: 293px;
   height: 405px;
-  background-color: rgba(248,247,244,0.3);
+  background-color: rgba(248, 247, 244, 0.3);
   border-radius: 5px;
-} 
+}
 
 .icecream-info:nth-of-type(4n) {
   float: right;
@@ -806,7 +807,7 @@ body > input[type="radio"] {
   color: #ffffff;
   font-weight: normal;
   text-decoration: none;
-  border-bottom: 1px solid rgba(225,225,225,0.2);
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2);
 }
 
 .quick-view {
@@ -815,6 +816,7 @@ body > input[type="radio"] {
   line-height: 24px;
   padding: 11px 15px;
 }
+
 .for-hit-icon::before {
   content: url(../img/hit-icon.png);
   position: absolute;
@@ -1177,7 +1179,9 @@ a.for-shippers {
 
 
 /* Стили для каталога*/
-.main-catalog-breadcrumbs { /* откуда отступ снизу? если display:block */
+
+.main-catalog-breadcrumbs {
+  /* откуда отступ снизу? если display:block */
   display: inline;
   margin: 0;
   padding: 0;
@@ -1193,7 +1197,8 @@ a.for-shippers {
   font-weight: 400;
 }
 
-.main-catalog-breadcrumbs li:not(:first-child) { /* для иконки */
+.main-catalog-breadcrumbs li:not(:first-child) {
+  /* для иконки */
   padding-left: 22px;
   margin-left: -4px;
 }
@@ -1209,7 +1214,7 @@ a.for-shippers {
   display: block;
   color: inherit;
   text-decoration: none;
-  border-bottom: 1px solid rgba(225,225,225,0.2);
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2);
 }
 
 .main-catalog h2 {
@@ -1235,10 +1240,16 @@ a.for-shippers {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 16px;
+}
+
+.sort-select p,
+.sort-price p,
+.sort-fatness p {
   margin-left: 15px;
 }
 
-.sort-select select { /* как отодвинуть иконку всплывающего селекта? или селект помещать в обертку с нужным background? */
+.sort-select select {
+  /* как отодвинуть иконку всплывающего селекта? или селект помещать в обертку с нужным background? */
   box-sizing: border-box;
   display: inline-block;
   height: 36px;
@@ -1248,7 +1259,7 @@ a.for-shippers {
   padding-left: 15px;
   color: inherit;
   border: none;
-  background-color: rgba(225,225,225,0.2);
+  background-color: rgba(225, 225, 225, 0.2);
   border-radius: 18px;
 }
 
@@ -1272,12 +1283,13 @@ a.for-shippers {
   padding-bottom: 9px;
   padding-right: 15px;
   border-radius: 18px;
-  background-color: rgba(225,225,225,0.2);
-} 
+  background-color: rgba(225, 225, 225, 0.2);
+}
 
-.sort-fatness input[type="radio"] { /* скрываем стандартные радио */
+.sort-fatness input[type="radio"] {
+  /* скрываем стандартные радио */
   display: none;
-} 
+}
 
 .sort-fatness-radio label {
   position: relative;
@@ -1291,24 +1303,26 @@ a.for-shippers {
   margin-right: 0;
 }
 
-.sort-fatness label::after { /* внешняя обводка */
+.sort-fatness label::after {
+  /* внешняя обводка */
   box-sizing: border-box;
   position: absolute;
   content: "";
-  top:0;
+  top: 0;
   left: 0;
-  width:20px;
+  width: 20px;
   height: 20px;
   border: 1px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
 }
 
-.sort-fatness label::before { /* внутренняя обводка */
+.sort-fatness label::before {
+  /* внутренняя обводка */
   box-sizing: border-box;
   position: absolute;
   content: "";
-  top:5px;
+  top: 5px;
   left: 5px;
   width: 10px;
   height: 10px;
@@ -1317,14 +1331,15 @@ a.for-shippers {
   display: none;
 }
 
-.sort-fatness-radio label:hover::after { 
+.sort-fatness-radio label:hover::after {
   /* утолщении внешней обводки при наведении */
   border: 2px solid #ffffff;
 }
 
+
 /* #zero-percent:checked ~ .sort-fatness-radio label {
   color:red; 
-} почему не срабатывает такая запись через селектор?*/ 
+} почему не срабатывает такая запись через селектор?*/
 
 #zero-percent:checked ~ label[for="zero-percent"]::before {
   display: block;
@@ -1348,7 +1363,7 @@ a.for-shippers {
   margin-left: 15px;
 }
 
-.sort-fill-checkbox input[type="checkbox"] {  
+.sort-fill-checkbox input[type="checkbox"] {
   /* прячем стандартные чекбоксы */
   display: none;
 }
@@ -1363,6 +1378,7 @@ a.for-shippers {
 .sort-fill-checkbox label:last-of-type {
   margin-right: 0px;
 }
+
 .sort-fill-checkbox label::after {
   box-sizing: border-box;
   position: absolute;
@@ -1376,7 +1392,7 @@ a.for-shippers {
 }
 
 .sort-fill-checkbox label::before {
-   position: absolute;
+  position: absolute;
   content: "";
   width: 14px;
   height: 14px;
@@ -1406,4 +1422,30 @@ a.for-shippers {
 
 #fill-jam:checked ~ label[for="fill-jam"]::before {
   background: url(../img/checkbox-on.png) no-repeat;
+}
+
+.sort-submit-btn {   /* центровка текста по умолчанию в button? */
+  box-sizing: border-box;
+  height: 36px;
+  min-width: 144px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  background-color: rgba(225, 225, 225, 0.2);
+  cursor: pointer;
+}
+
+.sort-submit-btn:hover {
+  background-color: #ffffff;
+  color: #323232;
+}
+
+.sort-submit-btn:active {
+  border: none;/* не соответствует стайлгайду */
+  box-shadow: inset 0 2px 1px #696969;
+  background-color: #ededed;
+  color: #323232;
 }
