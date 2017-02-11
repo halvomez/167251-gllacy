@@ -1235,6 +1235,7 @@ a.for-shippers {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 16px;
+  margin-left: 15px;
 }
 
 .sort-select select { /* как отодвинуть иконку всплывающего селекта? или селект помещать в обертку с нужным background? */
@@ -1265,14 +1266,13 @@ a.for-shippers {
 }
 
 .sort-fatness-radio {
-  min-width: 415px;
   box-sizing: border-box;
   padding-left: 15px;
   padding-top: 9px;
   padding-bottom: 9px;
   padding-right: 15px;
   border-radius: 18px;
-  background-color: rgba(225,225,225,0.2)
+  background-color: rgba(225,225,225,0.2);
 } 
 
 .sort-fatness input[type="radio"] { /* скрываем стандартные радио */
@@ -1283,6 +1283,7 @@ a.for-shippers {
   position: relative;
   padding-left: 31px;
   margin-right: 20px;
+  font-weight: 500;
   cursor: pointer;
 }
 
@@ -1298,7 +1299,7 @@ a.for-shippers {
   left: 0;
   width:20px;
   height: 20px;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -1316,6 +1317,10 @@ a.for-shippers {
   display: none;
 }
 
+.sort-fatness-radio label:hover::after { 
+  /* утолщении внешней обводки при наведении */
+  border: 2px solid #ffffff;
+}
 
 /* #zero-percent:checked ~ .sort-fatness-radio label {
   color:red; 
@@ -1337,15 +1342,68 @@ a.for-shippers {
   display: block;
 }
 
-.sort-fatness label {
-  font-weight: 500;
-}
-
 .sort-fill {
   display: inline-block;
   font-weight: 500;
+  margin-left: 15px;
 }
 
-.sort-submit-btn { 
-  /* почему кнопка не встает в один ряд с другими inline-block; */
+.sort-fill-checkbox input[type="checkbox"] {  
+  /* прячем стандартные чекбоксы */
+  display: none;
+}
+
+.sort-fill-checkbox label {
+  position: relative;
+  padding-left: 32px;
+  margin-right: 18px;
+  cursor: pointer;
+}
+
+.sort-fill-checkbox label:last-of-type {
+  margin-right: 0px;
+}
+.sort-fill-checkbox label::after {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+}
+
+.sort-fill-checkbox label::before {
+   position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  top: 5px;
+  left: 3px;
+}
+
+.sort-fill-checkbox label:hover::after {
+  border: 2px solid #ffffff;
+}
+
+#fill-choco:checked ~ label[for="fill-choco"]::before {
+  background: url(../img/checkbox-on.png) no-repeat;
+}
+
+#fill-sugar:checked ~ label[for="fill-sugar"]::before {
+  background: url(../img/checkbox-on.png) no-repeat;
+}
+
+#fill-fruits:checked ~ label[for="fill-fruits"]::before {
+  background: url(../img/checkbox-on.png) no-repeat;
+}
+
+#fill-syrup:checked ~ label[for="fill-syrup"]::before {
+  background: url(../img/checkbox-on.png) no-repeat;
+}
+
+#fill-jam:checked ~ label[for="fill-jam"]::before {
+  background: url(../img/checkbox-on.png) no-repeat;
 }
