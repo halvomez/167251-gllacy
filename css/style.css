@@ -1264,16 +1264,32 @@ a.for-shippers {
   display: inline-block;
 }
 
-/* .sort-fatness input[type="radio"] {
-  display: none;
-} */
+.sort-fatness-radio {
+  min-width: 415px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-right: 15px;
+  border-radius: 18px;
+  background-color: rgba(225,225,225,0.2)
+} 
 
-.sort-fatness label {
+.sort-fatness input[type="radio"] { /* скрываем стандартные радио */
+  display: none;
+} 
+
+.sort-fatness-radio label {
   position: relative;
   padding-left: 31px;
   margin-right: 20px;
   cursor: pointer;
 }
+
+.sort-fatness-radio label:last-of-type {
+  margin-right: 0;
+}
+
 .sort-fatness label::after { /* внешняя обводка */
   box-sizing: border-box;
   position: absolute;
@@ -1302,7 +1318,7 @@ a.for-shippers {
 
 
 /* #zero-percent:checked ~ .sort-fatness-radio label {
-  color:aqua; 
+  color:red; 
 } почему не срабатывает такая запись через селектор?*/ 
 
 #zero-percent:checked ~ label[for="zero-percent"]::before {
