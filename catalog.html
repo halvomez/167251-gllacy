@@ -124,17 +124,17 @@
     <div class="main-catalog-sort">
       <form action="#" method="post" name="catalog-sort">
         <!-- одна форма и в ней все элементы? Да  -->
-        <div class="sort-select sort-block">
+        <div class="sort-select">
           <p>Сортировка</p>
           <div class="sort-block-style">
             <select id="sort-select" name="sort-select">
-              <option value="sort-popular">По популярности</option>
-              <option value="sort-price">По цене</option>
+              <option value="sort-popular">по популярности</option>
+              <option value="sort-price">по цене</option>
               <!-- какие должны быть остальные значения в списке? -->
             </select>
           </div>
         </div>
-        <div class="sort-price sort-block">
+        <div class="sort-price">
           <p>Цена</p>
           <input type="text" value="100 руб.">-
           <input type="text" value="500 руб.">
@@ -142,7 +142,7 @@
           </div>
           <!-- как верстать ползунок? Стандартом сделать нельзя, оживлять только через JS, здесь просто визуально, размечается через div -->
         </div>
-        <div class="sort-fatness sort-block">
+        <div class="sort-fatness">
           <p>Жирность:</p>
           <div class="sort-fatness-radio sort-block-style">
             <input type="radio" id="zero-percent">
@@ -157,7 +157,7 @@
         </div>
         <div class="sort-block">
           <p>Наполнители</p>
-          <div class="sort-block-style">
+          <div class="sort-fill">
             <input type="checkbox" id="fill-choco" checked>
             <label for="fill-choco">шоколадные</label>
             <input type="checkbox" id="fill-sugar" checked>
@@ -170,7 +170,7 @@
             <label for="fill-jam">джемы</label>
           </div>
         </div>
-        <button type="submit sort-block">Применить</button>
+        <button type="submit" class="sort-submit-btn">Применить</button>
       </form>
     </div>
     <!-- первые 4 секции из index только без картинки хит -->
