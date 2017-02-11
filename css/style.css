@@ -1177,30 +1177,102 @@ a.for-shippers {
 
 
 /* Стили для каталога*/
-
-.header-catalog {
-  margin-bottom: 25px;
-}
-
-.main-catalog-breadcrumbs {
-  margin-bottom: -10px;
+.main-catalog-breadcrumbs { /* откуда отступ снизу? если display:block */
+  display: inline;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 5px;
 }
 
 .main-catalog-breadcrumbs li {
-  display: inline;
-  margin-right: 25px;
-}
-
-.main-catalog-sort {
-  min-height: 150px;
-  width: 930px;
-}
-
-.sort-block {
+  position: relative;
   display: inline-block;
-  vertical-align: middle;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
 }
 
-.catalog-page {
-  float: right;
+.main-catalog-breadcrumbs li:not(:first-child) { /* для иконки */
+  padding-left: 22px;
+  margin-left: -4px;
+}
+
+.main-catalog-breadcrumbs li:not(:first-child)::before {
+  content: "»";
+  position: absolute;
+  top: 0;
+  left: 8px;
+}
+
+.main-catalog-breadcrumbs a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(225,225,225,0.2);
+}
+
+.main-catalog h2 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.main-catalog-sort div {
+  margin-right: 20px;
+}
+
+.main-catalog-sort p {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.sort-select {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 16px;
+}
+
+.sort-select select { /* как отодвинуть иконку всплывающего селекта? или селект помещать в обертку с нужным background? */
+  box-sizing: border-box;
+  display: inline-block;
+  height: 36px;
+  width: 192px;
+  font-size: 16px;
+  line-height: 18px;
+  padding-left: 15px;
+  color: inherit;
+  border: none;
+  background-color: rgba(225,225,225,0.2);
+  border-radius: 18px;
+}
+
+.sort-select select:hover {
+  background-color: #ffffff;
+  color: #323232;
+}
+
+.sort-price {
+  display: inline-block;
+}
+
+.sort-fatness {
+  display: inline-block;
+}
+
+.sort-fatness label {
+  font-weight: 500;
+}
+
+.sort-fill {
+  display: inline-block;
+  font-weight: 500;
+}
+
+.sort-submit-btn { 
+  /* почему кнопка не встает в один ряд с другими inline-block; */
 }

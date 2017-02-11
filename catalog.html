@@ -9,104 +9,104 @@
 
 <body>
   <!-- копируем хедер из главной страницы -->
-  <header class="main-header">
-    <div class="container clearfix">
-      <div class="main-header-logo">
-        <img src="img/logo.png" alt="GllacyShop логотип" width="154" height="64">
-      </div>
-      <nav class="main-header-nav">
-        <ul class="nav-menu">
-          <li class="hover-catalog">
-            <a href="#">Каталог</a>
-            <ul class="sub-menu">
-              <li>
-                <a href="#">Новинки</a>
+  <header class="catalog-header">
+        <div class="container clearfix">
+          <div class="main-header-logo">
+            <a href="http://127.0.0.1:50381/index.html"><img src="img/logo.png" alt="GllacyShop логотип" width="154" height="64"></a>
+          </div>
+          <nav class="main-header-nav">
+            <ul class="nav-menu">
+              <li class="hover-catalog">
+                <a href="#">Каталог</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#">Новинки</a>
+                  </li>
+                  <li>
+                    <a href="#">Сливочное</a>
+                  </li>
+                  <li>
+                    <a href="#">Щербеты</a>
+                  </li>
+                  <li>
+                    <a href="#">Фруктовый лед</a>
+                  </li>
+                  <li>
+                    <a href="#">Мелорин</a>
+                  </li>
+                </ul>
               </li>
               <li>
-                <a href="#">Сливочное</a>
+                <a href="#">Доставка и оплата</a>
               </li>
               <li>
-                <a href="#">Щербеты</a>
-              </li>
-              <li>
-                <a href="#">Фруктовый лед</a>
-              </li>
-              <li>
-                <a href="#">Мелорин</a>
+                <a href="#">О Компании</a>
               </li>
             </ul>
-          </li>
-          <li>
-            <a href="#">Доставка и оплата</a>
-          </li>
-          <li>
-            <a href="#">О Компании</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Верстать ссылками, переход на формы через ховер. Иконки через псевдоэлемент -->
-      <div class="main-header-userform">
-        <div class="userform-search">
-          <a href="#">Поиск</a>
-          <section class="form-search">
-            <form action="#" method="post" name="form-search">
-              <input type="text" name="form-search-text" placeholder="Что ищем?">
-            </form>
-          </section>
+          </nav>
+          <!-- Верстать ссылками, переход на формы через ховер. Иконки через псевдоэлемент -->
+          <div class="main-header-userform">
+            <div class="userform-search">
+              <a href="#">Поиск</a>
+              <section class="form-search">
+                <form action="#" method="post" name="form-search">
+                  <input type="text" name="form-search-text" placeholder="Что ищем?">
+                </form>
+              </section>
+            </div>
+            <div class="userform-login">
+              <a href="#">Вход</a>
+              <section class="form-login">
+                <form action="#" method="post" name="form-login">
+                  <input type="text" class="form-login-email" name="form-login-email" placeholder="Электронная почта">
+                  <input type="text" class="form-login-password" name="form-login-password" placeholder="Пароль">
+                  <button type="submit" class="login-btn orange-btn">Войти</button>
+                </form>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </section>
+            </div>
+            <div class="userform-basket">
+              <a href="#">Пусто</a>
+              <section class="form-basket">
+                <form action="#" method="post" name="form-basket">
+                  <div class=basket-line>
+                    <div class="basket-delete"></div>
+                    <p class="basket-ice-name icecream-orange">Пломбир с апельсиновым джемом</p>
+                    <p class="basket-ice-info">1,5 кг х <span>200 руб.</span></p>
+                    <p class="icecream-price">300 руб.</p>
+                  </div>
+                  <div class="basket-line">
+                    <div class="basket-delete"></div>
+                    <p class="basket-ice-name icecream-strawberry">Клубничный пломбир с присыпкой из белого шоколада</p>
+                    <p class="basket-ice-info">1,5 кг х <span>300 руб.</span></p>
+                    <p class="icecream-price">450 руб.</p>
+                  </div>
+                  <div class="basket-submit">
+                    <p>Итого:</p>
+                    <p class="basket-sum">750 руб</p>
+                  </div>
+                  <a href="#" class="order-btn orange-btn">Оформить заказ</a>
+                </form>
+              </section>
+            </div>
+          </div>
+          <div class="main-index-schedule">
+            <p class="schedule-time">С 10 до 20, ежедневно</p>
+            <p class="schedule-tel">8 812 450-25-25</p>
+          </div>
         </div>
-        <div class="userform-login">
-          <a href="#">Вход</a>
-          <section class="form-login">
-            <form action="#" method="post" name="form-login">
-              <input type="text" class="form-login-email" name="form-login-email" placeholder="Электронная почта">
-              <input type="text" class="form-login-password" name="form-login-password" placeholder="Пароль">
-              <button type="submit" class="login-btn orange-btn">Войти</button>
-            </form>
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
-          </section>
-        </div>
-        <div class="userform-basket">
-          <a href="#">Пусто</a>
-          <section class="form-basket">
-            <form action="#" method="post" name="form-basket">
-              <div class=basket-line>
-                <div class="basket-delete"></div>
-                <p class="basket-ice-name icecream-orange">Пломбир с апельсиновым джемом</p>
-                <p class="basket-ice-info">1,5 кг х <span>200 руб.</span></p>
-                <p class="icecream-price">300 руб.</p>
-              </div>
-              <div class="basket-line">
-                <div class="basket-delete"></div>
-                <p class="basket-ice-name icecream-strawberry">Клубничный пломбир с присыпкой из белого шоколада</p>
-                <p class="basket-ice-info">1,5 кг х <span>300 руб.</span></p>
-                <p class="icecream-price">450 руб.</p>
-              </div>
-              <div class="basket-submit">
-                <p>Итого:</p>
-                <p class="basket-sum">750 руб</p>
-              </div>
-              <a href="#" class="order-btn orange-btn">Оформить заказ</a>
-            </form>
-          </section>
-        </div>
-      </div>
-      <div class="main-index-schedule">
-        <p class="schedule-time">С 10 до 20, ежедневно</p>
-        <p class="schedule-tel">8 812 450-25-25</p>
-      </div>
-    </div>
-    <section class="feedback">
-      <p>Мы обязательно ответим!</p>
-      <form action="#" method="post" name="feedback">
-        <input type="text" id="ask-name" placeholder="Как вас зовут?">
-        <input type="text" id="ask-email" placeholder="Ваша почта для ответа?">
-        <!-- textarea задается ширина и высота без cols rows. Нужно ли в html прописывать cols rows -->
-        <textarea name="ask-info-write" id="ask-info-write" cols="20" rows="20" placeholder="Напишите что-нибудь..."></textarea>
-        <button type="submit" class="feedback-send-btn orange-btn">Отправить</button>
-      </form>
-    </section>
-  </header>
+        <section class="feedback">
+          <p>Мы обязательно ответим!</p>
+          <form action="#" method="post" name="feedback">
+            <input type="text" id="ask-name" placeholder="Как вас зовут?">
+            <input type="text" id="ask-email" placeholder="Ваша почта для ответа?">
+            <!-- textarea задается ширина и высота без cols rows. Нужно ли в html прописывать cols rows -->
+            <textarea name="ask-info-write" id="ask-info-write" cols="20" rows="20" placeholder="Напишите что-нибудь..."></textarea>
+            <button type="submit" class="feedback-send-btn orange-btn">Отправить</button>
+          </form>
+        </section>
+      </header>
   <main class="main-catalog container clearfix">
     <ul class="main-catalog-breadcrumbs">
       <li>
@@ -122,30 +122,29 @@
     <h2>Сливочное мороженное</h2>
     <!--Здесь h2. h1 если полное объяснение, что на странице находится. -->
     <div class="main-catalog-sort">
-      <form action="#" name="catalog-sort">
+      <form action="#" method="post" name="catalog-sort">
         <!-- одна форма и в ней все элементы? Да  -->
-        <div class="sort-block">
+        <div class="sort-select sort-block">
           <p>Сортировка</p>
           <div class="sort-block-style">
-            <!--  sort-block-style для общей стилизации элементов в форме -->
-            <select>
+            <select id="sort-select" name="sort-select">
               <option value="sort-popular">По популярности</option>
               <option value="sort-price">По цене</option>
               <!-- какие должны быть остальные значения в списке? -->
             </select>
           </div>
         </div>
-        <div class="sort-block">
-          Цена
+        <div class="sort-price sort-block">
+          <p>Цена</p>
           <input type="text" value="100 руб.">-
           <input type="text" value="500 руб.">
           <div class="sort-block-style">
           </div>
           <!-- как верстать ползунок? Стандартом сделать нельзя, оживлять только через JS, здесь просто визуально, размечается через div -->
         </div>
-        <div class="sort-block">
+        <div class="sort-fatness sort-block">
           <p>Жирность:</p>
-          <div class="sort-block-style">
+          <div class="sort-fatness-radio sort-block-style">
             <input type="radio" id="zero-percent">
             <label for="zero-percent">0%</label>
             <input type="radio" id="less10-percent">
