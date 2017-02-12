@@ -62,7 +62,7 @@ body {
 }
 
 .main-index-sliderbtn label:hover {
-  background-color: rgba(225,225,225,0.4);
+  background-color: rgba(225, 225, 225, 0.4);
 }
 
 body > input[type="radio"] {
@@ -1268,9 +1268,8 @@ a.for-shippers {
 
 .main-catalog {
   /* разделить внизу */
-  border-bottom: 1px solid rgba(225,225,225,0.3);
+  border-bottom: 1px solid rgba(225, 225, 225, 0.3);
 }
-
 
 .main-catalog-breadcrumbs {
   /* откуда отступ снизу? если display:block */
@@ -1631,13 +1630,15 @@ a.for-shippers {
   margin-left: 22px;
 }
 
+
 /* переключатель страниц в каталоге */
 
 .catalog-page {
   clear: both;
   float: right;
   width: 195px;
-  margin-top: 50px; /* подогнать */
+  margin-top: 50px;
+  /* подогнать */
   margin-bottom: 30px;
   text-align: center;
   font-size: 0;
@@ -1686,16 +1687,20 @@ a.page-forward::before {
   background-position: -656px -10px;
 }
 
+
 /* подсветка кнопок */
+
+
 /* подсветка при наведении */
+
 .catalog-page a:hover {
-  background-color: rgba(225,225,225,0.2);
+  background-color: rgba(225, 225, 225, 0.2);
 }
 
+
 /* страница 1 текущая */
+
 .catalog-page a:nth-child(2) {
   background-color: #ffffff;
   color: #323232;
 }
-
-
