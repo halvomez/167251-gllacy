@@ -854,6 +854,7 @@ a.basket-goods {
   width: 293px;
   height: 405px;
   background-color: rgba(248, 247, 244, 0.3);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   z-index: 1;
 }
@@ -864,10 +865,13 @@ a.basket-goods {
 }
 
 .icecream-info p {
+  position: relative;
   margin-top: -50px;
   margin-bottom: 25px;
   font-size: 45px;
   text-align: left;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+  z-index: 2;
 }
 
 .icecream-info a:first-of-type {
@@ -1262,6 +1266,12 @@ a.for-shippers {
 
 /* Стили для каталога*/
 
+.main-catalog {
+  /* разделить внизу */
+  border-bottom: 1px solid rgba(225,225,225,0.3);
+}
+
+
 .main-catalog-breadcrumbs {
   /* откуда отступ снизу? если display:block */
   display: inline;
@@ -1627,6 +1637,8 @@ a.for-shippers {
   clear: both;
   float: right;
   width: 195px;
+  margin-top: 50px; /* подогнать */
+  margin-bottom: 30px;
   text-align: center;
   font-size: 0;
 }
