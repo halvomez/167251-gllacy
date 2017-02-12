@@ -1068,40 +1068,52 @@ body > input[type="radio"] {
   margin-right: 11px;
   border: 2px solid #c2cec7;
   border-radius: 32px;
-  background-color: #ffffff;
+  
   opacity: 0.8;
 }
 
-.main-footer-social a:before {
+.main-footer-social a::before {
+  box-sizing: border-box;
   content: "";
   position: absolute;
+  top: 0;
+  left: 0;
   width: 32px;
-  height: 32px;
+  height:32px;
+  border-radius: inherit;
+  border: 3px solid rgba(230,235,233,0.8);
 }
 
+.main-footer-social a::after { /* для иконок */
+  content: "";
+  position: absolute;
+  top:12px;
+  left: 12px;
+  width: 20px;
+  height: 20px;
+}
 
-/* .social-twitter::before {
+.social-twitter::after {
   background-image: url(../img/spritesheet-gllacy.png);
   background-position: -850px -10px;
 }
 
-.social-instagram::before {
+.social-instagram::after {
   background-image: url(../img/spritesheet-gllacy.png);
   background-position: -685px -10px;
 }
 
-.social-fb::before {
+.social-fb::after {
   background-image: url(../img/spritesheet-gllacy.png);
   background-position: -366px -10px;
 }
 
-.social-vk::before {
+.social-vk::after {
   background-image: url(../img/spritesheet-gllacy.png);
   background-position: -902px -10px;
-} */
+}
 
 .main-footer-documents {
-  /* при малом масштабе окна разъезжаются */
   float: left;
   width: 350px;
 }
