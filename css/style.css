@@ -620,9 +620,10 @@ body > input[type="radio"] {
 /* Всплывающие формы*/
 
 /* для демонстрации формы обратной связи*/
-.feedback-modal:hover .feedback{
+.feedback-modal:active .feedback{
   display: block;
-} 
+}
+
 
 .feedback {
   display: none;
