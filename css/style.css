@@ -780,6 +780,7 @@ body > input[type="radio"] {
 
 .icecream-info::before {
   /* обводка */
+  display: none;
   content: "";
   position: absolute;
   top: -5px;
@@ -811,10 +812,21 @@ body > input[type="radio"] {
 }
 
 .quick-view {
-  margin-top: 20px;
+  display: none;
+  position: absolute;
+  top:334px;
+  left: 50%;
+  margin-left: -101px;
   font-size: 18px;
   line-height: 24px;
-  padding: 11px 15px;
+  font-weight: bold;
+  padding: 11px 18px;
+}
+
+.icecream-info:hover::before,
+.icecream-info:hover .quick-view {
+  display: block;
+  /* обводка и кнопка быстрого просмотра при наведении */
 }
 
 .for-hit-icon::before {
@@ -1109,7 +1121,6 @@ body > input[type="radio"] {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
-  /* REGULAR? */
   text-decoration: none;
   border-bottom: 1px solid rgba(225, 225, 225, 0.2);
 }
