@@ -308,11 +308,11 @@ body > input[type="radio"] {
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
-.userform-search > a:hover {
+.userform-search:hover {
   background-color: #f8f7f4;
 }
 
-.userform-search > a:hover::before {
+.userform-search:hover > a::before {
   background: url(../img/search-black.png) no-repeat;
 }
 
@@ -369,15 +369,14 @@ body > input[type="radio"] {
   background-color: #f8f7f4;
 }
 
-.userform-login:hover::before {
+.userform-login:hover > a::before {
+  /* черный вариант иконки */
   background: url(../img/login-black.png) no-repeat;
 }
 
 .userform-login:hover > a {
   color: #323232;
 }
-
-
 
 .userform-login:hover .form-login {
   display: block;
@@ -417,16 +416,15 @@ body > input[type="radio"] {
   line-height: 24px;
   color: #323232;
   text-decoration: none;
-  /* как сделать нижнее подчеркивание как на макете? */
   border-bottom: 1px solid #adacaa;
 }
 
-.userform-basket {
+.userform-basket > a {
   padding-right: 34px;
   padding-left: 45px;
 }
 
-.userform-basket::before {
+.userform-basket > a::before {
   position: absolute;
   content: "";
   width: 21px;
@@ -435,6 +433,36 @@ body > input[type="radio"] {
   left: 16px;
   background: url(../img/spritesheet-gllacy.png) no-repeat;
   background-position: -284px -10px;
+}
+
+.userform-basket > a::after {
+  /* хак, чтобы не пропадал ховер при наведении вниз с ссылки  */
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 10px;
+  top: 30px;
+  left: 5px;
+}
+
+
+/* для демонстрации блока и формы корзины */
+
+.userform-basket:hover > a::before {
+  background: url(../img/spritesheet-gllacy.png) no-repeat;
+  background-position: -325px -10px;
+}
+
+.userform-basket:hover > a {
+  color: #323232;
+}
+
+.userform-basket:hover {
+  background-color: #f8f7f4;
+}
+
+.userform-basket:hover .form-basket {
+  display: block;
 }
 
 .form-basket {
