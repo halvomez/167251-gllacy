@@ -619,11 +619,13 @@ body > input[type="radio"] {
 
 /* Всплывающие формы*/
 
-/* для демонстрации формы обратной связи*/
-.feedback-modal:active .feedback{
+
+/* для демонстрации формы обратной связи
+Затемнение body?*/
+
+.feedback-modal:active .feedback {
   display: block;
 }
-
 
 .feedback {
   display: none;
@@ -655,7 +657,7 @@ body > input[type="radio"] {
   cursor: pointer;
 }
 
-.feedback::before:hover  {
+.feedback::before:hover {
   display: none;
 }
 
@@ -708,7 +710,6 @@ body > input[type="radio"] {
   margin-left: 305px;
   border: none;
 }
-
 
 
 /* Основное содержание */
@@ -954,12 +955,15 @@ body > input[type="radio"] {
 }
 
 .main-index-news {
+  box-sizing: border-box;
   width: 560px;
   float: left;
   min-height: 220px;
   background-image: url(../img/news-background.jpg);
   border-radius: 20px;
   margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 255px;
 }
 
 .main-index-news p {
@@ -967,19 +971,26 @@ body > input[type="radio"] {
   color: #323232;
   font-size: 16px;
   line-height: 22px;
-  padding-left: 20px;
   padding-top: 25px;
   padding-bottom: 8px;
 }
 
 .main-index-news a {
-  display: inline-block;
   color: #323232;
   font-size: 24px;
   line-height: 30px;
-  padding-left: 20px;
   width: 290px;
+  border-bottom: 2px solid;
+  text-decoration: none;
 }
+
+.main-index-news a:hover {
+  border-bottom-color: rgba(232, 77, 55, 0.3);
+  color: #e84d37;
+}
+
+
+/* border-bottom: rgba(232,77,55,0.3); */
 
 .main-index-subscribe {
   /* почему разваливается при масштабировании? */
@@ -1181,7 +1192,6 @@ body > input[type="radio"] {
 a.for-shippers {
   /* ссылка 'для поставщиков' */
   font-weight: bold;
-  /* почему не срабатывает переопределение? */
 }
 
 .for-shippers::before {
@@ -1218,15 +1228,18 @@ a.for-shippers {
 .main-footer-copyright a {
   color: inherit;
   text-decoration: none;
-  border-bottom: 1px solid #9db1a5;
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2);
 }
 
 
 /* стилизация состояния ссылок футера при наведении */
 
-.main-footer a:hover,
-.main-footer a:active {
+.main-footer-copyright a:hover,
+.main-footer-documents a:hover,
+.main-footer-copyright a:active,
+.main-footer-documents a:active {
   color: #ffbc9e;
+  border-bottom: 1px solid rgba(255, 102, 51, 0.3);
 }
 
 
