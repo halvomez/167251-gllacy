@@ -119,7 +119,7 @@ body > input[type="radio"] {
   /* для всплывающего подменю */
 }
 
-.nav-menu>li {
+.nav-menu > li {
   display: inline-block;
   height: 32px;
   font-size: 16px;
@@ -251,9 +251,9 @@ body > input[type="radio"] {
   margin-right: 0px;
 }
 
-.userform-search>a,
-.userform-login>a,
-.userform-basket>a {
+.userform-search > a,
+.userform-login > a,
+.userform-basket > a {
   position: relative;
   font-size: 14px;
   line-height: 16px;
@@ -268,12 +268,12 @@ body > input[type="radio"] {
   padding-top: 8px;
 }
 
-.userform-search>a {
+.userform-search > a {
   font-size: 0px;
   width: 32px;
 }
 
-.userform-search>a::before {
+.userform-search > a::before {
   content: "";
   position: absolute;
   width: 17px;
@@ -284,7 +284,7 @@ body > input[type="radio"] {
   background-position: -778px -10px;
 }
 
-.userform-search>a::after {
+.userform-search > a::after {
   /* хак, чтобы не пропадал ховер при наведении вниз с ссылки поиска */
   content: "";
   position: absolute;
@@ -308,8 +308,12 @@ body > input[type="radio"] {
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
-.userform-search:hover {
+.userform-search > a:hover {
   background-color: #f8f7f4;
+}
+
+.userform-search > a:hover::before {
+  background: url(../img/search-black.png) no-repeat;
 }
 
 .userform-search:hover .form-search {
@@ -335,12 +339,12 @@ body > input[type="radio"] {
   color: #999999;
 }
 
-.userform-login>a {
+.userform-login > a {
   padding-right: 10px;
   padding-left: 45px;
 }
 
-.userform-login>a::before {
+.userform-login > a::before {
   content: "";
   position: absolute;
   width: 21px;
@@ -351,7 +355,7 @@ body > input[type="radio"] {
   background-position: -737px -10px;
 }
 
-.userform-login>a::after {
+.userform-login > a::after {
   /* хак, чтобы не пропадал ховер при наведении вниз с ссылки поиска */
   content: "";
   position: absolute;
@@ -365,9 +369,15 @@ body > input[type="radio"] {
   background-color: #f8f7f4;
 }
 
-.userform-login:hover>a {
+.userform-login:hover::before {
+  background: url(../img/login-black.png) no-repeat;
+}
+
+.userform-login:hover > a {
   color: #323232;
 }
+
+
 
 .userform-login:hover .form-login {
   display: block;
@@ -814,7 +824,7 @@ body > input[type="radio"] {
 .quick-view {
   display: none;
   position: absolute;
-  top:334px;
+  top: 334px;
   left: 50%;
   margin-left: -101px;
   font-size: 18px;
@@ -1071,7 +1081,8 @@ body > input[type="radio"] {
   opacity: 0.8;
 }
 
-.main-footer-social a::after { /* для иконок */
+.main-footer-social a::after {
+  /* для иконок */
   content: "";
   position: absolute;
   width: 32px;
@@ -1176,7 +1187,6 @@ a.for-shippers {
 .main-footer a:active {
   color: #ffbc9e;
 }
-
 
 
 /* Стили для каталога*/
