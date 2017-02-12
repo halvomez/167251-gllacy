@@ -382,6 +382,21 @@ body > input[type="radio"] {
   display: block;
 }
 
+.form-login {
+  display: none;
+  position: absolute;
+  top: 37px;
+  right: 0;
+  box-sizing: border-box;
+  width: 277px;
+  height: 214px;
+  background-color: #f8f7f4;
+  border-radius: 6px;
+  padding-left: 20px;
+  padding-top: 20px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
 .form-login input {
   display: block;
   box-sizing: border-box;
@@ -604,12 +619,17 @@ body > input[type="radio"] {
 
 /* Всплывающие формы*/
 
+/* для демонстрации формы обратной связи*/
+.feedback-modal:hover .feedback{
+  display: block;
+} 
+
 .feedback {
+  display: none;
   position: fixed;
   top: 345px;
   left: 50%;
   margin-left: -240px;
-  z-index: 10;
   box-sizing: border-box;
   padding-left: 24px;
   padding-top: 18px;
@@ -634,9 +654,13 @@ body > input[type="radio"] {
   cursor: pointer;
 }
 
+.feedback::before:hover  {
+  display: none;
+}
+
 .feedback p {
   margin: 0;
-  color: #323232;
+  color: #23232;
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
@@ -659,7 +683,7 @@ body > input[type="radio"] {
   font-family: inherit;
   font-size: 16px;
   font-weight: 24px;
-  color: #999999;
+  color: #323232;
 }
 
 .feedback textarea {
@@ -668,35 +692,22 @@ body > input[type="radio"] {
   width: 428px;
   height: 155px;
   font-family: inherit;
-  color: #999999;
+  color: #323232;
   padding-left: 15px;
   padding-top: 12px;
   border: 1px solid #d3d3d2;
   border-radius: 4px;
   border: 1px solid #d3d3d2;
   margin-bottom: 25px;
+  resize: none;
 }
 
 .feedback-send-btn {
   font-family: inherit;
   margin-left: 305px;
-  /* как убрать свои стили у кнопки? */
+  border: none;
 }
 
-.form-login {
-  display: none;
-  position: absolute;
-  top: 37px;
-  right: 0;
-  box-sizing: border-box;
-  width: 277px;
-  height: 214px;
-  background-color: #f8f7f4;
-  border-radius: 6px;
-  padding-left: 20px;
-  padding-top: 20px;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-}
 
 
 /* Основное содержание */
@@ -1029,7 +1040,7 @@ body > input[type="radio"] {
   border-radius: 15px;
 }
 
-.where-address p {
+.where-address > p {
   margin: 0px;
   padding-left: 25px;
   font-size: 14px;
