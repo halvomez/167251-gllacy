@@ -450,29 +450,37 @@ body > input[type="radio"] {
   background-position: -284px -10px;
 }
 
-.userform-basket > a::after {
-  /* хак, чтобы не пропадал ховер при наведении вниз с ссылки  */
+a.basket-goods::after {
+  /* хак, чтобы не пропадал ховер при наведении вниз с кнопки корзины  */
   content: "";
   position: absolute;
-  width: 110px;
+  width: 130px;
   height: 10px;
   top: 30px;
   left: 5px;
 }
 
 
-/* для демонстрации блока и формы корзины */
+/* Для демонстрации состояний кнопки корзина. По умолчанию кнопка с товарами внутри корзины. Отключаем комментирование для появления одного из двух типов кнопок, либо пустой, либо с товаром внутри. При наведении на пустую кнопку меню корзины не появляется, т.к. считаем, что там нет товаров. При наведении на кнопку с товаром внутри появляется всплывающее меню корзины.*/
 
-.userform-basket:hover > a::before {
+a.basket-goods {
+  /* display: none; */
+}
+
+a.basket-empty {
+  display: none;
+}
+
+a.basket-goods::before {
   background: url(../img/spritesheet-gllacy.png) no-repeat;
   background-position: -325px -10px;
 }
 
-.userform-basket:hover > a {
+a.basket-goods {
   color: #323232;
 }
 
-.userform-basket:hover {
+a.basket-goods {
   background-color: #f8f7f4;
 }
 
@@ -884,7 +892,8 @@ body > input[type="radio"] {
 .for-hit-icon::before {
   content: url(../img/hit-icon.png);
   position: absolute;
-  /* почему так срабатывает? */
+  top: 0;
+  left: 0;
 }
 
 .main-index-gllacyinfo {
