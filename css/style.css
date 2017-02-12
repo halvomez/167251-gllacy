@@ -1223,29 +1223,42 @@ a.for-shippers {
   margin-bottom: 26px;
 }
 
-.main-catalog-sort div {
-  margin-right: 20px;
+.main-catalog-sort {
+  font-size: 0;
+  margin-bottom: 40px;
 }
 
 .main-catalog-sort p {
+  display: inline-block;
   padding: 0;
   margin: 0;
+  /* margin-bottom: 8px; откуда такой отступ после P*/
   font-size: 14px;
   line-height: 16px;
-  font-weight: 400;
-  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.sort-select,
+.sort-price {
+  margin-right: 15px;
+}
+
+.sort-select > p,
+.sort-price > p:first-child,
+.sort-fatness > p,
+.sort-fill > p {
+  margin-left: 15px;
 }
 
 .sort-select {
   display: inline-block;
+  width: 193px;
   vertical-align: top;
   margin-bottom: 16px;
 }
 
-.sort-select p,
-.sort-price p,
-.sort-fatness p {
-  margin-left: 15px;
+.sort-select-menu {
+  display: inline-block;
 }
 
 .sort-select select {
@@ -1257,7 +1270,7 @@ a.for-shippers {
   font-size: 16px;
   line-height: 18px;
   padding-left: 15px;
-  color: inherit;
+  color: #ffffff;
   border: none;
   background-color: rgba(225, 225, 225, 0.2);
   border-radius: 18px;
@@ -1268,10 +1281,6 @@ a.for-shippers {
   color: #323232;
 }
 
-.sort-price {
-  display: inline-block;
-}
-
 .sort-fatness {
   display: inline-block;
 }
@@ -1279,7 +1288,7 @@ a.for-shippers {
 .sort-fatness-radio {
   box-sizing: border-box;
   height: 36px;
-  padding-top: 8px;
+  padding-top: 9px;
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 18px;
@@ -1295,6 +1304,8 @@ a.for-shippers {
   position: relative;
   padding-left: 31px;
   margin-right: 20px;
+  font-size: 16px;
+  line-height: 18px;
   font-weight: 500;
   cursor: pointer;
 }
@@ -1339,7 +1350,7 @@ a.for-shippers {
 
 /* #zero-percent:checked ~ .sort-fatness-radio label {
   color:red; 
-} почему не срабатывает такая запись через селектор?*/
+} почему не срабатывает такая запись через селектор? неважно из какого селектора label, ищет просто по id?*/
 
 #zero-percent:checked ~ label[for="zero-percent"]::before {
   display: block;
@@ -1359,8 +1370,17 @@ a.for-shippers {
 
 .sort-fill {
   display: inline-block;
-  font-weight: 500;
-  margin-left: 15px;
+  margin-right: 14px;
+}
+
+.sort-fill-checkbox {
+  box-sizing: border-box;
+  height: 36px;
+  padding-top: 9px;
+  background-color: rgba(225, 225, 225, 0.3);
+  border-radius: 18px;
+  padding-left: 16px;
+  padding-right: 18px;
 }
 
 .sort-fill-checkbox input[type="checkbox"] {
@@ -1369,9 +1389,13 @@ a.for-shippers {
 }
 
 .sort-fill-checkbox label {
+  display: inline-block;
   position: relative;
   padding-left: 32px;
   margin-right: 18px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
   cursor: pointer;
 }
 
@@ -1424,7 +1448,8 @@ a.for-shippers {
   background: url(../img/checkbox-on.png) no-repeat;
 }
 
-.sort-submit-btn {   /* центровка текста по умолчанию в button? */
+.sort-submit-btn {
+  /* центровка текста по умолчанию в button? */
   box-sizing: border-box;
   height: 36px;
   min-width: 144px;
@@ -1451,32 +1476,27 @@ a.for-shippers {
 }
 
 .sort-price {
+  /* откуда отступ снизу? */
   display: inline-block;
+  width: 218px;
   vertical-align: top;
-  font-size: 0;
 }
 
-.sort-price-control label {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-.sort-price-control label:nth-child(1) {
-  margin-left: 15px;
-}
-
-.sort-price-control input[type="text"] {
-  border:none;
+.sort-price input[type="text"] {
+  /* как заставить поле ввода расширяться? */
+  padding: 0;
+  margin: 0 5px;
   width: 55px;
+  border: none;
   background-color: transparent;
   font-size: 14px;
   line-height: 16px;
+  font-weight: 500;
   color: #ffffff;
 }
+
 .sort-range-control {
+  position: relative;
   display: inline-block;
   box-sizing: border-box;
   height: 36px;
@@ -1486,10 +1506,10 @@ a.for-shippers {
 }
 
 .control-scale {
-  position: relative;
+  position: absolute;
   width: 188px;
   height: 4px;
-  background-color: rgba(248,247,244,0.5);
+  background-color: rgba(248, 247, 244, 0.5);
   margin-top: 16px;
   margin-left: 15px;
 }
@@ -1501,14 +1521,15 @@ a.for-shippers {
   border-radius: 50%;
   background-color: #f8f7f4;
   top: -8px;
+  cursor: pointer;
 }
 
 .toggle-min {
   left: 19px;
 }
 
-.toggle-max { /* откуда тащит маргин справа на 20px? проверить */
-  right: 31px;
+.toggle-max {
+  right: 51px;
 }
 
 .control-bar {
@@ -1517,5 +1538,3 @@ a.for-shippers {
   background-color: #f8f7f4;
   margin-left: 22px;
 }
-
-/* РАЗОБРАТЬСЯ ПОЧЕМУ БЛОК С ЦЕНОЙ НЕ СОВПАДАЕТ С ОСТАЛЬНЫМИ ИНЛАЙНАМИ В СТРОЧКЕ */

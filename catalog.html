@@ -126,29 +126,27 @@
         <!-- одна форма и в ней все элементы? Да  -->
         <div class="sort-select">
           <p>Сортировка</p>
-          <div class="sort-block-style">
-            <select id="sort-select" name="sort-select">
-              <option value="sort-popular">по популярности</option>
-              <option value="sort-price">по цене</option>
-              <!-- какие должны быть остальные значения в списке? -->
-            </select>
-          </div>
+          <select id="sort-select" name="sort-select" class="sort-select-menu">
+            <option value="sort-popular">по популярности</option>
+            <option value="sort-price">по цене</option>
+            <!-- какие должны быть остальные значения в списке? -->
+          </select>
         </div>
         <div class="sort-price">
-          <div class="sort-price-control">
-            <label for="min-price">Цена:</label>
-            <input type="text" value="100 руб." id="min-price">
-            <label for="max-price">&#8212;</label>
-            <input type="text" value="500 руб." id="max-price">
-          </div>
-          <div class="sort-range-control">
-            <div class="control-scale">
-              <div class="control-bar"></div>
-              <div class="toggle toggle-min"></div>
-              <div class="toggle toggle-max"></div>
-            </div>
-          </div>
-          <!-- как верстать ползунок? Стандартом сделать нельзя, оживлять только через JS, здесь просто визуально, размечается через div -->
+          <!-- откуда внутренний отступ снизу? -->
+          <p>Цена:
+            <p>
+              <input type="text" value="100 руб." id="min-price">
+              <p>&#8212;
+                <p>
+                  <input type="text" value="500 руб." id="max-price">
+                  <div class="sort-range-control">
+                    <div class="control-scale">
+                      <div class="control-bar"></div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                    </div>
+                  </div>
         </div>
         <div class="sort-fatness">
           <p>Жирность:</p>
