@@ -840,10 +840,6 @@ a.banner-getchocolate {
   font-weight: bold;
 }
 
-a.banner-getchocolate {
-  padding:
-}
-
 .main-index-banners {
   margin-bottom: 40px;
 }
@@ -872,19 +868,24 @@ a.banner-getchocolate {
   z-index: 1;
 }
 
-.icecream-info:nth-of-type(4n) {
-  float: right;
-  margin-right: 0;
+ .icecream-info-last  {
+   float: right;
+  margin-right: 0px;
 }
 
 .icecream-info p {
   position: relative;
-  margin-top: -50px;
-  margin-bottom: 25px;
+  margin-top: -53px;
+  margin-bottom: 31px;
   font-size: 45px;
   text-align: left;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
   z-index: 2;
+}
+
+.icecream-info span {
+  font-size: 30px;
+  margin-left: 6px;
 }
 
 .icecream-info a:first-of-type {
