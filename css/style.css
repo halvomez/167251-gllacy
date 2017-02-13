@@ -932,32 +932,31 @@ a.banner-getchocolate {
 }
 
 .main-index-gllacyinfo h1 {
-  padding-top: 28px;
+  padding-top: 23px;
   padding-left: 20px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
-  /* MEDIUM? */
+  margin-bottom: 7px;
 }
 
 .gllacyinfo-aboutus {
   display: inline-block;
   width: 540px;
   vertical-align: top;
-  margin-left: 20px;
-  padding-bottom: 26px;
+  margin-left: 23px;
+  margin-bottom: 20px;
 }
 
 .gllacyinfo-aboutus p {
   position: relative;
   display: inline-block;
   margin: 0;
-  padding-left: 58px;
+  padding-left: 54px;
   padding-top: 15px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400px;
-  /* REGULAR? */
 }
 
 .gllacyinfo-aboutus p::before {
@@ -966,7 +965,7 @@ a.banner-getchocolate {
   width: 49px;
   height: 49px;
   left: 0;
-  top: -5px;
+  top: 2px;
 }
 
 .aboutus-ice::before {
@@ -1006,8 +1005,8 @@ a.banner-getchocolate {
   color: #323232;
   font-size: 16px;
   line-height: 22px;
-  padding-top: 25px;
-  padding-bottom: 8px;
+  margin-top: 24px;
+  margin-bottom: 4px;
 }
 
 .main-index-news a {
@@ -1023,9 +1022,6 @@ a.banner-getchocolate {
   border-bottom-color: rgba(232, 77, 55, 0.3);
   color: #e84d37;
 }
-
-
-/* border-bottom: rgba(232,77,55,0.3); */
 
 .main-index-subscribe {
   /* почему разваливается при масштабировании? */
