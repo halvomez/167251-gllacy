@@ -240,7 +240,6 @@ a.sub-menu-new {
   margin-top: 14px;
   float: right;
   min-width: 260px;
-  text-align: right;
   font-size: 0;
 }
 
@@ -453,8 +452,8 @@ a.sub-menu-new {
 }
 
 .userform-basket>a {
-  padding-right: 34px;
-  padding-left: 45px;
+  padding-left: 44px;
+  width: 117px;
 }
 
 .userform-basket>a::before {
@@ -482,11 +481,11 @@ a.basket-goods::after {
 /* Для демонстрации состояний кнопки корзина. По умолчанию кнопка с товарами внутри корзины. Отключаем комментирование для появления одного из двух типов кнопок, либо пустой, либо с товаром внутри. При наведении на пустую кнопку меню корзины не появляется, т.к. считаем, что там нет товаров. При наведении на кнопку с товаром внутри появляется всплывающее меню корзины.*/
 
 a.basket-goods {
-  display: none;
+/*  display: none;*/
 }
 
 a.basket-empty {
-  /* display: none; */
+   display: none; 
 }
 
 a.basket-goods::before {
@@ -1311,6 +1310,9 @@ a.for-shippers {
   border-bottom: 1px solid rgba(225, 225, 225, 0.3);
 }
 
+.hover-catalog-red {
+  background-color: #d07058;
+}
 .main-catalog-breadcrumbs {
   /* откуда отступ снизу? если display:block */
   display: inline-block;
@@ -1620,7 +1622,7 @@ a.for-shippers {
 .sort-price input[type="text"] {
   /* как заставить поле ввода расширяться? */
   padding: 0;
-  margin: 0 5px;
+  margin: 0 2px;
   width: 55px;
   border: none;
   background-color: transparent;
@@ -1660,11 +1662,11 @@ a.for-shippers {
 }
 
 .toggle-min {
-  left: 19px;
+  left: 22px;
 }
 
 .toggle-max {
-  right: 51px;
+  right: 48px;
 }
 
 .control-bar {
@@ -1680,9 +1682,7 @@ a.for-shippers {
 .catalog-page {
   clear: both;
   float: right;
-  width: 195px;
-  margin-top: 50px;
-  /* подогнать */
+  margin-top: 40px;
   margin-bottom: 30px;
   text-align: center;
   font-size: 0;
@@ -1709,6 +1709,7 @@ a.page-back,
 a.page-forward {
   font-size: 0;
 }
+
 
 a.page-back::before,
 a.page-forward::before {
