@@ -167,12 +167,12 @@ body>input[type="radio"] {
 .sub-menu {
   /* внутреннее подменю каталога. Как сделать, чтобы не пропадало? */
   position: absolute;
-  top: 37px;
+  top: 35px;
   left: -7px;
   margin: 0;
   padding: 0;
   /* временно скрываем */
-  display: none;
+  /*  display: none;*/
   width: 145px;
   list-style: none;
   background-color: #f8f7f4;
@@ -186,14 +186,15 @@ body>input[type="radio"] {
 }
 
 .sub-menu li {
-  padding-left: 14px;
-  padding-right: 14px;
-  height: 28px;
+  box-sizing: border-box;
+  display: block;
+  padding-left: 22px;
+  min-height: 30px;
+  padding-top: 6px;
 }
 
 .sub-menu a {
-  padding-top: 6px;
-  display: block;
+  display: inline;
   margin: 0;
   text-decoration: none;
   color: #323232;
@@ -204,10 +205,8 @@ body>input[type="radio"] {
 
 .sub-menu li:first-child {
   position: relative;
-  padding-top: 5px;
   margin-top: 5px;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .sub-menu li:last-child {
@@ -215,17 +214,17 @@ body>input[type="radio"] {
 }
 
 .sub-menu li:first-child::before {
+  /*подчеркивание*/
   position: absolute;
   content: "";
   width: 130px;
   height: 1px;
   background-color: #d1d0ce;
-  top: 38px;
+  top: 35px;
   left: 6px;
 }
 
-.sub-menu li:first-child a {
-  /* можно такой селектор? */
+a.sub-menu-new {
   font-weight: 700;
 }
 
@@ -656,7 +655,7 @@ a.basket-goods {
 }
 
 .feedback {
-/*  display: none;*/
+  /*  display: none;*/
   position: fixed;
   top: 345px;
   left: 50%;
@@ -881,8 +880,8 @@ a.banner-getchocolate {
   z-index: 1;
 }
 
- .icecream-info-last  {
-   float: right;
+.icecream-info-last {
+  float: right;
   margin-right: 0px;
 }
 
