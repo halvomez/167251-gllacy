@@ -172,7 +172,7 @@ body>input[type="radio"] {
   margin: 0;
   padding: 0;
   /* временно скрываем */
-  /*  display: none;*/
+  display: none;
   width: 145px;
   list-style: none;
   background-color: #f8f7f4;
@@ -392,7 +392,7 @@ a.sub-menu-new {
 }
 
 .form-login {
-  /* display: none; */
+  display: none;
   position: absolute;
   top: 35px;
   right: -5px;
@@ -655,7 +655,7 @@ a.basket-goods {
 }
 
 .feedback {
-  /*  display: none;*/
+  display: none;
   position: fixed;
   top: 345px;
   left: 50%;
@@ -1141,7 +1141,7 @@ a.banner-getchocolate {
 .feedback-btn {
   height: 43px;
   padding-left: 28px;
-  padding-top: 7px;
+  padding-top: 9px;
   width: 250px;
   margin-left: 25px;
   font-size: 18px;
