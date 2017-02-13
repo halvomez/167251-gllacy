@@ -513,8 +513,8 @@ a.basket-goods {
   box-sizing: border-box;
   width: 540px;
   min-height: 242px;
-  padding-left: 15px;
-  padding-top: 30px;
+  padding-left: 60px;
+  padding-top: 28px;
   padding-right: 13px;
   padding-bottom: 20px;
   background-color: #f8f7f4;
@@ -530,13 +530,14 @@ a.basket-goods {
   position: relative;
 }
 
+
 .basket-line:first-child {
-  margin-bottom: 38px;
+  margin-bottom: 33px;
 }
 
 .basket-line:nth-child(2) {
   /* почему не работает last-child */
-  padding-bottom: 32px;
+  padding-bottom: 15px;
   border-bottom: 1px solid #cacac7;
   margin-bottom: 16px;
 }
@@ -549,22 +550,18 @@ a.basket-goods {
 
 .basket-line p {
   max-width: 220px;
-  vertical-align: middle;
+  vertical-align: top;
   text-align: left;
   font-size: 13px;
   line-height: 16px;
-  margin-left: 30px;
   font-weight: 400;
-}
-
-.basket-line p:last-child {
-  margin-right: 20px;
 }
 
 .basket-delete {
   /* иконка крестика в форме */
   position: absolute;
   top: 3px;
+  left: -40px;
   width: 10px;
   height: 11px;
   background: url(../img/x.png) no-repeat;
@@ -572,9 +569,15 @@ a.basket-goods {
   cursor: pointer;
 }
 
-.basket-ice-name {
+p.basket-ice-name {
   position: relative;
   width: 220px;
+  margin-left: 30px;
+  margin-right: 25px;
+}
+
+p.basket-ice-info {
+  margin-right: 30px;
 }
 
 .basket-ice-name::before {
@@ -600,15 +603,24 @@ a.basket-goods {
 }
 
 .basket-submit {
+  float: right;
+  min-width: 100px;
   font-size: 15px;
   line-height: 18px;
   margin-bottom: 14px;
 }
 
 .form-basket .order-btn {
+  clear: both;
   float: right;
-  padding-left: 15px;
-  padding-right: 15px;
+  box-sizing: border-box;
+  height: 44px;
+  width: 170px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  padding-left: 14px;
+  padding-top: 7px;
 }
 
 .main-index-schedule {
