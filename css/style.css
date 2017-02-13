@@ -880,7 +880,7 @@ a.banner-getchocolate {
   z-index: 1;
 }
 
-.icecream-info-last {
+.icecream-info:nth-of-type(4n) { 
   float: right;
   margin-right: 0px;
 }
