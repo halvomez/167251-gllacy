@@ -881,6 +881,7 @@ a.banner-getchocolate {
 }
 
 .icecream-info:nth-of-type(4n) { 
+/*  какой лучше использовать селектор*/
   float: right;
   margin-right: 0px;
 }
@@ -1005,7 +1006,7 @@ a.banner-getchocolate {
   width: 560px;
   float: left;
   min-height: 220px;
-  background-image: url(../img/news-background.jpg);
+  background: #ffffff url(../img/news-background.jpg);
   border-radius: 20px;
   margin-bottom: 40px;
   padding-left: 20px;
@@ -1036,12 +1037,11 @@ a.banner-getchocolate {
 }
 
 .main-index-subscribe {
-  /* почему разваливается при масштабировании? */
   width: 560px;
   float: right;
   min-height: 220px;
   border-radius: 20px;
-  background-image: url(../img/subscribe-background.jpg);
+  background: #f8f7f4 url(../img/subscribe-background.jpg) no-repeat;
   color: #5a5a5a;
 }
 
@@ -1054,6 +1054,7 @@ a.banner-getchocolate {
   padding-left: 27px;
   padding-right: 10px;
   margin-bottom: 35px;
+  color: #5a5a5a;
 }
 
 .main-index-subscribe form {
