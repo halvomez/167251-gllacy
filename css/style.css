@@ -1296,6 +1296,16 @@ a.for-shippers {
 
 /* Стили для каталога*/
 
+.catalog-wrapper {     /*обводка для страницы каталога*/
+  background: url(../img/catalog-overlay.png) no-repeat;
+  background-position: 50% 0;
+}
+
+.catalog-header {
+  padding-top: 10px;
+  margin-bottom: -22px;
+}
+
 .main-catalog {
   /* разделить внизу */
   border-bottom: 1px solid rgba(225, 225, 225, 0.3);
@@ -1303,10 +1313,11 @@ a.for-shippers {
 
 .main-catalog-breadcrumbs {
   /* откуда отступ снизу? если display:block */
-  display: inline;
+  display: inline-block;
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-top: 
   margin-bottom: 5px;
 }
 
@@ -1342,6 +1353,9 @@ a.for-shippers {
   padding: 0;
   margin: 0;
   margin-bottom: 26px;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
 }
 
 .main-catalog-sort {
@@ -1368,7 +1382,7 @@ a.for-shippers {
 .sort-price>p:first-child,
 .sort-fatness>p,
 .sort-fill>p {
-  margin-left: 15px;
+  margin-left: 18px;
 }
 
 .sort-select {
@@ -1513,7 +1527,7 @@ a.for-shippers {
   display: inline-block;
   position: relative;
   padding-left: 32px;
-  margin-right: 18px;
+  margin-right: 22px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
