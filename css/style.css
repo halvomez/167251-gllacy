@@ -104,13 +104,13 @@ body > input[type="radio"] {
   width: 154px;
   height: 64px;
   float: left;
-  margin-right: 10px;
+  margin-right: 11px;
 }
 
 .main-header-nav {
   min-width: 450px;
   float: left;
-  margin-top: 10px;
+  margin-top: 14px;
 }
 
 .nav-menu {
@@ -129,7 +129,6 @@ body > input[type="radio"] {
   font-size: 16px;
   line-height: 18px;
   vertical-align: top;
-  margin-right: 15px;
   border-radius: 15px;
 }
 
@@ -234,7 +233,7 @@ body > input[type="radio"] {
 }
 
 .main-header-userform {
-  margin-top: 10px;
+  margin-top: 14px;
   float: right;
   min-width: 260px;
   text-align: right;
@@ -270,7 +269,7 @@ body > input[type="radio"] {
   border-radius: inherit;
   color: #ffffff;
   min-height: 32px;
-  padding-top: 8px;
+  padding-top: 7px;
 }
 
 .userform-search > a {
@@ -283,8 +282,8 @@ body > input[type="radio"] {
   position: absolute;
   width: 17px;
   height: 17px;
-  top: 25%;
-  left: 8px;
+  top: 6px;
+  left: 7px;
   background: url(../img/spritesheet-gllacy.png) no-repeat;
   background-position: -778px -10px;
 }
@@ -346,7 +345,7 @@ body > input[type="radio"] {
 }
 
 .userform-login > a {
-  padding-right: 10px;
+  padding-right: 14px;
   padding-left: 45px;
 }
 
@@ -356,7 +355,7 @@ body > input[type="radio"] {
   width: 21px;
   height: 21px;
   top: 6px;
-  left: 16px;
+  left: 17px;
   background: url(../img/spritesheet-gllacy.png) no-repeat;
   background-position: -737px -10px;
 }
@@ -451,8 +450,8 @@ body > input[type="radio"] {
   content: "";
   width: 21px;
   height: 21px;
-  top: 6px;
-  left: 16px;
+  top: 5px;
+  left: 18px;
   background: url(../img/spritesheet-gllacy.png) no-repeat;
   background-position: -284px -10px;
 }
@@ -471,11 +470,11 @@ a.basket-goods::after {
 /* Для демонстрации состояний кнопки корзина. По умолчанию кнопка с товарами внутри корзины. Отключаем комментирование для появления одного из двух типов кнопок, либо пустой, либо с товаром внутри. При наведении на пустую кнопку меню корзины не появляется, т.к. считаем, что там нет товаров. При наведении на кнопку с товаром внутри появляется всплывающее меню корзины.*/
 
 a.basket-goods {
-  /* display: none; */
+  display: none;
 }
 
 a.basket-empty {
-  display: none;
+  /* display: none; */
 }
 
 a.basket-goods::before {
@@ -606,7 +605,7 @@ a.basket-goods {
   min-width: 175px;
   text-align: right;
   margin-left: 600px;
-  margin-top: 18px;
+  margin-top: 17px;
   /* можно ли таким способом прижать второй флоат, чтобы один был над другим? */
 }
 
@@ -618,7 +617,7 @@ a.basket-goods {
 .main-index-schedule p:first-child {
   font-size: 14px;
   line-height: 16px;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 
 .main-index-schedule p:last-child {
@@ -731,6 +730,7 @@ a.basket-goods {
 /* Основное содержание */
 
 .main-header {
+  padding-top: 10px;
   min-height: 120px;
   margin-bottom: 285px;
 }
