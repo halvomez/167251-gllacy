@@ -307,7 +307,7 @@ body>input[type="radio"] {
   display: none;
   position: absolute;
   box-sizing: border-box;
-  top: 37px;
+  top: 35px;
   right: 0;
   width: 340px;
   height: 85px;
@@ -393,10 +393,10 @@ body>input[type="radio"] {
 }
 
 .form-login {
-  display: none;
+  /* display: none; */
   position: absolute;
-  top: 37px;
-  right: 0;
+  top: 35px;
+  right: -5px;
   box-sizing: border-box;
   width: 277px;
   height: 214px;
@@ -414,7 +414,7 @@ body>input[type="radio"] {
   width: 240px;
   height: 44px;
   margin-bottom: 20px;
-  padding-left: 15px;
+  padding-left: 14px;
   padding-right: 15px;
   border-radius: 5px;
   border-color: #d3d3d2;
@@ -433,13 +433,22 @@ body>input[type="radio"] {
   font-family: inherit;
   margin-right: 19px;
   border: none;
+  box-sizing: border-box;
+  height: 44px;
+  width: 100px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .form-login a {
+  display: inline;
   float: left;
+  text-align: left;
   width: 120px;
+  height: 18px;
   font-size: 13px;
   line-height: 24px;
+  font-weight: 400;
   color: #323232;
   text-decoration: none;
   border-bottom: 1px solid #adacaa;
@@ -502,7 +511,7 @@ a.basket-goods {
 .form-basket {
   display: none;
   position: absolute;
-  top: 37px;
+  top: 35px;
   right: 0;
   box-sizing: border-box;
   width: 540px;
