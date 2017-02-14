@@ -12,7 +12,6 @@ body {
   color: #ffffff;
   font-weight: bold;
   background-color: #849d8f;
-  /* нужно ли задавать ширину? нет*/
 }
 
 .site-wrapper {
@@ -72,29 +71,29 @@ body > input[type="radio"] {
   display: none;
 }
 
-#btn-1:checked~.site-wrapper #slide1,
-#btn-2:checked~.site-wrapper #slide2,
-#btn-3:checked~.site-wrapper #slide3 {
+#btn-1:checked ~ .site-wrapper #slide1,
+#btn-2:checked ~ .site-wrapper #slide2,
+#btn-3:checked ~ .site-wrapper #slide3 {
   display: block;
 }
 
-#btn-1:checked~.site-wrapper label[for="btn-1"],
-#btn-2:checked~.site-wrapper label[for="btn-2"],
-#btn-3:checked~.site-wrapper label[for="btn-3"] {
+#btn-1:checked ~ .site-wrapper label[for="btn-1"],
+#btn-2:checked ~ .site-wrapper label[for="btn-2"],
+#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
   background-color: #ffffff;
 }
 
-#btn-1:checked~.site-wrapper {
+#btn-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slider1.png");
 }
 
-#btn-2:checked~.site-wrapper {
+#btn-2:checked ~ .site-wrapper {
   background-color: #8996a6;
   background-image: url("../img/slider2.png");
 }
 
-#btn-3:checked~.site-wrapper {
+#btn-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/slider3.png");
 }
@@ -125,7 +124,6 @@ body > input[type="radio"] {
   list-style: none;
   font-size: 0;
   position: relative;
-  /* для всплывающего подменю */
 }
 
 .nav-menu > li {
@@ -140,7 +138,6 @@ body > input[type="radio"] {
 .nav-menu a {
   display: inline-block;
   margin: 7px 14px 0;
-  /* чтобы подчеркивание размещалось по строчке, а не по блоку */
   color: #ffffff;
   text-decoration: none;
   border-bottom: 1px solid rgba(225, 225, 225, 0.2);
@@ -151,7 +148,6 @@ body > input[type="radio"] {
 }
 
 .nav-menu li:hover a {
-  /* цвет ссылки при наведении */
   color: #323232;
 }
 
@@ -482,13 +478,13 @@ a.basket-goods::after {
 /* Для демонстрации состояний кнопки корзина. По умолчанию кнопка с товарами внутри корзины. Отключаем комментирование для появления одного из двух типов кнопок, либо пустой, либо с товаром внутри. При наведении на пустую кнопку меню корзины не появляется, т.к. считаем, что там нет товаров. При наведении на кнопку с товаром внутри появляется всплывающее меню корзины.*/
 
 a.basket-goods {
-  /*  display: none;*/
+  /* display: none; */
 }
 
 
-/* a.basket-empty {
-display: none; 
-} */
+a.basket-empty {
+  /* display: none; */ 
+} 
 
 a.basket-goods::before {
   background: url(../img/spritesheet-gllacy.png) no-repeat;
@@ -648,11 +644,9 @@ p.basket-ice-info {
   text-align: right;
   margin-left: 600px;
   margin-top: 17px;
-  /* можно ли таким способом прижать второй флоат, чтобы один был над другим? */
 }
 
 .main-index-schedule p {
-  /* обнуляем для абзацев */
   margin: 0;
 }
 
@@ -747,7 +741,6 @@ p.basket-ice-info {
 }
 
 .feedback textarea {
-  /* как убрать возможность растягивания? */
   box-sizing: border-box;
   width: 428px;
   height: 155px;
@@ -755,7 +748,6 @@ p.basket-ice-info {
   color: #323232;
   padding-left: 15px;
   padding-top: 12px;
-  border: 1px solid #d3d3d2;
   border-radius: 4px;
   border: 1px solid #d3d3d2;
   margin-bottom: 20px;
@@ -1348,7 +1340,7 @@ a.for-shippers {
 /* Стили для каталога*/
 
 .catalog-wrapper {
-  /*обводка для страницы каталога*/
+  /*светлая обводка для страницы каталога сверху */
   background: url(../img/catalog-overlay.png) repeat-x;
   background-position: 50% 0;
 }
@@ -1537,23 +1529,23 @@ select option {
 }
 
 
-/* #zero-percent:checked ~ .sort-fatness-radio label {
+/* #zero-percent:checked  ~  .sort-fatness-radio label {
   color:red; 
 } почему не срабатывает такая запись через селектор? неважно из какого селектора label, ищет просто по id?*/
 
-#zero-percent:checked~label[for="zero-percent"]::before {
+#zero-percent:checked ~ label[for="zero-percent"]::before {
   display: block;
 }
 
-#less10-percent:checked~label[for="less10-percent"]::before {
+#less10-percent:checked ~ label[for="less10-percent"]::before {
   display: block;
 }
 
-#less30-percent:checked~label[for="less30-percent"]::before {
+#less30-percent:checked ~ label[for="less30-percent"]::before {
   display: block;
 }
 
-#more30-percent:checked~label[for="more30-percent"]::before {
+#more30-percent:checked ~ label[for="more30-percent"]::before {
   display: block;
 }
 
@@ -1617,28 +1609,27 @@ select option {
   border: 2px solid #ffffff;
 }
 
-#fill-choco:checked~label[for="fill-choco"]::before {
+#fill-choco:checked ~ label[for="fill-choco"]::before {
   background: url(../img/checkbox-on.png) no-repeat;
 }
 
-#fill-sugar:checked~label[for="fill-sugar"]::before {
+#fill-sugar:checked ~ label[for="fill-sugar"]::before {
   background: url(../img/checkbox-on.png) no-repeat;
 }
 
-#fill-fruits:checked~label[for="fill-fruits"]::before {
+#fill-fruits:checked ~ label[for="fill-fruits"]::before {
   background: url(../img/checkbox-on.png) no-repeat;
 }
 
-#fill-syrup:checked~label[for="fill-syrup"]::before {
+#fill-syrup:checked ~ label[for="fill-syrup"]::before {
   background: url(../img/checkbox-on.png) no-repeat;
 }
 
-#fill-jam:checked~label[for="fill-jam"]::before {
+#fill-jam:checked ~ label[for="fill-jam"]::before {
   background: url(../img/checkbox-on.png) no-repeat;
 }
 
 .sort-submit-btn {
-  /* центровка текста по умолчанию в button? */
   box-sizing: border-box;
   height: 36px;
   min-width: 144px;
