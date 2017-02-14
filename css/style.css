@@ -452,7 +452,7 @@ a.sub-menu-new {
 }
 
 .userform-basket>a {
-  padding-left: 44px;
+  padding-left: 45px;
   width: 117px;
 }
 
@@ -484,9 +484,9 @@ a.basket-goods {
 /*  display: none;*/
 }
 
-a.basket-empty {
-   display: none; 
-}
+/* a.basket-empty {
+display: none; 
+} */
 
 a.basket-goods::before {
   background: url(../img/spritesheet-gllacy.png) no-repeat;
@@ -916,6 +916,7 @@ a.banner-getchocolate {
   display: inline;
   color: #ffffff;
   font-weight: normal;
+  text-align: center;
   text-decoration: none;
   border-bottom: 1px solid rgba(225, 225, 225, 0.2);
 }
