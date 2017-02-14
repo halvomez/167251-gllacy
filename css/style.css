@@ -620,7 +620,7 @@ p.basket-ice-info {
   line-height: 24px;
   font-weight: bold;
   padding-left: 14px;
-  padding-top: 7px;
+  padding-top: 10px;
 }
 
 .main-index-schedule {
@@ -1308,8 +1308,9 @@ a.for-shippers {
 
 /* Стили для каталога*/
 
-.catalog-wrapper {     /*обводка для страницы каталога*/
-  background: url(../img/catalog-overlay.png) no-repeat;
+.catalog-wrapper {     
+  /*обводка для страницы каталога*/
+  background: url(../img/catalog-overlay.png) repeat-x;
   background-position: 50% 0;
 }
 
