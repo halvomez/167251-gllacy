@@ -64,7 +64,7 @@ body {
   background-color: rgba(225, 225, 225, 0.4);
 }
 
-body>input[type="radio"] {
+body > input[type="radio"] {
   display: none;
 }
 
@@ -128,7 +128,7 @@ body>input[type="radio"] {
   /* для всплывающего подменю */
 }
 
-.nav-menu>li {
+.nav-menu > li {
   display: inline-block;
   height: 32px;
   font-size: 16px;
@@ -185,7 +185,6 @@ body>input[type="radio"] {
 .hover-catalog-red:hover .sub-menu {
   display: block;
 }
-
 
 .sub-menu li {
   box-sizing: border-box;
@@ -260,9 +259,9 @@ a.sub-menu-new {
   margin-right: 0px;
 }
 
-.userform-search>a,
-.userform-login>a,
-.userform-basket>a {
+.userform-search > a,
+.userform-login > a,
+.userform-basket > a {
   position: relative;
   font-size: 14px;
   line-height: 16px;
@@ -277,12 +276,12 @@ a.sub-menu-new {
   padding-top: 7px;
 }
 
-.userform-search>a {
+.userform-search > a {
   font-size: 0px;
   width: 32px;
 }
 
-.userform-search>a::before {
+.userform-search > a::before {
   content: "";
   position: absolute;
   width: 17px;
@@ -293,7 +292,7 @@ a.sub-menu-new {
   background-position: -778px -10px;
 }
 
-.userform-search>a::after {
+.userform-search > a::after {
   /* хак, чтобы не пропадал ховер при наведении вниз с ссылки поиска */
   content: "";
   position: absolute;
@@ -322,7 +321,7 @@ a.sub-menu-new {
   background-color: #f8f7f4;
 }
 
-.userform-search:hover>a::before {
+.userform-search:hover > a::before {
   background: url(../img/search-black.png) no-repeat;
 }
 
@@ -346,15 +345,15 @@ a.sub-menu-new {
   font-family: inherit;
   font-size: 14px;
   line-height: 24px;
-  color: #999999;
+  color: #323232;
 }
 
-.userform-login>a {
+.userform-login > a {
   padding-right: 14px;
   padding-left: 45px;
 }
 
-.userform-login>a::before {
+.userform-login > a::before {
   content: "";
   position: absolute;
   width: 21px;
@@ -365,7 +364,7 @@ a.sub-menu-new {
   background-position: -737px -10px;
 }
 
-.userform-login>a::after {
+.userform-login > a::after {
   /* хак, чтобы не пропадал ховер при наведении вниз с ссылки поиска */
   content: "";
   position: absolute;
@@ -379,12 +378,12 @@ a.sub-menu-new {
   background-color: #f8f7f4;
 }
 
-.userform-login:hover>a::before {
+.userform-login:hover > a::before {
   /* черный вариант иконки */
   background: url(../img/login-black.png) no-repeat;
 }
 
-.userform-login:hover>a {
+.userform-login:hover > a {
   color: #323232;
 }
 
@@ -425,7 +424,7 @@ a.sub-menu-new {
   font-family: inherit;
   font-size: 14px;
   line-height: 24px;
-  color: #999999;
+  color: #323232;
 }
 
 .login-btn {
@@ -453,12 +452,12 @@ a.sub-menu-new {
   border-bottom: 1px solid #adacaa;
 }
 
-.userform-basket>a {
+.userform-basket > a {
   padding-left: 45px;
   width: 117px;
 }
 
-.userform-basket>a::before {
+.userform-basket > a::before {
   position: absolute;
   content: "";
   width: 21px;
@@ -623,6 +622,24 @@ p.basket-ice-info {
   font-weight: bold;
   padding-left: 14px;
   padding-top: 10px;
+}
+
+.form-search input:hover,
+.form-login input:hover,
+.form-login input:hover,
+.main-index-subscribe input:hover,
+.feedback input:hover {
+  border: 2px solid #c7c6c5;
+  border-radius: 5px;
+}
+
+.form-search input:focus,
+.form-login input:focus,
+.form-login input:focus,
+.main-index-subscribe input:focus,
+.feedback input:focus {
+  border: 2px solid #8fbdec;
+  border-radius: 5px;
 }
 
 .main-index-schedule {
@@ -1077,12 +1094,17 @@ a.banner-getchocolate {
   margin-right: 12px;
 }
 
+.main-index-subscribe input {
+  border: 1px solid #d3d3d2;
+}
+
 .main-index-subscribe input[type="text"] {
   box-sizing: border-box;
   width: 368px;
   height: 44px;
   padding-left: 15px;
   border-radius: 5px;
+  color: #323232;
 }
 
 .subscribe-btn {
@@ -1116,7 +1138,7 @@ a.banner-getchocolate {
   border-radius: 15px;
 }
 
-.where-address>p {
+.where-address > p {
   margin: 0px;
   padding-left: 25px;
   font-size: 14px;
@@ -1336,8 +1358,6 @@ a.for-shippers {
   margin-bottom: -22px;
 }
 
-
-
 .hover-catalog-red {
   background-color: #d07058;
 }
@@ -1407,10 +1427,10 @@ a.for-shippers {
   margin-right: 15px;
 }
 
-.sort-select>p,
-.sort-price>p:first-child,
-.sort-fatness>p,
-.sort-fill>p {
+.sort-select > p,
+.sort-price > p:first-child,
+.sort-fatness > p,
+.sort-fill > p {
   margin-left: 18px;
 }
 
