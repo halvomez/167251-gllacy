@@ -481,8 +481,9 @@ a.basket-goods::after {
 /* Для демонстрации состояний кнопки корзина. По умолчанию кнопка с товарами внутри корзины. Отключаем комментирование для появления одного из двух типов кнопок, либо пустой, либо с товаром внутри. При наведении на пустую кнопку меню корзины не появляется, т.к. считаем, что там нет товаров. При наведении на кнопку с товаром внутри появляется всплывающее меню корзины.*/
 
 a.basket-goods {
-/*  display: none;*/
+  /*  display: none;*/
 }
+
 
 /* a.basket-empty {
 display: none; 
@@ -529,7 +530,6 @@ a.basket-goods {
   font-size: 0;
   position: relative;
 }
-
 
 .basket-line:first-child {
   margin-bottom: 33px;
@@ -891,8 +891,8 @@ a.banner-getchocolate {
   z-index: 1;
 }
 
-.icecream-info:nth-of-type(4n) { 
-/*  какой лучше использовать селектор*/
+.icecream-info:nth-of-type(4n) {
+  /*  какой лучше использовать селектор*/
   float: right;
   margin-right: 0px;
 }
@@ -1191,63 +1191,53 @@ a.banner-getchocolate {
   min-height: 32px;
   min-width: 32px;
   margin-right: 14px;
-  border: 2px solid rgba(225,225,225,0.5);
+  border: 2px solid rgba(225, 225, 225, 0.5);
   border-radius: 32px;
   opacity: 0.8;
+  z-index: 2;
 }
 
-.main-footer-social a::before { внутренняя обводка
+.main-footer-social a::before {
+  /* для иконок */
   content: "";
   position: absolute;
   width: 32px;
   height: 32px;
-  left: 0;
   top: 0;
-  background-color: aqua;
+  left: 0;
   border-radius: 50%;
-} 
-
-/* .main-footer-social a::after {
-  для иконок
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 1px;
-  left: 1px;
-  border-radius: 50%;
-  z-index: 0;
-} */
+  z-index: 1;
+}
 
 .main-footer-social a:hover {
   opacity: 1;
-  border: 2px solid rgba(225,225,225,0.7);
+  border: 2px solid rgba(225, 225, 225, 0.7);
 }
 
 .main-footer-social a:active {
   opacity: 0.8;
-  border: 2px solid rgba(225,225,225,0.7);
-  box-shadow: inset 0px 2px 1px 0px rgba(50,50,50,0.4);
+  border: 2px solid rgba(225, 225, 225, 0.7);
+  box-shadow: inset 0px 2px 1px 0px rgba(50, 50, 50, 0.8);
 }
 
-.social-twitter::after {
+.social-twitter::before {
   background-image: url(../img/spritesheet-gllacy.png);
-  background-position: -851px -11px;
+  background-position: -850px -10px;
 }
 
-.social-instagram::after {
+.social-instagram::before {
   background-image: url(../img/spritesheet-gllacy.png);
-  background-position: -686px -11px;
+  background-position: -685px -10px;
 }
 
-.social-fb::after {
+.social-fb::before {
   background-image: url(../img/spritesheet-gllacy.png);
-  background-position: -367px -11px;
+  background-position: -366px -10px;
 }
 
-.social-vk::after {
+.social-vk::before {
   background-image: url(../img/spritesheet-gllacy.png);
-  background-position: -903px -11px;
+  background-position: -902px -10px;
 }
 
 .main-footer-documents {
@@ -1330,7 +1320,7 @@ a.for-shippers {
 
 /* Стили для каталога*/
 
-.catalog-wrapper {     
+.catalog-wrapper {
   /*обводка для страницы каталога*/
   background: url(../img/catalog-overlay.png) repeat-x;
   background-position: 50% 0;
@@ -1349,14 +1339,14 @@ a.for-shippers {
 .hover-catalog-red {
   background-color: #d07058;
 }
+
 .main-catalog-breadcrumbs {
   /* откуда отступ снизу? если display:block */
   display: inline-block;
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-top: 
-  margin-bottom: 5px;
+  margin-top: margin-bottom: 5px;
 }
 
 .main-catalog-breadcrumbs li {
@@ -1793,6 +1783,7 @@ a.page-forward::before {
 .catalog-page .page-select:hover {
   background-color: rgba(225, 225, 225, 0.2);
 }
+
 
 /* страница 1 текущая */
 
