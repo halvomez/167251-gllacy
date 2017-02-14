@@ -165,7 +165,6 @@ body>input[type="radio"] {
 }
 
 .sub-menu {
-  /* внутреннее подменю каталога. Как сделать, чтобы не пропадало? */
   position: absolute;
   top: 35px;
   left: -7px;
@@ -248,7 +247,6 @@ a.sub-menu-new {
 .userform-basket {
   position: relative;
   display: inline-block;
-  font-size: 16px;
   margin-right: 10px;
   border-radius: 15px;
   background-color: rgba(225, 225, 225, 0.2);
@@ -1771,7 +1769,7 @@ a.page-back::before {
 a.page-forward::before {
   background: url(../img/spritesheet-gllacy.png) no-repeat;
   background-position: -656px -10px;
-  left: 120px;
+  left: 12px;
 }
 
 
