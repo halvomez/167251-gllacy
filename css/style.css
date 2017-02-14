@@ -1168,8 +1168,9 @@ a.banner-getchocolate {
 }
 
 .main-footer-social {
-  width: 425px;
-  float: left;
+  width: 420px;
+  display: inline-block;
+  vertical-align: top;
   margin-top: 39px;
 }
 
@@ -1240,7 +1241,7 @@ a.banner-getchocolate {
 }
 
 .main-footer-documents {
-  float: left;
+  display: inline-block;
   width: 350px;
 }
 
