@@ -155,7 +155,8 @@ body>input[type="radio"] {
   color: #323232;
 }
 
-.hover-catalog::before {
+.hover-catalog::before,
+.hover-catalog-red::before {
   content: "";
   position: absolute;
   top: 20px;
@@ -180,9 +181,11 @@ body>input[type="radio"] {
   z-index: 1;
 }
 
-.hover-catalog:hover .sub-menu {
+.hover-catalog:hover .sub-menu,
+.hover-catalog-red:hover .sub-menu {
   display: block;
 }
+
 
 .sub-menu li {
   box-sizing: border-box;
