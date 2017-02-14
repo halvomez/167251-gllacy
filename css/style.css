@@ -1696,6 +1696,7 @@ a.for-shippers {
 .catalog-page {
   clear: both;
   float: right;
+  width: 200px;
   margin-top: 40px;
   margin-bottom: 30px;
   text-align: center;
@@ -1709,7 +1710,6 @@ a.for-shippers {
   width: 25px;
   height: 25px;
   padding-top: 4px;
-  margin-right: 2px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -1719,11 +1719,26 @@ a.for-shippers {
   border-radius: 50%;
 }
 
+a.page-select {
+  margin-right: 4px;
+}
+
 a.page-back,
 a.page-forward {
   font-size: 0;
 }
 
+a.page-back {
+  float: left;
+  width: 25px;
+}
+
+a.page-forward {
+  /* ошибка в макете? иконка завалена максимально вправо */
+  float: right;
+  width: 25px;
+  margin-left: -10px;
+}
 
 a.page-back::before,
 a.page-forward::before {
@@ -1732,18 +1747,19 @@ a.page-forward::before {
   height: 15px;
   width: 15px;
   top: 6px;
-  left: 8px;
 }
 
 a.page-back::before {
   background: url(../img/spritesheet-gllacy.png) no-repeat;
   background-position: -627px -10px;
+  left: 10px;
   opacity: 0.2;
 }
 
 a.page-forward::before {
   background: url(../img/spritesheet-gllacy.png) no-repeat;
   background-position: -656px -10px;
+  left: 120px;
 }
 
 
@@ -1752,14 +1768,14 @@ a.page-forward::before {
 
 /* подсветка при наведении */
 
-.catalog-page a:hover {
+.catalog-page .page-select:hover {
   background-color: rgba(225, 225, 225, 0.2);
 }
 
-
 /* страница 1 текущая */
 
-.catalog-page a:nth-child(2) {
+a.page-select:nth-of-type(2) {
+  /* почему не срабатывает nth-of-type(1) */
   background-color: #ffffff;
   color: #323232;
 }
