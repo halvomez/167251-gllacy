@@ -10,7 +10,7 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 400;
   background-color: #849d8f;
 }
 
@@ -71,29 +71,29 @@ body > input[type="radio"] {
   display: none;
 }
 
-#btn-1:checked ~ .site-wrapper #slide1,
-#btn-2:checked ~ .site-wrapper #slide2,
-#btn-3:checked ~ .site-wrapper #slide3 {
+.btn-1:checked ~ .site-wrapper .slide1,
+.btn-2:checked ~ .site-wrapper .slide2,
+.btn-3:checked ~ .site-wrapper .slide3 {
   display: block;
 }
 
-#btn-1:checked ~ .site-wrapper label[for="btn-1"],
-#btn-2:checked ~ .site-wrapper label[for="btn-2"],
-#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+.btn-1:checked ~ .site-wrapper label[for="btn-1"],
+.btn-2:checked ~ .site-wrapper label[for="btn-2"],
+.btn-3:checked ~ .site-wrapper label[for="btn-3"] {
   background-color: #ffffff;
 }
 
-#btn-1:checked ~ .site-wrapper {
+.btn-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slider1.png");
 }
 
-#btn-2:checked ~ .site-wrapper {
+.btn-2:checked ~ .site-wrapper {
   background-color: #8996a6;
   background-image: url("../img/slider2.png");
 }
 
-#btn-3:checked ~ .site-wrapper {
+.btn-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/slider3.png");
 }
@@ -131,6 +131,7 @@ body > input[type="radio"] {
   height: 32px;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 700;
   vertical-align: top;
   border-radius: 15px;
 }
@@ -269,7 +270,7 @@ a.sub-menu-new {
   border-radius: inherit;
   color: #ffffff;
   min-height: 32px;
-  padding-top: 7px;
+  padding-top: 9px;
 }
 
 .userform-search > a {
@@ -504,7 +505,7 @@ a.basket-goods {
 }
 
 .form-basket {
-  /* display: none; */
+  display: none;
   position: absolute;
   top: 35px;
   right: 0;
@@ -1555,19 +1556,19 @@ a.for-shippers {
   color:red; 
 } почему не срабатывает такая запись через селектор? неважно из какого селектора label, ищет просто по id?*/
 
-#zero-percent:checked ~ label[for="zero-percent"]::before {
+.zero-percent:checked ~ label[for="zero-percent"]::before {
   display: block;
 }
 
-#less10-percent:checked ~ label[for="less10-percent"]::before {
+.less10-percent:checked ~ label[for="less10-percent"]::before {
   display: block;
 }
 
-#less30-percent:checked ~ label[for="less30-percent"]::before {
+.less30-percent:checked ~ label[for="less30-percent"]::before {
   display: block;
 }
 
-#more30-percent:checked ~ label[for="more30-percent"]::before {
+.more30-percent:checked ~ label[for="more30-percent"]::before {
   display: block;
 }
 
@@ -1631,23 +1632,23 @@ a.for-shippers {
   border: 2px solid #ffffff;
 }
 
-#fill-choco:checked ~ label[for="fill-choco"]::before {
+.fill-choco:checked ~ label[for="fill-choco"]::before {
   background: url(../img/checkbox-on.png) no-repeat;
 }
 
-#fill-sugar:checked ~ label[for="fill-sugar"]::before {
+.fill-sugar:checked ~ label[for="fill-sugar"]::before {
   background: url(../img/checkbox-on.png) no-repeat;
 }
 
-#fill-fruits:checked ~ label[for="fill-fruits"]::before {
+.fill-fruits:checked ~ label[for="fill-fruits"]::before {
   background: url(../img/checkbox-on.png) no-repeat;
 }
 
-#fill-syrup:checked ~ label[for="fill-syrup"]::before {
+.fill-syrup:checked ~ label[for="fill-syrup"]::before {
   background: url(../img/checkbox-on.png) no-repeat;
 }
 
-#fill-jam:checked ~ label[for="fill-jam"]::before {
+.fill-jam:checked ~ label[for="fill-jam"]::before {
   background: url(../img/checkbox-on.png) no-repeat;
 }
 
