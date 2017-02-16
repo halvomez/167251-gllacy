@@ -504,7 +504,7 @@ a.basket-goods {
 }
 
 .form-basket {
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 35px;
   right: 0;
@@ -585,14 +585,15 @@ p.basket-ice-info {
   left: -48px;
   width: 35px;
   height: 35px;
+  border-radius: 50%;
 }
 
 .icecream-orange::before {
-  background: url(../img/basket-iceorange.png) no-repeat;
+  background: url(../img/basket-iceorange.jpg) no-repeat;
 }
 
 .icecream-strawberry::before {
-  background: url(../img/basket-icestrawberry.png) no-repeat;
+  background: url(../img/basket-icestrawberry.jpg) no-repeat;
 }
 
 .basket-ice-info span {
@@ -1051,7 +1052,8 @@ a.banner-getchocolate {
   width: 560px;
   float: left;
   min-height: 220px;
-  background: #ffffff url(../img/news-background.jpg);
+  background-color: #ffffff;
+  background: url(../img/news-background.jpg);
   border-radius: 20px;
   margin-bottom: 40px;
   padding-left: 20px;
