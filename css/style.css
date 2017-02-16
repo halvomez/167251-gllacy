@@ -1006,7 +1006,7 @@ a.banner-getchocolate {
   padding-top: 15px;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400px;
+  font-weight: 400;
 }
 
 .gllacyinfo-aboutus p::before {
@@ -1086,7 +1086,7 @@ a.banner-getchocolate {
   margin: 0;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400px;
+  font-weight: 400;
   margin-top: 35px;
   padding-left: 27px;
   padding-right: 10px;
@@ -1149,8 +1149,7 @@ a.banner-getchocolate {
   padding-left: 25px;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400px;
-  /* REGULAR? */
+  font-weight: 400;
 }
 
 .where-address p:nth-of-type(2) {
@@ -1166,6 +1165,7 @@ a.banner-getchocolate {
   display: inline-block;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 700;
   margin-bottom: 14px;
 }
 
@@ -1178,6 +1178,7 @@ a.banner-getchocolate {
   display: inline-block;
   font-size: 18px;
   line-height: 22px;
+  font-weight: 700;
   margin-bottom: 3px;
 }
 
