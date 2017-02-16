@@ -887,6 +887,10 @@ a.banner-getchocolate {
   text-align: center;
 }
 
+.icecream-info img {
+  border-radius: 50%;
+}
+
 .icecream-info::before {
   /* обводка */
   display: none;
