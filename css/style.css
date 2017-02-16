@@ -826,6 +826,7 @@ a.get-btn {
 }
 
 .banner-raspberry {
+  background-color: #8b0020;
   background-image: url(../img/raspberries-background.jpg);
   background-repeat: no-repeat;
   float: left;
@@ -850,6 +851,7 @@ a.get-btn {
 }
 
 .banner-choco {
+  background-color: #71544b;
   background-image: url(../img/chocolate-background.jpg);
   background-repeat: no-repeat;
   float: right;
@@ -981,6 +983,7 @@ a.banner-getchocolate {
   color: #323232;
   border-radius: 20px;
   margin-bottom: 40px;
+  background-color: #eee3cd;
   background-image: url(../img/aboutus-wafer.jpg);
   font-size: 0;
 }
@@ -1083,7 +1086,8 @@ a.banner-getchocolate {
   float: right;
   min-height: 220px;
   border-radius: 20px;
-  background: #f8f7f4 url(../img/subscribe-background.jpg) no-repeat;
+  background-color: #f8f7f4;
+  background: url(../img/subscribe-background.jpg) no-repeat;
   color: #5a5a5a;
 }
 
