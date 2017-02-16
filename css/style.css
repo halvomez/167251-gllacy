@@ -38,7 +38,7 @@ body {
 }
 
 .content-wrapper {
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -910,8 +910,8 @@ a.banner-getchocolate {
 
 .icecream-info p {
   position: relative;
-  margin-top: -53px;
-  margin-bottom: 31px;
+  margin-top: -59px;
+  margin-bottom: 20px;
   font-size: 45px;
   text-align: left;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
@@ -919,8 +919,22 @@ a.banner-getchocolate {
 }
 
 .icecream-info span {
+  display: inline;
+  position: relative;
   font-size: 30px;
-  margin-left: 6px;
+  line-height: 45px;
+  margin-left: 35px;
+}
+
+.icecream-info span::before {
+  /* символ рубля через svg */
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 37px;
+  top: -4px;
+  left: -30px;
+  background: url(../img/symbol-rub.svg) no-repeat;
 }
 
 .icecream-info a:first-of-type {
