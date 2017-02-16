@@ -1477,10 +1477,6 @@ a.for-shippers {
   border-radius: 18px;
 }
 
-select option {
-  background-color: #90a69a;
-}
-
 .sort-select select:hover {
   background-color: #ffffff;
   color: #323232;
