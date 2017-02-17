@@ -1276,12 +1276,12 @@ a.banner-getchocolate {
 
 .main-footer-social a:hover {
   opacity: 1;
-  border: 2px solid rgba(225, 225, 225, 0.7);
+  border: 3px solid rgba(225, 225, 225, 0.7);
 }
 
 .main-footer-social a:active {
   opacity: 0.8;
-  border: 2px solid rgba(225, 225, 225, 0.7);
+  border: 3px solid rgba(225, 225, 225, 0.7);
   box-shadow: inset 0px 2px 1px 0px rgba(50, 50, 50, 0.8);
 }
 
