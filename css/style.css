@@ -169,7 +169,7 @@ body > input[type="radio"] {
   margin: 0;
   padding: 0;
   /* временно скрываем */
-  /* display: none; */
+  display: none;
   width: 145px;
   list-style: none;
   background-color: #f8f7f4;
@@ -270,7 +270,7 @@ a.sub-menu-new {
   border-radius: inherit;
   color: #ffffff;
   min-height: 32px;
-  padding-top: 9px;
+  padding-top: 8px;
 }
 
 .userform-search > a {
@@ -785,7 +785,7 @@ p.basket-ice-info {
 
 .main-index-sliderbtn {
   display: inline-block;
-  margin-right: 350px;
+  margin-right: 347px;
 }
 
 .orange-btn {
@@ -876,7 +876,7 @@ a.banner-getchocolate {
   min-height: 46px;
   float: right;
   margin-right: 20px;
-  padding-top: 10px;
+  padding-top: 9px;
   padding-left: 22px;
   padding-right: 22px;
   font-size: 18px;
@@ -893,7 +893,7 @@ a.banner-getchocolate {
   width: 268px;
   float: left;
   margin-right: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   text-align: center;
 }
 
@@ -924,8 +924,8 @@ a.banner-getchocolate {
 
 .icecream-info p {
   position: relative;
-  margin-top: -62px;
-  margin-bottom: 22px;
+  margin-top: -63px;
+  margin-bottom: 20px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
@@ -939,7 +939,7 @@ a.banner-getchocolate {
   position: relative;
   font-size: 30px;
   line-height: 45px;
-  margin-left: 35px;
+  margin-left: 36px;
 }
 
 .icecream-info span::before {
@@ -992,6 +992,7 @@ a.banner-getchocolate {
 
 .main-index-gllacyinfo {
   clear: both;
+  min-height: 308px;
   color: #323232;
   border-radius: 20px;
   margin-bottom: 40px;
@@ -1014,15 +1015,15 @@ a.banner-getchocolate {
   width: 540px;
   vertical-align: top;
   margin-left: 23px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .gllacyinfo-aboutus p {
   position: relative;
   display: inline-block;
   margin: 0;
-  margin-bottom: 10px;
-  padding-left: 56px;
+  margin-bottom: 8px;
+  padding-left: 57px;
   padding-right: 5px;
   padding-top: 15px;
   font-size: 16px;
@@ -1067,7 +1068,7 @@ a.banner-getchocolate {
   background-color: #ffffff;
   background: url(../img/news-background.jpg);
   border-radius: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   padding-left: 20px;
   padding-right: 255px;
 }
@@ -1078,7 +1079,7 @@ a.banner-getchocolate {
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
-  margin-top: 24px;
+  margin-top: 20px;
   margin-bottom: 4px;
 }
 
@@ -1112,10 +1113,10 @@ a.banner-getchocolate {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
-  margin-top: 35px;
+  margin-top: 32px;
   padding-left: 27px;
   padding-right: 15px;
-  margin-bottom: 38px;
+  margin-bottom: 36px;
   color: #5a5a5a;
 }
 
@@ -1163,7 +1164,7 @@ a.banner-getchocolate {
 }
 
 .where-address {
-  min-height: 308px;
+  min-height: 305px;
   min-width: 300px;
   position: absolute;
   top: 62px;
@@ -1234,7 +1235,7 @@ a.banner-getchocolate {
   width: 420px;
   display: inline-block;
   vertical-align: top;
-  margin-top: 38px;
+  margin-top: 35px;
 }
 
 .main-footer-social ul {
@@ -1253,8 +1254,8 @@ a.banner-getchocolate {
   position: relative;
   display: block;
   min-height: 32px;
-  min-width: 32px;
-  margin-right: 16px;
+  min-width: 31px;
+  margin-right: 15px;
   border: 2px solid rgba(225, 225, 225, 0.5);
   border-radius: 32px;
   opacity: 0.8;
