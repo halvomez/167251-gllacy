@@ -203,12 +203,12 @@ body > input[type="radio"] {
 
 .sub-menu li:first-child {
   position: relative;
-  margin-top: 5px;
+  margin-top: 3px;
   margin-bottom: 10px;
 }
 
 .sub-menu li:last-child {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .sub-menu li:first-child::before {
@@ -775,7 +775,7 @@ p.basket-ice-info {
 .slider-description {
   margin: 0;
   margin-left: 240px;
-  width: 672px;
+  width: 670px;
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
