@@ -10,12 +10,12 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 400;
   background-color: #849d8f;
 }
 
 .site-wrapper {
-  min-width: 940px;
+  min-width: 1200px;
   background-color: #849d8f;
   background-image: url("../img/slider1.png");
   background-repeat: no-repeat;
@@ -71,29 +71,29 @@ body > input[type="radio"] {
   display: none;
 }
 
-#btn-1:checked ~ .site-wrapper #slide1,
-#btn-2:checked ~ .site-wrapper #slide2,
-#btn-3:checked ~ .site-wrapper #slide3 {
+.btn-1:checked ~ .site-wrapper .slide1,
+.btn-2:checked ~ .site-wrapper .slide2,
+.btn-3:checked ~ .site-wrapper .slide3 {
   display: block;
 }
 
-#btn-1:checked ~ .site-wrapper label[for="btn-1"],
-#btn-2:checked ~ .site-wrapper label[for="btn-2"],
-#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+.btn-1:checked ~ .site-wrapper label[for="btn-1"],
+.btn-2:checked ~ .site-wrapper label[for="btn-2"],
+.btn-3:checked ~ .site-wrapper label[for="btn-3"] {
   background-color: #ffffff;
 }
 
-#btn-1:checked ~ .site-wrapper {
+.btn-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slider1.png");
 }
 
-#btn-2:checked ~ .site-wrapper {
+.btn-2:checked ~ .site-wrapper {
   background-color: #8996a6;
   background-image: url("../img/slider2.png");
 }
 
-#btn-3:checked ~ .site-wrapper {
+.btn-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/slider3.png");
 }
@@ -131,6 +131,7 @@ body > input[type="radio"] {
   height: 32px;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 700;
   vertical-align: top;
   border-radius: 15px;
 }
@@ -202,12 +203,12 @@ body > input[type="radio"] {
 
 .sub-menu li:first-child {
   position: relative;
-  margin-top: 5px;
+  margin-top: 3px;
   margin-bottom: 10px;
 }
 
 .sub-menu li:last-child {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .sub-menu li:first-child::before {
@@ -269,7 +270,7 @@ a.sub-menu-new {
   border-radius: inherit;
   color: #ffffff;
   min-height: 32px;
-  padding-top: 7px;
+  padding-top: 8px;
 }
 
 .userform-search > a {
@@ -292,10 +293,10 @@ a.sub-menu-new {
   /* хак, чтобы не пропадал ховер при наведении вниз с ссылки поиска */
   content: "";
   position: absolute;
-  width: 32px;
+  width: 50px;
   height: 50px;
   top: 0;
-  left: 0;
+  right: 0;
 }
 
 .form-search {
@@ -536,7 +537,7 @@ a.basket-goods {
   /* почему не работает last-child */
   padding-bottom: 15px;
   border-bottom: 1px solid #cacac7;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .form-basket p {
@@ -585,14 +586,15 @@ p.basket-ice-info {
   left: -48px;
   width: 35px;
   height: 35px;
+  border-radius: 50%;
 }
 
 .icecream-orange::before {
-  background: url(../img/basket-iceorange.png) no-repeat;
+  background: url(../img/basket-iceorange.jpg) no-repeat;
 }
 
 .icecream-strawberry::before {
-  background: url(../img/basket-icestrawberry.png) no-repeat;
+  background: url(../img/basket-icestrawberry.jpg) no-repeat;
 }
 
 .basket-ice-info span {
@@ -601,10 +603,12 @@ p.basket-ice-info {
 
 .basket-submit {
   float: right;
+  right: 2px;
   min-width: 100px;
   font-size: 15px;
   line-height: 18px;
-  margin-bottom: 14px;
+  font-weight: 700;
+  margin-bottom: 13px;
 }
 
 .form-basket .order-btn {
@@ -653,12 +657,14 @@ p.basket-ice-info {
 .main-index-schedule p:first-child {
   font-size: 14px;
   line-height: 16px;
+  font-weight: 700;
   margin-bottom: 4px;
 }
 
 .main-index-schedule p:last-child {
   font-size: 22px;
   line-height: 24px;
+  font-weight: 700;
 }
 
 .clearfix::after {
@@ -771,16 +777,17 @@ p.basket-ice-info {
 .slider-description {
   margin: 0;
   margin-left: 240px;
-  width: 672px;
+  width: 670px;
   font-size: 60px;
   line-height: 60px;
+  font-weight: 700;
   text-align: center;
   margin-bottom: 29px;
 }
 
 .main-index-sliderbtn {
   display: inline-block;
-  margin-right: 345px;
+  margin-right: 347px;
 }
 
 .orange-btn {
@@ -819,13 +826,15 @@ a.get-btn {
   min-width: 278px;
   vertical-align: baseline;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 9px;
   font-size: 32px;
   line-height: 44px;
+  font-weight: 700;
   margin-bottom: 42px;
 }
 
 .banner-raspberry {
+  background-color: #8b0020;
   background-image: url(../img/raspberries-background.jpg);
   background-repeat: no-repeat;
   float: left;
@@ -835,9 +844,10 @@ a.get-btn {
   margin: 0;
   font-size: 35px;
   line-height: 41px;
+  font-weight: 700;
   padding-top: 17px;
   padding-left: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .banner-promo-info {
@@ -846,10 +856,12 @@ a.get-btn {
   margin: 0;
   font-size: 18px;
   line-height: 22px;
+  font-weight: 700;
   margin-bottom: 44px;
 }
 
 .banner-choco {
+  background-color: #71544b;
   background-image: url(../img/chocolate-background.jpg);
   background-repeat: no-repeat;
   float: right;
@@ -866,7 +878,7 @@ a.banner-getchocolate {
   min-height: 46px;
   float: right;
   margin-right: 20px;
-  padding-top: 10px;
+  padding-top: 9px;
   padding-left: 22px;
   padding-right: 22px;
   font-size: 18px;
@@ -883,8 +895,12 @@ a.banner-getchocolate {
   width: 268px;
   float: left;
   margin-right: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   text-align: center;
+}
+
+.icecream-info img {
+  border-radius: 50%;
 }
 
 .icecream-info::before {
@@ -910,9 +926,11 @@ a.banner-getchocolate {
 
 .icecream-info p {
   position: relative;
-  margin-top: -59px;
+  margin-top: -63px;
   margin-bottom: 20px;
   font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
   text-align: left;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
   z-index: 2;
@@ -923,7 +941,7 @@ a.banner-getchocolate {
   position: relative;
   font-size: 30px;
   line-height: 45px;
-  margin-left: 35px;
+  margin-left: 36px;
 }
 
 .icecream-info span::before {
@@ -940,7 +958,9 @@ a.banner-getchocolate {
 .icecream-info a:first-of-type {
   display: inline;
   color: #ffffff;
-  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
   text-align: center;
   text-decoration: none;
   border-bottom: 1px solid rgba(225, 225, 225, 0.2);
@@ -974,9 +994,11 @@ a.banner-getchocolate {
 
 .main-index-gllacyinfo {
   clear: both;
+  min-height: 308px;
   color: #323232;
   border-radius: 20px;
   margin-bottom: 40px;
+  background-color: #eee3cd;
   background-image: url(../img/aboutus-wafer.jpg);
   font-size: 0;
 }
@@ -987,7 +1009,7 @@ a.banner-getchocolate {
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 }
 
 .gllacyinfo-aboutus {
@@ -995,18 +1017,20 @@ a.banner-getchocolate {
   width: 540px;
   vertical-align: top;
   margin-left: 23px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .gllacyinfo-aboutus p {
   position: relative;
   display: inline-block;
   margin: 0;
-  padding-left: 54px;
+  margin-bottom: 8px;
+  padding-left: 57px;
+  padding-right: 5px;
   padding-top: 15px;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400px;
+  font-weight: 400;
 }
 
 .gllacyinfo-aboutus p::before {
@@ -1043,9 +1067,10 @@ a.banner-getchocolate {
   width: 560px;
   float: left;
   min-height: 220px;
-  background: #ffffff url(../img/news-background.jpg);
+  background-color: #ffffff;
+  background: url(../img/news-background.jpg);
   border-radius: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   padding-left: 20px;
   padding-right: 255px;
 }
@@ -1055,7 +1080,8 @@ a.banner-getchocolate {
   color: #323232;
   font-size: 16px;
   line-height: 22px;
-  margin-top: 24px;
+  font-weight: 500;
+  margin-top: 20px;
   margin-bottom: 4px;
 }
 
@@ -1063,6 +1089,7 @@ a.banner-getchocolate {
   color: #323232;
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
   width: 290px;
   border-bottom: 2px solid;
   text-decoration: none;
@@ -1078,7 +1105,8 @@ a.banner-getchocolate {
   float: right;
   min-height: 220px;
   border-radius: 20px;
-  background: #f8f7f4 url(../img/subscribe-background.jpg) no-repeat;
+  background-color: #f8f7f4;
+  background: url(../img/subscribe-background.jpg) no-repeat;
   color: #5a5a5a;
 }
 
@@ -1086,18 +1114,18 @@ a.banner-getchocolate {
   margin: 0;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400px;
-  margin-top: 35px;
+  font-weight: 400;
+  margin-top: 32px;
   padding-left: 27px;
-  padding-right: 10px;
-  margin-bottom: 35px;
+  padding-right: 15px;
+  margin-bottom: 36px;
   color: #5a5a5a;
 }
 
 .main-index-subscribe form {
   display: inline-block;
   margin-left: 27px;
-  margin-right: 12px;
+  margin-right: 10px;
 }
 
 .main-index-subscribe input {
@@ -1111,6 +1139,9 @@ a.banner-getchocolate {
   padding-left: 15px;
   border-radius: 5px;
   color: #323232;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 .subscribe-btn {
@@ -1122,6 +1153,7 @@ a.banner-getchocolate {
   border: none;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 700;
 }
 
 .where-map {
@@ -1134,7 +1166,7 @@ a.banner-getchocolate {
 }
 
 .where-address {
-  min-height: 308px;
+  min-height: 305px;
   min-width: 300px;
   position: absolute;
   top: 62px;
@@ -1149,12 +1181,11 @@ a.banner-getchocolate {
   padding-left: 25px;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400px;
-  /* REGULAR? */
+  font-weight: 400;
 }
 
 .where-address p:nth-of-type(2) {
-  margin-bottom: 27px;
+  margin-bottom: 24px;
 }
 
 .where-address-place {
@@ -1166,6 +1197,7 @@ a.banner-getchocolate {
   display: inline-block;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 700;
   margin-bottom: 14px;
 }
 
@@ -1178,6 +1210,7 @@ a.banner-getchocolate {
   display: inline-block;
   font-size: 18px;
   line-height: 22px;
+  font-weight: 700;
   margin-bottom: 3px;
 }
 
@@ -1189,6 +1222,7 @@ a.banner-getchocolate {
   margin-left: 25px;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 700;
 }
 
 
@@ -1203,7 +1237,7 @@ a.banner-getchocolate {
   width: 420px;
   display: inline-block;
   vertical-align: top;
-  margin-top: 38px;
+  margin-top: 35px;
 }
 
 .main-footer-social ul {
@@ -1223,8 +1257,8 @@ a.banner-getchocolate {
   display: block;
   min-height: 32px;
   min-width: 32px;
-  margin-right: 14px;
-  border: 2px solid rgba(225, 225, 225, 0.5);
+  margin-right: 12px;
+  border: 3px solid rgba(225, 225, 225, 0.5);
   border-radius: 32px;
   opacity: 0.8;
   z-index: 2;
@@ -1244,12 +1278,12 @@ a.banner-getchocolate {
 
 .main-footer-social a:hover {
   opacity: 1;
-  border: 2px solid rgba(225, 225, 225, 0.7);
+  border: 3px solid rgba(225, 225, 225, 0.7);
 }
 
 .main-footer-social a:active {
   opacity: 0.8;
-  border: 2px solid rgba(225, 225, 225, 0.7);
+  border: 3px solid rgba(225, 225, 225, 0.7);
   box-shadow: inset 0px 2px 1px 0px rgba(50, 50, 50, 0.8);
 }
 
@@ -1315,7 +1349,8 @@ a.for-shippers {
 
 .main-footer-copyright {
   float: right;
-  margin-top: 20px;
+  margin-top: 17px;
+  margin-right: -2px;
 }
 
 .htmlacademy-logo {
@@ -1330,7 +1365,7 @@ a.for-shippers {
   margin: 0;
   font-size: 12px;
   line-height: 18px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .main-footer-copyright a {
@@ -1410,7 +1445,7 @@ a.for-shippers {
   margin-bottom: 26px;
   font-size: 35px;
   line-height: 41px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .main-catalog-sort {
@@ -1465,10 +1500,6 @@ a.for-shippers {
   border: none;
   background-color: rgba(225, 225, 225, 0.2);
   border-radius: 18px;
-}
-
-select option {
-  background-color: #90a69a;
 }
 
 .sort-select select:hover {
@@ -1547,25 +1578,25 @@ select option {
   color:red; 
 } почему не срабатывает такая запись через селектор? неважно из какого селектора label, ищет просто по id?*/
 
-#zero-percent:checked ~ label[for="zero-percent"]::before {
+.zero-percent:checked ~ label[for="zero-percent"]::before {
   display: block;
 }
 
-#less10-percent:checked ~ label[for="less10-percent"]::before {
+.less10-percent:checked ~ label[for="less10-percent"]::before {
   display: block;
 }
 
-#less30-percent:checked ~ label[for="less30-percent"]::before {
+.less30-percent:checked ~ label[for="less30-percent"]::before {
   display: block;
 }
 
-#more30-percent:checked ~ label[for="more30-percent"]::before {
+.more30-percent:checked ~ label[for="more30-percent"]::before {
   display: block;
 }
 
 .sort-fill {
   display: inline-block;
-  margin-right: 14px;
+  margin-right: 13px;
 }
 
 .sort-fill-checkbox {
@@ -1623,23 +1654,23 @@ select option {
   border: 2px solid #ffffff;
 }
 
-#fill-choco:checked ~ label[for="fill-choco"]::before {
+.fill-choco:checked ~ label[for="fill-choco"]::before {
   background: url(../img/checkbox-on.png) no-repeat;
 }
 
-#fill-sugar:checked ~ label[for="fill-sugar"]::before {
+.fill-sugar:checked ~ label[for="fill-sugar"]::before {
   background: url(../img/checkbox-on.png) no-repeat;
 }
 
-#fill-fruits:checked ~ label[for="fill-fruits"]::before {
+.fill-fruits:checked ~ label[for="fill-fruits"]::before {
   background: url(../img/checkbox-on.png) no-repeat;
 }
 
-#fill-syrup:checked ~ label[for="fill-syrup"]::before {
+.fill-syrup:checked ~ label[for="fill-syrup"]::before {
   background: url(../img/checkbox-on.png) no-repeat;
 }
 
-#fill-jam:checked ~ label[for="fill-jam"]::before {
+.fill-jam:checked ~ label[for="fill-jam"]::before {
   background: url(../img/checkbox-on.png) no-repeat;
 }
 
@@ -1740,8 +1771,8 @@ select option {
   clear: both;
   float: right;
   width: 200px;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin-top: 42px;
+  margin-bottom: 31px;
   text-align: center;
   font-size: 0;
 }

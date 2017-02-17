@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>GllacyCatalog</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -116,7 +118,7 @@
           <form action="#" method="post" name="catalog-sort">
             <!-- одна форма и в ней все элементы? Да  -->
             <div class="sort-select">
-              <p>Сортировка</p>
+              <p>Сортировка:</p>
               <select id="sort-select" name="sort-select" class="sort-select-menu">
                 <option value="sort-popular">по популярности</option>
                 <option value="sort-cheap">сначала недорогие</option>
@@ -143,28 +145,28 @@
             <div class="sort-fatness">
               <p>Жирность:</p>
               <div class="sort-fatness-radio">
-                <input type="radio" id="zero-percent" name="fatness" value="">
+                <input type="radio" id="zero-percent" name="fatness" class="zero-percent" value="">
                 <label for="zero-percent">0%</label>
-                <input type="radio" id="less10-percent" checked name="fatness" value="">
+                <input type="radio" id="less10-percent" class="less10-percent" checked name="fatness" value="">
                 <label for="less10-percent">до 10%</label>
-                <input type="radio" id="less30-percent" name="fatness" value="">
+                <input type="radio" id="less30-percent" class="less30-percent" name="fatness" value="">
                 <label for="less30-percent">до 30%</label>
-                <input type="radio" id="more30-percent" name="fatness" value="">
+                <input type="radio" id="more30-percent" class="more30-percent" name="fatness" value="">
                 <label for="more30-percent">выше 30%</label>
               </div>
             </div>
             <div class="sort-fill">
-              <p>Наполнители</p>
+              <p>Наполнители:</p>
               <div class="sort-fill-checkbox">
-                <input type="checkbox" id="fill-choco" checked>
+                <input type="checkbox" id="fill-choco" class="fill-choco" checked>
                 <label for="fill-choco">шоколадные</label>
-                <input type="checkbox" id="fill-sugar" checked>
+                <input type="checkbox" id="fill-sugar" class="fill-sugar" checked>
                 <label for="fill-sugar">сахарные присыпки</label>
-                <input type="checkbox" id="fill-fruits">
+                <input type="checkbox" id="fill-fruits" class="fill-fruits">
                 <label for="fill-fruits">фрукты</label>
-                <input type="checkbox" id="fill-syrup">
+                <input type="checkbox" id="fill-syrup" class="fill-syrup">
                 <label for="fill-syrup">сиропы</label>
-                <input type="checkbox" id="fill-jam">
+                <input type="checkbox" id="fill-jam" class="fill-jam">
                 <label for="fill-jam">джемы</label>
               </div>
             </div>
@@ -173,73 +175,73 @@
         </div>
         <!-- первые 4 секции из index только без картинки хит -->
         <section class="icecream-info">
-          <img src="img/icecream-orange.png" class="icephoto-radius" alt="Сливочное с апельсиновым джемом" width="267" height="267">
+          <img src="img/icecream-orange.jpg" alt="Сливочное с апельсиновым джемом" width="267" height="267">
           <p>310<span>/кг</span></p>
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           <a href="#" class="quick-view orange-btn">Быстрый просмотр</a>
         </section>
         <section class="icecream-info">
-          <img src="img/icecream-coffee.png" class="icephoto-radius" alt="Сливочное кофейное" width="267" height="267">
+          <img src="img/icecream-coffee.jpg" alt="Сливочное кофейное" width="267" height="267">
           <p>380<span>/кг</span></p>
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
           <a href="#" class="quick-view orange-btn">Быстрый просмотр</a>
         </section>
         <section class="icecream-info">
-          <img src="img/icecream-strawberry.png" class="icephoto-radius" alt="Сливочное клубничное" width="267" height="267">
+          <img src="img/icecream-strawberry.jpg" alt="Сливочное клубничное" width="267" height="267">
           <p>355<span>/кг</span></p>
           <a href="#">Сливочно-клубничное с<br> присыпкой из белого шоколада</a>
           <a href="#" class="quick-view orange-btn">Быстрый просмотр</a>
         </section>
         <section class="icecream-info">
-          <img src="img/icecream-caramel.png" class="icephoto-radius" alt="Сливочное крем-брюле" width="267" height="267">
+          <img src="img/icecream-caramel.jpg" alt="Сливочное крем-брюле" width="267" height="267">
           <p>415<span>/кг</span></p>
           <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
           <a href="#" class="quick-view orange-btn">Быстрый просмотр</a>
         </section>
         <section class="icecream-info">
-          <img src="img/icecream-cowberry.png" class="icephoto-radius" alt="Сливочное брусничное" width="267" height="267">
+          <img src="img/icecream-cowberry.jpg" alt="Сливочное брусничное" width="267" height="267">
           <p>325<span>/кг</span></p>
           <a href="#">Сливочное с брусничным<br> джемом</a>
           <a href="#" class="quick-view orange-btn">Быстрый просмотр</a>
         </section>
         <section class="icecream-info">
-          <img src="img/icecream-bilberry.png" class="icephoto-radius" alt="Сливочное черничное" width="267" height="267">
+          <img src="img/icecream-bilberry.jpg" alt="Сливочное черничное" width="267" height="267">
           <p>410<span>/кг</span></p>
           <a href="#">Сливочно-черничное с цельными ягодами черники </a>
           <a href="#" class="quick-view orange-btn">Быстрый просмотр</a>
         </section>
         <section class="icecream-info">
-          <img src="img/icecream-lemon.png" class="icephoto-radius" alt="Сливочное лимонное" width="267" height="267">
+          <img src="img/icecream-lemon.jpg" alt="Сливочное лимонное" width="267" height="267">
           <p>375<span>/кг</span></p>
           <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
           <a href="#" class="quick-view orange-btn">Быстрый просмотр</a>
         </section>
         <section class="icecream-info">
-          <img src="img/icecream-choco.png" class="icephoto-radius" alt="Сливочное с шоколадной стружкой" width="267" height="267">
+          <img src="img/icecream-choco.jpg" alt="Сливочное с шоколадной стружкой" width="267" height="267">
           <p>320<span>/кг</span></p>
           <a href="#">Сливочное с шоколадной стружкой</a>
           <a href="#" class="quick-view orange-btn">Быстрый просмотр</a>
         </section>
         <section class="icecream-info">
-          <img src="img/icecream-vanilla.png" class="icephoto-radius" alt="Сливочное ванильное" width="267" height="267">
+          <img src="img/icecream-vanilla.jpg" alt="Сливочное ванильное" width="267" height="267">
           <p>440<span>/кг</span></p>
           <a href="#">Сливочно-ванильное с<br> кусочками шоколада</a>
           <a href="#" class="quick-view orange-btn">Быстрый просмотр</a>
         </section>
         <section class="icecream-info">
-          <img src="img/icecream-menthol.png" class="icephoto-radius" alt="Сливочное с ментоловым сиропом" width="267" height="267">
+          <img src="img/icecream-menthol.jpg" alt="Сливочное с ментоловым сиропом" width="267" height="267">
           <p>435<span>/кг</span></p>
           <a href="#">Сливочное с ментоловым<br> сиропом</a>
           <a href="#" class="quick-view orange-btn">Быстрый просмотр</a>
         </section>
         <section class="icecream-info">
-          <img src="img/icecream-blackchoco.png" class="icephoto-radius" alt="Сливочное с черным шоколадом" width="267" height="267">
+          <img src="img/icecream-blackchoco.jpg" alt="Сливочное с черным шоколадом" width="267" height="267">
           <p>355<span>/кг</span></p>
           <a href="#">Сливочное с кусочками черного шоколада</a>
           <a href="#" class="quick-view orange-btn">Быстрый просмотр</a>
         </section>
         <section class="icecream-info">
-          <img src="img/icecream-mint.png" class="icephoto-radius" alt="Сливочное с мятным сиропом" width="267" height="267">
+          <img src="img/icecream-mint.jpg" alt="Сливочное с мятным сиропом" width="267" height="267">
           <p>420<span>/кг</span></p>
           <a href="#">Сливочное с мятным сиропом</a>
           <a href="#" class="quick-view orange-btn">Быстрый просмотр</a>
