@@ -16,11 +16,11 @@ function closeFeedback() {
 
 function closeModalEsc(event) {
   if (event.keyCode === 27) {
-    closeFeedback;
+    closeFeedback();
   }
 }
 
 /*три варианта закрытия формы, через крестик, через клик по оверлею и через ескейп*/
 feedbackCloseBtn.addEventListener("click", closeFeedback);
 feedbackOverlay.addEventListener("click", closeFeedback);
-window.addEventListener("keydown", closeFeedback);
+window.addEventListener("keydown", closeModalEsc);
