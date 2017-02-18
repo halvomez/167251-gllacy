@@ -1175,7 +1175,14 @@ a.banner-getchocolate {
   height: 429px;
   position: relative;
   margin-left: -27px;
-  /* можно ли так? */
+}
+
+.js-map { /* интерактивная карта */
+  position: absolute;
+  width: 1200px;
+  height: 429px;
+  top: 0;
+  left: 0;
 }
 
 .where-address {
@@ -1867,3 +1874,4 @@ a.page-select:nth-of-type(2) {
   background-color: #ffffff;
   color: #323232;
 }
+
