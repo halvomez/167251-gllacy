@@ -1641,6 +1641,30 @@ a.for-shippers {
   opacity: 0.4;
 }
 
+.fill-choco:disabled ~ label[for="fill-choco"]::before,
+.fill-choco:disabled ~ label[for="fill-choco"]::after {
+  opacity: 0.4;
+}
+
+.fill-sugar:disabled ~ label[for="fill-sugar"]::before,
+.fill-sugar:disabled ~ label[for="fill-sugar"]::after {
+  opacity: 0.4;
+}
+
+.fill-fruits:disabled ~ label[for="fill-fruits"]::before,
+.fill-fruits:disabled ~ label[for="fill-fruits"]::after {
+  opacity: 0.4;
+}
+
+.fill-syrup:disabled ~ label[for="fill-syrup"]::before,
+.fill-syrup:disabled ~ label[for="fill-syrup"]::after {
+  opacity: 0.4;
+}
+
+.fill-jam:disabled ~ label[for="fill-jam"]::before,
+.fill-jam:disabled ~ label[for="fill-jam"]::after {
+  opacity: 0.4;
+}
 
 
 /* #zero-percent:checked  ~  .sort-fatness-radio label {
