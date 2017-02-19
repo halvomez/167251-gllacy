@@ -1621,6 +1621,27 @@ a.for-shippers {
   border: 2px solid #ffffff;
 }
 
+.zero-percent:disabled ~ label[for="zero-percent"]::before,
+.zero-percent:disabled ~ label[for="zero-percent"]::after {
+  opacity: 0.4;
+}
+
+.less10-percent:disabled ~ label[for="less10-percent"]::before,
+.less10-percent:disabled ~ label[for="less10-percent"]::after {
+  opacity: 0.4;
+}
+
+.less30-percent:disabled ~ label[for="less30-percent"]::before,
+.less30-percent:disabled ~ label[for="less30-percent"]::after {
+  opacity: 0.4;
+}
+
+.more30-percent:disabled ~ label[for="zmore30-percent"]::before,
+.more30-percent:disabled ~ label[for="more30-percent"]::after {
+  opacity: 0.4;
+}
+
+
 
 /* #zero-percent:checked  ~  .sort-fatness-radio label {
   color:red; 
