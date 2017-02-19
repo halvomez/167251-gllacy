@@ -202,10 +202,18 @@
                   <p>Мы обязательно вам ответим!</p>
                   <div class="feedback-close-btn"></div>
                   <form action="#" method="post" name="feedback">
-                    <input type="text" id="ask-name" placeholder="Как вас зовут?">
-                    <input type="text" id="ask-email" placeholder="Ваша почта для ответа?">
-                    <!-- textarea задается ширина и высота без cols rows. Нужно ли в html прописывать cols rows -->
-                    <textarea name="ask-info-write" id="ask-info-write" cols="20" rows="20" placeholder="Напишите что-нибудь..."></textarea>
+                    <div class="ask-name-wrapper">
+                      <input type="text" id="ask-name" class="ask-name" placeholder="Как вас зовут?">
+                      <label for="ask-name" class="label-ask-name">Как вас зовут?</label>
+                    </div>
+                    <div class="ask-email-wrapper">
+                      <input type="text" id="ask-email" class="ask-email" placeholder="Ваша почта для ответа?">
+                      <label for="ask-email" class="label-ask-email">Ваша почта для ответа?</label>
+                    </div>
+                    <div class="textarea-wrapper">
+                      <textarea name="ask-info-write" id="ask-info-write" class="ask-info-write" cols="20" rows="20" placeholder="Напишите что-нибудь..."></textarea>
+                      <label for="ask-info-write" class="label-info-write">Напишите что-нибудь...</label>
+                    </div>
                     <button type="submit" class="feedback-send-btn orange-btn">Отправить</button>
                   </form>
                 </section>

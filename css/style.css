@@ -485,10 +485,9 @@ a.basket-goods {
   /* display: none; */
 }
 
-
 a.basket-empty {
-  /* display: none; */ 
-} 
+  /* display: none; */
+}
 
 a.basket-goods::before {
   background: url(../img/spritesheet-gllacy.png) no-repeat;
@@ -702,7 +701,7 @@ p.basket-ice-info {
   z-index: 10;
 }
 
-.feedback-modal-open { 
+.feedback-modal-open {
   /* класс для открытия формы через js */
   display: block;
   animation: open 0.3s;
@@ -754,6 +753,7 @@ p.basket-ice-info {
 }
 
 .feedback input {
+  position: relative;
   box-sizing: border-box;
   display: block;
   width: 268px;
@@ -1194,7 +1194,8 @@ a.banner-getchocolate {
   margin-left: -27px;
 }
 
-.js-map { /* интерактивная карта */
+.js-map {
+  /* интерактивная карта */
   position: absolute;
   width: 1200px;
   height: 429px;
@@ -1951,3 +1952,28 @@ a.page-select:nth-of-type(2) {
   color: #323232;
 }
 
+.ask-name-wrapper,
+.ask-email-wrapper,
+.textarea-wrapper {
+  position: relative;
+}
+
+.label-ask-email,
+.label-ask-name,
+.label-info-write {
+  display: none;
+  position: absolute;
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: 400;
+  color: #999999;
+  top: -15px;
+  left: 17px;
+}
+
+.ask-name:focus ~ .label-ask-name,
+.ask-email:focus ~ .label-ask-email,
+.ask-info-write:focus ~ .label-info-write {
+  display: block;
+  color: #5b9ddf;
+}
