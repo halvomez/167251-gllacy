@@ -51,6 +51,7 @@ body {
 
 .main-index-sliderbtn label {
   display: inline-block;
+  vertical-align: baseline;
   width: 17px;
   height: 17px;
   margin-right: 5px;
@@ -129,16 +130,17 @@ body > input[type="radio"] {
 
 .nav-menu > li {
   display: inline-block;
+  vertical-align: top;
   height: 32px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  vertical-align: top;
   border-radius: 15px;
 }
 
 .nav-menu a {
   display: inline-block;
+  vertical-align: baseline;
   margin: 7px 14px 0;
   color: #ffffff;
   text-decoration: none;
@@ -543,6 +545,7 @@ a.basket-goods {
 
 .form-basket p {
   display: inline-block;
+  vertical-align: top;
   margin: 0;
   padding: 0;
 }
@@ -811,11 +814,13 @@ p.basket-ice-info {
 .main-index-sliderbtn {
   display: inline-block;
   margin-right: 347px;
+  vertical-align: baseline;
 }
 
 .orange-btn {
   box-sizing: border-box;
   display: inline-block;
+  vertical-align: baseline;
   border-radius: 30px;
   text-decoration: none;
   color: #ffffff;
@@ -1046,6 +1051,7 @@ a.banner-getchocolate {
 .gllacyinfo-aboutus p {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   margin: 0;
   margin-bottom: 8px;
   padding-left: 57px;
@@ -1147,6 +1153,7 @@ a.banner-getchocolate {
 
 .main-index-subscribe form {
   display: inline-block;
+  vertical-align: baseline;
   margin-left: 27px;
   margin-right: 10px;
 }
@@ -1225,6 +1232,7 @@ a.banner-getchocolate {
 
 .where-address-place span {
   display: inline-block;
+  vertical-align: baseline;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1233,11 +1241,13 @@ a.banner-getchocolate {
 
 .where-address-tel span:nth-of-type(1) {
   display: inline-block;
+  vertical-align: baseline;
   margin-bottom: 5px;
 }
 
 .where-address-tel span:nth-of-type(2) {
   display: inline-block;
+  vertical-align: baseline;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
@@ -1340,6 +1350,7 @@ a.banner-getchocolate {
 .main-footer-documents {
   display: inline-block;
   width: 350px;
+  vertical-align: baseline;
 }
 
 .main-footer-documents ul {
@@ -1347,6 +1358,7 @@ a.banner-getchocolate {
   padding: 0;
   list-style: none;
   display: inline-block;
+  vertical-align: top;
   margin-top: 32px;
   margin-right: 29px;
 }
@@ -1436,6 +1448,7 @@ a.for-shippers {
 .main-catalog-breadcrumbs {
   /* откуда отступ снизу? если display:block */
   display: inline-block;
+  vertical-align: baseline;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1444,6 +1457,7 @@ a.for-shippers {
 .main-catalog-breadcrumbs li {
   position: relative;
   display: inline-block;
+  vertical-align: baseline;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -1485,6 +1499,7 @@ a.for-shippers {
 
 .main-catalog-sort p {
   display: inline-block;
+  vertical-align: baseline;
   padding: 0;
   margin: 0;
   /* margin-bottom: 8px; откуда такой отступ после P*/
@@ -1514,12 +1529,14 @@ a.for-shippers {
 
 .sort-select-menu {
   display: inline-block;
+  vertical-align: top;
 }
 
 .sort-select select {
   /* как отодвинуть иконку всплывающего селекта? или селект помещать в обертку с нужным background? */
   box-sizing: border-box;
   display: inline-block;
+  vertical-align: baseline;
   height: 36px;
   width: 192px;
   font-size: 16px;
@@ -1539,6 +1556,7 @@ a.for-shippers {
 
 .sort-fatness {
   display: inline-block;
+  vertical-align: top;
 }
 
 .sort-fatness-radio {
@@ -1626,6 +1644,7 @@ a.for-shippers {
 
 .sort-fill {
   display: inline-block;
+  vertical-align: baseline;
   margin-right: 13px;
 }
 
@@ -1646,6 +1665,7 @@ a.for-shippers {
 
 .sort-fill-checkbox label {
   display: inline-block;
+  vertical-align: baseline;
   position: relative;
   padding-left: 32px;
   margin-right: 22px;
@@ -1753,6 +1773,7 @@ a.for-shippers {
 .sort-range-control {
   position: relative;
   display: inline-block;
+  vertical-align: baseline;
   box-sizing: border-box;
   height: 36px;
   width: 218px;
@@ -1811,6 +1832,7 @@ a.for-shippers {
   position: relative;
   box-sizing: border-box;
   display: inline-block;
+  vertical-align: top;
   width: 25px;
   height: 25px;
   padding-top: 4px;
@@ -1818,7 +1840,6 @@ a.for-shippers {
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
-  vertical-align: top;
   text-decoration: none;
   border-radius: 50%;
 }
