@@ -6,7 +6,7 @@
   <title>Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -183,6 +183,9 @@
             <button type="submit" class="subscribe-btn orange-btn">Отправить</button>
           </section>
           <section class="where-map">
+            <div class="js-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5991032728616!2d30.3208946!3d59.9387942!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1487435623160" width="1200" height="429" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
             <img src="img/map.jpg" alt="наш адрес" width="1200" height="429">
             <div class="where-address">
               <p class="where-address-place">Адрес главного офиса
@@ -194,14 +197,23 @@
                 <span>8 812 450-25-25</span>
                 <br>(с 10 до 20 ежедневно)</p>
               <div class="feedback-modal">
-                <a href="#" class="feedback-btn orange-btn">Форма обратной связи</a>
+                <a href="feedback-form.html" class="feedback-open-btn orange-btn">Форма обратной связи</a>
                 <section class="feedback">
                   <p>Мы обязательно вам ответим!</p>
+                  <div class="feedback-close-btn"></div>
                   <form action="#" method="post" name="feedback">
-                    <input type="text" id="ask-name" placeholder="Как вас зовут?">
-                    <input type="text" id="ask-email" placeholder="Ваша почта для ответа?">
-                    <!-- textarea задается ширина и высота без cols rows. Нужно ли в html прописывать cols rows -->
-                    <textarea name="ask-info-write" id="ask-info-write" cols="20" rows="20" placeholder="Напишите что-нибудь..."></textarea>
+                    <div class="ask-name-wrapper">
+                      <input type="text" id="ask-name" class="ask-name" placeholder="Как вас зовут?">
+                      <label for="ask-name" class="label-ask-name">Как вас зовут?</label>
+                    </div>
+                    <div class="ask-email-wrapper">
+                      <input type="text" id="ask-email" class="ask-email" placeholder="Ваша почта для ответа?">
+                      <label for="ask-email" class="label-ask-email">Ваша почта для ответа?</label>
+                    </div>
+                    <div class="textarea-wrapper">
+                      <textarea name="ask-info-write" id="ask-info-write" class="ask-info-write" cols="20" rows="20" placeholder="Напишите что-нибудь..."></textarea>
+                      <label for="ask-info-write" class="label-info-write">Напишите что-нибудь...</label>
+                    </div>
                     <button type="submit" class="feedback-send-btn orange-btn">Отправить</button>
                   </form>
                 </section>
@@ -255,6 +267,8 @@
       </footer>
     </div>
   </div>
+  <div class="modal-overlay"></div>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

@@ -5,6 +5,7 @@ body {
 }
 
 body {
+  min-width: 1200px;
   position: relative;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
@@ -50,6 +51,7 @@ body {
 
 .main-index-sliderbtn label {
   display: inline-block;
+  vertical-align: baseline;
   width: 17px;
   height: 17px;
   margin-right: 5px;
@@ -128,16 +130,17 @@ body > input[type="radio"] {
 
 .nav-menu > li {
   display: inline-block;
+  vertical-align: top;
   height: 32px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  vertical-align: top;
   border-radius: 15px;
 }
 
 .nav-menu a {
   display: inline-block;
+  vertical-align: baseline;
   margin: 7px 14px 0;
   color: #ffffff;
   text-decoration: none;
@@ -482,10 +485,9 @@ a.basket-goods {
   /* display: none; */
 }
 
-
 a.basket-empty {
-  /* display: none; */ 
-} 
+  /* display: none; */
+}
 
 a.basket-goods::before {
   background: url(../img/spritesheet-gllacy.png) no-repeat;
@@ -542,6 +544,7 @@ a.basket-goods {
 
 .form-basket p {
   display: inline-block;
+  vertical-align: top;
   margin: 0;
   padding: 0;
 }
@@ -674,15 +677,11 @@ p.basket-ice-info {
 }
 
 
-/* Всплывающие формы*/
+/* Всплывающие форма обратной связи*/
 
 
 /* для демонстрации формы обратной связи
 Затемнение body?*/
-
-.feedback-modal:active .feedback {
-  display: block;
-}
 
 .feedback {
   display: none;
@@ -699,12 +698,42 @@ p.basket-ice-info {
   border: 1px solid #d3d3d2;
   border-radius: 10px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-  z-index: 1;
+  z-index: 10;
 }
 
-.feedback::before {
-  /* навесить на кнопку закрывание формы */
-  content: "";
+.feedback-modal-open {
+  /* класс для открытия формы через js */
+  display: block;
+  animation: open 0.3s;
+}
+
+@keyframes open {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.modal-overlay {
+  /* затемнение при открытиии формы обратной связи */
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.3;
+  z-index: 5;
+}
+
+.modal-overlay-show {
+  display: block;
+}
+
+.feedback-close-btn {
   position: absolute;
   width: 17px;
   height: 17px;
@@ -712,10 +741,6 @@ p.basket-ice-info {
   right: 15px;
   background: url(../img/x.png) no-repeat;
   cursor: pointer;
-}
-
-.feedback::before:hover {
-  display: none;
 }
 
 .feedback p {
@@ -728,6 +753,7 @@ p.basket-ice-info {
 }
 
 .feedback input {
+  position: relative;
   box-sizing: border-box;
   display: block;
   width: 268px;
@@ -777,7 +803,7 @@ p.basket-ice-info {
 .slider-description {
   margin: 0;
   margin-left: 240px;
-  width: 670px;
+  width: 675px;
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
@@ -788,11 +814,13 @@ p.basket-ice-info {
 .main-index-sliderbtn {
   display: inline-block;
   margin-right: 347px;
+  vertical-align: baseline;
 }
 
 .orange-btn {
   box-sizing: border-box;
   display: inline-block;
+  vertical-align: baseline;
   border-radius: 30px;
   text-decoration: none;
   color: #ffffff;
@@ -1023,6 +1051,7 @@ a.banner-getchocolate {
 .gllacyinfo-aboutus p {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   margin: 0;
   margin-bottom: 8px;
   padding-left: 57px;
@@ -1124,6 +1153,7 @@ a.banner-getchocolate {
 
 .main-index-subscribe form {
   display: inline-block;
+  vertical-align: baseline;
   margin-left: 27px;
   margin-right: 10px;
 }
@@ -1162,7 +1192,15 @@ a.banner-getchocolate {
   height: 429px;
   position: relative;
   margin-left: -27px;
-  /* можно ли так? */
+}
+
+.js-map {
+  /* интерактивная карта */
+  position: absolute;
+  width: 1200px;
+  height: 429px;
+  top: 0;
+  left: 0;
 }
 
 .where-address {
@@ -1195,6 +1233,7 @@ a.banner-getchocolate {
 
 .where-address-place span {
   display: inline-block;
+  vertical-align: baseline;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1203,18 +1242,20 @@ a.banner-getchocolate {
 
 .where-address-tel span:nth-of-type(1) {
   display: inline-block;
+  vertical-align: baseline;
   margin-bottom: 5px;
 }
 
 .where-address-tel span:nth-of-type(2) {
   display: inline-block;
+  vertical-align: baseline;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
   margin-bottom: 3px;
 }
 
-.feedback-btn {
+.feedback-open-btn {
   height: 43px;
   padding-left: 28px;
   padding-top: 9px;
@@ -1310,6 +1351,7 @@ a.banner-getchocolate {
 .main-footer-documents {
   display: inline-block;
   width: 350px;
+  vertical-align: baseline;
 }
 
 .main-footer-documents ul {
@@ -1317,6 +1359,7 @@ a.banner-getchocolate {
   padding: 0;
   list-style: none;
   display: inline-block;
+  vertical-align: top;
   margin-top: 32px;
   margin-right: 29px;
 }
@@ -1406,6 +1449,7 @@ a.for-shippers {
 .main-catalog-breadcrumbs {
   /* откуда отступ снизу? если display:block */
   display: inline-block;
+  vertical-align: baseline;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1414,6 +1458,7 @@ a.for-shippers {
 .main-catalog-breadcrumbs li {
   position: relative;
   display: inline-block;
+  vertical-align: baseline;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -1455,6 +1500,7 @@ a.for-shippers {
 
 .main-catalog-sort p {
   display: inline-block;
+  vertical-align: baseline;
   padding: 0;
   margin: 0;
   /* margin-bottom: 8px; откуда такой отступ после P*/
@@ -1484,12 +1530,14 @@ a.for-shippers {
 
 .sort-select-menu {
   display: inline-block;
+  vertical-align: top;
 }
 
 .sort-select select {
   /* как отодвинуть иконку всплывающего селекта? или селект помещать в обертку с нужным background? */
   box-sizing: border-box;
   display: inline-block;
+  vertical-align: baseline;
   height: 36px;
   width: 192px;
   font-size: 16px;
@@ -1509,6 +1557,7 @@ a.for-shippers {
 
 .sort-fatness {
   display: inline-block;
+  vertical-align: top;
 }
 
 .sort-fatness-radio {
@@ -1573,6 +1622,51 @@ a.for-shippers {
   border: 2px solid #ffffff;
 }
 
+.zero-percent:disabled ~ label[for="zero-percent"]::before,
+.zero-percent:disabled ~ label[for="zero-percent"]::after {
+  opacity: 0.4;
+}
+
+.less10-percent:disabled ~ label[for="less10-percent"]::before,
+.less10-percent:disabled ~ label[for="less10-percent"]::after {
+  opacity: 0.4;
+}
+
+.less30-percent:disabled ~ label[for="less30-percent"]::before,
+.less30-percent:disabled ~ label[for="less30-percent"]::after {
+  opacity: 0.4;
+}
+
+.more30-percent:disabled ~ label[for="zmore30-percent"]::before,
+.more30-percent:disabled ~ label[for="more30-percent"]::after {
+  opacity: 0.4;
+}
+
+.fill-choco:disabled ~ label[for="fill-choco"]::before,
+.fill-choco:disabled ~ label[for="fill-choco"]::after {
+  opacity: 0.4;
+}
+
+.fill-sugar:disabled ~ label[for="fill-sugar"]::before,
+.fill-sugar:disabled ~ label[for="fill-sugar"]::after {
+  opacity: 0.4;
+}
+
+.fill-fruits:disabled ~ label[for="fill-fruits"]::before,
+.fill-fruits:disabled ~ label[for="fill-fruits"]::after {
+  opacity: 0.4;
+}
+
+.fill-syrup:disabled ~ label[for="fill-syrup"]::before,
+.fill-syrup:disabled ~ label[for="fill-syrup"]::after {
+  opacity: 0.4;
+}
+
+.fill-jam:disabled ~ label[for="fill-jam"]::before,
+.fill-jam:disabled ~ label[for="fill-jam"]::after {
+  opacity: 0.4;
+}
+
 
 /* #zero-percent:checked  ~  .sort-fatness-radio label {
   color:red; 
@@ -1596,6 +1690,7 @@ a.for-shippers {
 
 .sort-fill {
   display: inline-block;
+  vertical-align: baseline;
   margin-right: 13px;
 }
 
@@ -1616,6 +1711,7 @@ a.for-shippers {
 
 .sort-fill-checkbox label {
   display: inline-block;
+  vertical-align: baseline;
   position: relative;
   padding-left: 32px;
   margin-right: 22px;
@@ -1723,6 +1819,7 @@ a.for-shippers {
 .sort-range-control {
   position: relative;
   display: inline-block;
+  vertical-align: baseline;
   box-sizing: border-box;
   height: 36px;
   width: 218px;
@@ -1781,6 +1878,7 @@ a.for-shippers {
   position: relative;
   box-sizing: border-box;
   display: inline-block;
+  vertical-align: top;
   width: 25px;
   height: 25px;
   padding-top: 4px;
@@ -1788,7 +1886,6 @@ a.for-shippers {
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
-  vertical-align: top;
   text-decoration: none;
   border-radius: 50%;
 }
@@ -1853,4 +1950,30 @@ a.page-select:nth-of-type(2) {
   /* почему не срабатывает nth-of-type(1) */
   background-color: #ffffff;
   color: #323232;
+}
+
+.ask-name-wrapper,
+.ask-email-wrapper,
+.textarea-wrapper {
+  position: relative;
+}
+
+.label-ask-email,
+.label-ask-name,
+.label-info-write {
+  display: none;
+  position: absolute;
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: 400;
+  color: #999999;
+  top: -15px;
+  left: 17px;
+}
+
+.ask-name:focus ~ .label-ask-name,
+.ask-email:focus ~ .label-ask-email,
+.ask-info-write:focus ~ .label-info-write {
+  display: block;
+  color: #5b9ddf;
 }
